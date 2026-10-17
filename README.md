@@ -7,7 +7,7 @@ Deskloom helps you plan a better desk with the equipment you own and the budget 
 Start with a photo, country, and budget. Compare three setup directions.
 Explore each suggestion. Change product positions or swap products. Export a shopping list with real retailer links.
 
-[Source repository](https://github.com/kandulanikhilvarma/deskloom) · [Release checks](docs/verification.md) · [Deployment guide](docs/deployment.md)
+[Open Deskloom](https://deskloom.vercel.app) · [Source repository](https://github.com/kandulanikhilvarma/deskloom) · [Release checks](docs/verification.md) · [Deployment guide](docs/deployment.md)
 
 ## Release status
 
@@ -19,7 +19,8 @@ Neon currently permits password signup without email verification. Email ownersh
 Password recovery and verification email delivery still need an operator acceptance check.
 AI photo transformations remain disabled until the owner approves provider costs and supplies an API key.
 
-The source snapshot has no verified public production URL.
+The public planner is available at [deskloom.vercel.app](https://deskloom.vercel.app).
+Desktop and phone guest flows passed on Vercel. Cloud account flows passed against an isolated Neon branch.
 See [the activation record](docs/verification.md) before you describe a service as live.
 
 ## What users can complete

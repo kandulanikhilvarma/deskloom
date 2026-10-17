@@ -7,8 +7,8 @@ An implemented route does not establish a successful live integration.
 
 | Area | Current evidence | Next check |
 | --- | --- | --- |
-| GitHub | Public repository and Apache-2.0 base exist. | Publish the verified release through a pull request. |
-| Vercel | The Deskloom project exists. | Deploy the verified source commit and check its public flows. |
+| GitHub | Release PR and CI checks exist. | See [PR 1](https://github.com/kandulanikhilvarma/deskloom/pull/1) for the final merge record. |
+| Vercel | The public planner responds at [deskloom.vercel.app](https://deskloom.vercel.app). | Verify the merged source deployment. |
 | Neon | Readback confirmed both production tables. Vercel accepted the encrypted variables. | Verify the deployed server connection. |
 | Private plans | Isolated Neon accounts passed signup, photo save, restore, sign-out, sign-in, isolation, and deletion. | Check public deployment access. |
 | Verification email | Neon permits signup without email verification by default. | Configure verification, then receive a real code before a claim of verified email ownership. |
@@ -36,7 +36,11 @@ It reported five high-severity entries in the development lint dependency chain 
 The suggested automatic fix downgrades Next.js lint configuration across major versions. That downgrade was not applied.
 The affected tooling processes repository patterns, not public application input. Review a compatible upstream fix before you accept untrusted patterns.
 
-These results do not establish successful production activation.
+The initial Vercel deployment passed all four public guest browser tests.
+That run used source commit `e4d8b6b9ea8316f9172c11595a13b2f1d0a07fc3` and deployment `dpl_CuEWetvQDTdwH6LAfPsVhDDAH9az`.
+Both GitHub CI runs and the Vercel build passed for that commit.
+The public tests cover the full guest workflow, mobile controls, light and dark accessibility, and private API denial.
+The release still needs email delivery acceptance and optional image-provider activation.
 
 Run the following commands on the exact release head:
 
