@@ -1,0 +1,36 @@
+{
+  "name": "deskloom",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "scripts": {
+    "dev": "next dev --hostname 0.0.0.0",
+    "build": "next build",
+    "start": "next start --hostname 0.0.0.0",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "test:browser": "playwright test",
+    "test:database": "node --env-file=.env.test.local --import tsx --test tests/database.integration.ts"
+  },
+  "dependencies": {
+    "next": "16.4.2",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "@neondatabase/auth": "0.6.0-beta",
+    "@neondatabase/serverless": "^1.0.2",
+    "lucide-react": "^0.468.0",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@types/node": "^22.18.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "eslint": "^9.39.0",
+    "eslint-config-next": "16.4.2",
+    "tsx": "^4.20.6",
+    "@playwright/test": "^1.56.0",
+    "@axe-core/playwright": "^4.10.2"
+  }
+}

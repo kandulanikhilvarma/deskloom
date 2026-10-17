@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use Deskloom in research, cite this software."
+type: software
+title: Deskloom
+version: 1.0.0
+authors:
+  - family-names: Kandula
+    given-names: Nikhilvarma
+repository-code: "https://github.com/kandulanikhilvarma/deskloom"
+url: "https://github.com/kandulanikhilvarma/deskloom"
+license: Apache-2.0
+abstract: "A responsive workspace planner with local product references, budget controls, and private saved plans."
