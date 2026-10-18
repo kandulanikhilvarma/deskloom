@@ -18,6 +18,8 @@ Account services still need public deployment verification.
 Neon currently permits password signup without email verification. Email ownership is not verified.
 Password recovery and verification email delivery still need an operator acceptance check.
 Live photo transformations require an accepted image-provider request. The owner approved uncapped image costs and Deskloom OIDC authentication.
+The hosted request reached Vercel AI Gateway but returned `customer_verification_required` on 18 October 2026.
+Production photo generation remains disabled until the team completes verification and a live request passes.
 
 The public planner is available at [deskloom.vercel.app](https://deskloom.vercel.app).
 Desktop and phone guest flows passed on Vercel. Cloud account flows passed against an isolated Neon branch.
@@ -43,8 +45,8 @@ The interface names missing essentials when the catalog cannot support a complet
 
 ## Screenshots
 
-The screenshots show the responsive planner with an illustrative inspiration photo.
-The photo does not show the exact products in the shopping list.
+The screenshots show the responsive planner with a room concept.
+The Products view shows exact model photos. Room concepts are separate style references.
 
 ![Deskloom desktop planner](docs/screenshots/desktop.png)
 

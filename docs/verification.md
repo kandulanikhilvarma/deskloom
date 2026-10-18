@@ -7,16 +7,33 @@ An implemented route does not establish a successful live integration.
 
 | Area | Current evidence | Next check |
 | --- | --- | --- |
-| GitHub | Release PR and CI checks exist. | See [PR 1](https://github.com/kandulanikhilvarma/deskloom/pull/1) for the final merge record. |
+| GitHub | Initial release PR 1 merged. Repair PR 9 contains the visual and regional fixes. | See [PR 9](https://github.com/kandulanikhilvarma/deskloom/pull/9) for its exact head and merge record. |
 | Vercel | The public planner responds at [deskloom.vercel.app](https://deskloom.vercel.app). | Verify the merged source deployment. |
 | Neon | Readback confirmed both production tables. Vercel accepted the encrypted variables. | Verify the deployed server connection. |
 | Private plans | Isolated Neon accounts passed signup, photo save, restore, sign-out, sign-in, isolation, and deletion. | Check public deployment access. |
 | Verification email | Neon permits signup without email verification by default. | Configure verification, then receive a real code before a claim of verified email ownership. |
 | Password recovery | Application code needs browser acceptance. | Complete the email link and new-password flow. |
-| Image provider | Optional route exists; activation remains disabled. | Get cost approval, configure a key, and verify one approved request. |
+| Image provider | Hosted OIDC credentials work. Gateway rejected the real request with HTTP 403 and `customer_verification_required`. Production remains disabled. | Complete team verification in Vercel AI Gateway, then repeat the isolated three-version acceptance test. |
 | Checkout and stock | No checkout or live inventory integration exists. | Users must confirm the final order on the retailer site. |
 
 ## Required automated checks
+
+Repair checks on 18 October 2026:
+
+- All 44 unit tests passed, including runtime OIDC and safe provider errors.
+- Lint, TypeScript, and the production build passed.
+- Seven focused guest browser tests passed after the OIDC repair.
+- The isolated account browser test passed save, restore, sign-out, sign-in, owner isolation, and deletion.
+- The earlier eight-test visual run also captured the updated desktop and phone screenshots.
+- The German browser check loaded actual product photos and verified local links and distinct core products across all directions.
+- The hosted provider test created an isolated account and sent one consented photo request.
+- Gateway returned `customer_verification_required`; the app stopped without an automatic retry or a fabricated output.
+
+The hosted provider check used source `dc5f903fc6821b183a1bb5b642d2b0734eae87ab` and deployment `dpl_EkiL9VAaoLoNtnPTLKXrFMVntZwL`.
+No live generated output passed acceptance. The owner has already approved costs without a monthly cap and project OIDC.
+An account owner must complete the provider verification step. The release process did not accept new provider terms.
+
+### Initial release checks
 
 Local evidence from 17–18 October 2026:
 
@@ -54,7 +71,8 @@ npm run build
 
 Attach command results or GitHub Actions links before a merge.
 Do not mark a row as passed from source inspection alone.
-Tests use isolated fixtures and fake stores. They make no paid image requests.
+The automated unit and browser suites use isolated fixtures and fake provider responses.
+The separate hosted provider acceptance script makes an explicitly approved live request.
 
 ## Browser acceptance
 

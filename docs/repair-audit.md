@@ -14,6 +14,7 @@ Audit date: 18 October 2026.
 | P2 | Some links named the wrong destination retailer. | The button used the product brand as the retailer name. | The button uses the retailer field. |
 | P2 | Two low-budget directions selected the same products. | Every direction permitted every category. | The focus direction excludes decorative plant purchases. Preferred products take precedence when the budget permits. |
 | P2 | Changing direction discarded a generated image. | One image state served every direction. | Three independent image slots preserve completed versions. Changes to the plan clear stale results. |
+| P1 | Hosted image generation did not find its credential. | Availability checked only environment variables, while Vercel supplies a runtime OIDC header. | The server reads the request context through `@vercel/oidc`. |
 
 ## Link and image checks
 
@@ -49,4 +50,10 @@ Preview accounts use the isolated verification branch.
 
 The focused local browser run passed eight tests.
 It checked three distinct scene sources, no automatic photo pins, German product photos and links, swaps, mobile layout, and light and dark accessibility.
-Unit, build, hosted-provider, and deployment results belong in the final release evidence.
+The final source checks passed 44 unit tests, lint, types, and a production build.
+Seven guest browser tests and the isolated account test passed after the OIDC repair.
+The hosted provider test reached Gateway with valid server authentication.
+Gateway returned HTTP 403 and `customer_verification_required`. No generated output passed acceptance.
+Production image generation remains disabled until team verification and a successful live test.
+The owner must complete verification at [Vercel AI Gateway](https://vercel.com/kandula/~/ai-gateway).
+The app reports the recovery step without provider secrets or automatic retries.
