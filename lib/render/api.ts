@@ -3,6 +3,7 @@ import { createHash } from "node:crypto";
 import { HttpError, json, readJson, requireSameOrigin } from "../plans/api";
 import { isValidPhoto, MAX_PHOTO_BYTES } from "../plans/validation";
 import {products} from '../catalog';
+import {getVercelOidcToken} from '@vercel/oidc';
 
 const renderSchema = z.object({
   requestId: z.uuid(),
@@ -18,8 +19,15 @@ export interface RenderStore {
   settle(owner: string, requestId: string, status: "complete" | "failed" | "uncertain"): Promise<void>;
 }
 
-export function imageGenerationAvailable() {
-  return process.env.IMAGE_GENERATION_ENABLED === "true" && Boolean(process.env.OPENAI_API_KEY || process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN);
+export async function imageCredential(env: Record<string, string | undefined> = process.env, oidc: () => Promise<string> = getVercelOidcToken) {
+  const key = env.OPENAI_API_KEY || env.AI_GATEWAY_API_KEY || env.VERCEL_OIDC_TOKEN;
+  if (key) return key;
+  if (env.VERCEL !== '1') return undefined;
+  try { return await oidc(); } catch { return undefined; }
+}
+
+export async function imageGenerationAvailable() {
+  return process.env.IMAGE_GENERATION_ENABLED === "true" && Boolean(await imageCredential());
 }
 
 async function limitedProviderJson(response: Response): Promise<unknown> {
@@ -42,14 +50,14 @@ async function limitedProviderJson(response: Response): Promise<unknown> {
 export function createRenderApi(deps: {
   owner: () => Promise<string | null>;
   store: RenderStore;
-  available?: () => boolean;
+  available?: () => boolean | Promise<boolean>;
   fetcher?: typeof fetch;
 }) {
   const available = deps.available ?? imageGenerationAvailable;
   return {
-    availability: () => json({ available: available() }),
+    availability: async () => json({ available: await available() }),
     async render(request: Request) {
-      if (!available()) return json({ error: "Photo transformations are not active. Use the interactive plan while the owner activates an image provider." }, 503);
+      if (!await available()) return json({ error: "Photo transformations are not active. Use the interactive plan while the owner activates an image provider." }, 503);
       let owner: string | null = null;
       let requestId: string | null = null;
       let reserved = false;
@@ -71,7 +79,7 @@ export function createRenderApi(deps: {
         reserved = true;
         sentToProvider = true;
         const gateway=!process.env.OPENAI_API_KEY;
-        const credential=process.env.OPENAI_API_KEY || process.env.AI_GATEWAY_API_KEY || process.env.VERCEL_OIDC_TOKEN;
+        const credential=await imageCredential();
         const response = await (deps.fetcher ?? fetch)(gateway?"https://ai-gateway.vercel.sh/v1/images/edits":"https://api.openai.com/v1/images/edits", {
           method: "POST",
           headers: { Authorization: `Bearer ${credential}`, "Content-Type": "application/json" },

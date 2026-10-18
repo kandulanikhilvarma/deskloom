@@ -33,7 +33,9 @@ test('photo, budget, variants, markers, removal, and export form a complete gues
  const download=await downloadPromise;expect(download.suggestedFilename()).toBe('deskloom-shopping-list.txt');
  await page.getByRole('button',{name:'Layout map',exact:true}).click();await expect(page.locator('.floorplan')).toBeVisible();
  await page.getByRole('button',{name:/Redesign my room/}).click();
- await expect(page.getByRole('heading',{name:'AI previews are not active yet.'})).toBeVisible();
+ const active=(await (await page.request.get('/api/render')).json()).available;
+ if(active)await expect(page.getByRole('button',{name:'I agree. Create three versions'})).toBeVisible();
+ else await expect(page.getByRole('heading',{name:'AI previews are not active yet.'})).toBeVisible();
  await page.getByRole('button',{name:'Close dialog'}).click();
  await page.getByRole('button',{name:'Save plan',exact:true}).click();
  await expect(page.getByRole('dialog')).toBeVisible();

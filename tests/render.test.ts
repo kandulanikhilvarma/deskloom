@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { createRenderApi, type RenderStore } from "../lib/render/api";
+import { createRenderApi, imageCredential, type RenderStore } from "../lib/render/api";
 
 const requestId = "11111111-1111-4111-8111-111111111111";
 const photo = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Wl8kD8AAAAASUVORK5CYII=";
@@ -13,8 +13,15 @@ function store(): RenderStore { return { reserve: async () => "reserved", settle
 test("inactive image service never reaches auth, quota, or provider", async () => {
   const fail = async (): Promise<never> => { throw new Error("Must not run"); };
   const api = createRenderApi({ available: () => false, owner: fail, store: { reserve: fail, settle: fail }, fetcher: fail });
-  assert.deepEqual(await api.availability().json(), { available: false });
+  assert.deepEqual(await (await api.availability()).json(), { available: false });
   assert.equal((await api.render(request())).status, 503);
+});
+
+test('hosted image credentials use the request OIDC context without exposing a token', async () => {
+  assert.equal(await imageCredential({VERCEL:'1'},async()=>'request-token'),'request-token');
+  assert.equal(await imageCredential({VERCEL:'1'},async()=>{throw new Error('missing');}),undefined);
+  assert.equal(await imageCredential({},async()=>{throw new Error('must not run');}),undefined);
+  assert.equal(await imageCredential({AI_GATEWAY_API_KEY:'gateway-key'},async()=>{throw new Error('must not run');}),'gateway-key');
 });
 
 test("image edits need a session and explicit photo consent", async () => {
