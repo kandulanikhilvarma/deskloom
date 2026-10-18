@@ -17,9 +17,11 @@ test('photo, budget, variants, markers, removal, and export form a complete gues
  await variants.nth(1).click();await expect(variants.nth(1)).toHaveAttribute('aria-pressed','true');
  await variants.nth(2).click();await expect(variants.nth(2)).toHaveAttribute('aria-pressed','true');
  const before=await page.locator('.product-row').count();expect(before).toBeGreaterThan(0);
- await page.locator('.hotspot').first().click();
+ await page.getByRole('button',{name:'Products',exact:true}).click();
+ await page.locator('.board-product').first().click();
  await expect(page.getByRole('heading',{name:'Product details'})).toBeVisible();
  await expect(page.locator('.retailer-link')).toHaveAttribute('href',/^https:\/\//);
+ await page.getByRole('button',{name:'Move marker',exact:true}).click();
  await page.getByLabel('Horizontal position').fill('65');
  await page.getByLabel('Vertical position').fill('35');
  await expect(page.locator('.hotspot.active')).toHaveCSS('left',/px$/);
@@ -30,8 +32,10 @@ test('photo, budget, variants, markers, removal, and export form a complete gues
  const downloadPromise=page.waitForEvent('download');await page.getByRole('button',{name:'Download shopping list'}).click();
  const download=await downloadPromise;expect(download.suggestedFilename()).toBe('deskloom-shopping-list.txt');
  await page.getByRole('button',{name:'Layout map',exact:true}).click();await expect(page.locator('.floorplan')).toBeVisible();
- await page.getByRole('button',{name:/AI preview/}).click();
- await expect(page.getByRole('heading',{name:'AI previews are not active yet.'})).toBeVisible();
+ await page.getByRole('button',{name:/Redesign my room/}).click();
+ const active=(await (await page.request.get('/api/render')).json()).available;
+ if(active)await expect(page.getByRole('button',{name:'I agree. Create three versions'})).toBeVisible();
+ else await expect(page.getByRole('heading',{name:'AI previews are not active yet.'})).toBeVisible();
  await page.getByRole('button',{name:'Close dialog'}).click();
  await page.getByRole('button',{name:'Save plan',exact:true}).click();
  await expect(page.getByRole('dialog')).toBeVisible();
@@ -44,7 +48,7 @@ test('photo, budget, variants, markers, removal, and export form a complete gues
 
 test('regional budgets, constraints, dark mode, keyboard access, and mobile layout work',async({page})=>{
  await page.setViewportSize({width:390,height:844});await page.goto('/');
- await page.getByLabel('Where you shop').selectOption('EU');await expect(page.getByLabel('Your total budget')).toHaveValue('100');
+ await page.getByLabel('Where you shop').selectOption('EU');await expect(page.getByLabel('Your total budget')).toHaveValue('1500');
  await page.getByLabel('Where you shop').selectOption('US');await expect(page.getByLabel('Your total budget')).toHaveValue('150');
  await page.getByLabel('Where you shop').selectOption('IN');
  await page.getByLabel('Your total budget').fill('20000');
@@ -73,8 +77,8 @@ test('desktop and mobile light and dark interfaces have no serious accessibility
 
 test('private APIs reject guests and the inactive image provider returns an accurate state',async({request})=>{
  const plans=await request.get('/api/plans');expect(plans.status()).toBe(401);
- const availability=await request.get('/api/render');expect(await availability.json()).toEqual({available:false});
- const render=await request.post('/api/render',{data:{}});expect(render.status()).toBe(503);
+ const availability=await request.get('/api/render');const active=(await availability.json()).available;expect(typeof active).toBe('boolean');
+ const render=await request.post('/api/render',{data:{}});expect(render.status()).toBe(active?401:503);
 });
 
 test('save representative desktop and mobile screenshots',async({page})=>{

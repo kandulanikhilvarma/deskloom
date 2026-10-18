@@ -5,8 +5,9 @@
 `components/studio.tsx` holds the current plan in browser memory.
 `lib/planner.ts` selects products from `lib/catalog.ts` for the market, budget, owned categories, and room constraints.
 The planner uses a configurable reserve and excludes products with unknown or uncertain prices.
-The editor links each product row to a numbered marker.
-The photo preview and layout map share the same selected products.
+The Products view links each number to an actual model photo.
+Room concepts have no product pins. Original photos show only user-placed pins.
+The layout map shares the selected products and remains an illustrative schematic.
 
 The upload path accepts JPEG, PNG, and WebP.
 The browser reduces the longest edge to at most 1400 pixels and compresses the photo to at most 1 MiB.
@@ -72,12 +73,14 @@ Unavailable services return an error without database URLs or provider secrets.
 
 ## Optional image flow
 
-The image feature requires both `IMAGE_GENERATION_ENABLED=true` and `OPENAI_API_KEY`.
+The image feature requires `IMAGE_GENERATION_ENABLED=true` and an approved server credential.
+The server uses a direct OpenAI key or Vercel AI Gateway authentication.
+Gateway authentication can use a server key or the Vercel request OIDC context through `@vercel/oidc`.
 The feature also needs authentication, explicit photo consent, and the render request table.
 The server reserves the owner and request UUID before a provider call.
 The store rejects duplicate UUIDs, a recent active request, or more than 3 requests for the current UTC day.
 
-The provider receives the photo, selected product names, and layout preferences.
+The provider receives the room photo, selected product names, and up to eight canonical catalog product photos.
 The prompt requests preserved room geometry and labels the output as illustrative.
 The route limits response size and verifies JPEG output.
 The browser displays a successful image without a claim of exact product appearance.
@@ -85,7 +88,8 @@ The browser displays a successful image without a claim of exact product appeara
 A failed provider call does not trigger an automatic retry.
 An uncertain call keeps its request record because the provider can still process it.
 The app does not store generated image bytes in the database.
-The current generated image disappears when the editor resets or reloads.
+Each direction retains its own generated image in browser memory.
+The images disappear after a plan change or page reload.
 
 ## Recovery and deletion
 

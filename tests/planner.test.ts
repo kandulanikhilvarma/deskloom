@@ -87,24 +87,24 @@ test('lamps include the full accessory pack price exactly once', () => {
   const lamp = product('in-svallet');
   const bundled = resolveBundle(lamp, []);
   assert.deepEqual(bundled.map(p => p.id), ['in-svallet', 'in-solhetta-e14']);
-  assert.equal(total(bundled), 748);
+  assert.equal(total(bundled), 678);
   assert.deepEqual(resolveBundle(lamp, bundled), bundled);
-  assert.ok(validateAddition(lamp, [], 'IN', 747, [], settings({ reserve: 0 })).error);
-  assert.equal(total(validateAddition(lamp, [], 'IN', 748, [], settings({ reserve: 0 })).items!), 748);
+  assert.ok(validateAddition(lamp, [], 'IN', 677, [], settings({ reserve: 0 })).error);
+  assert.equal(total(validateAddition(lamp, [], 'IN', 678, [], settings({ reserve: 0 })).items!), 678);
 });
 
-test('the Germany lamp stays out until the catalog can price its bulb', () => {
-  const lamp = product('de-tertial');
-  assert.equal(isEligible(lamp, owned, defaults), false);
-  assert.match(validateAddition(lamp, [], 'EU', 100, owned, defaults).error!, /bulb/);
-  assert.ok(!plan('EU', 100, 'studio', owned).some(p => p.id === lamp.id));
+test('the German lamp includes its checked local bulb',()=>{
+ const lamp=product('de-tertial');
+ const result=validateAddition(lamp,[],'EU',100,owned,defaults);
+ assert.ok(result.items);
+ assert.ok(result.items.some(p=>p.id==='de-e27'));
+ assert.equal(result.items.filter(p=>p.id==='de-e27').length,1);
 });
-
 test('a lamp swap changes the lamp and bulb atomically', () => {
   const original = resolveBundle(product('in-svallet'), []);
   const rejected = validateAddition(product('in-tertial'), original, 'IN', 1500, [], defaults, 'in-svallet');
   assert.ok(rejected.error);
-  assert.equal(total(original), 748);
+  assert.equal(total(original), 678);
   const replacement = validateAddition(product('in-tertial'), original, 'IN', 2000, [], defaults, 'in-svallet');
   assert.deepEqual(replacement.items?.map(p => p.id), ['in-tertial', 'in-knoppslinga-e27']);
   assert.equal(total(replacement.items!), 1569);
@@ -199,6 +199,6 @@ test('shopping exports preserve reference dates and label unknown totals', () =>
   const text = shoppingText('My desk', 'IN', 1500, [product('in-m240')], owned);
   assert.match(text, /Known-price subtotal, incomplete/);
   assert.match(text, /Price needs a check/);
-  assert.match(text, /Reference checked 2026-10-16/);
+  assert.match(text, /Reference checked 2026-10-18/);
   assert.match(text, /Check delivery, tax, accessories, and stock/);
 });

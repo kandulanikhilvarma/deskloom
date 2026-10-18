@@ -17,7 +17,9 @@ Neon contains both application tables. Vercel has encrypted production and previ
 Account services still need public deployment verification.
 Neon currently permits password signup without email verification. Email ownership is not verified.
 Password recovery and verification email delivery still need an operator acceptance check.
-AI photo transformations remain disabled until the owner approves provider costs and supplies an API key.
+Live photo transformations require an accepted image-provider request. The owner approved uncapped image costs and Deskloom OIDC authentication.
+The hosted request reached Vercel AI Gateway but returned `customer_verification_required` on 18 October 2026.
+Production photo generation remains disabled until the team completes verification and a live request passes.
 
 The public planner is available at [deskloom.vercel.app](https://deskloom.vercel.app).
 Desktop and phone guest flows passed on Vercel. Cloud account flows passed against an isolated Neon branch.
@@ -43,8 +45,8 @@ The interface names missing essentials when the catalog cannot support a complet
 
 ## Screenshots
 
-The screenshots show the responsive planner with an illustrative inspiration photo.
-The photo does not show the exact products in the shopping list.
+The screenshots show the responsive planner with a room concept.
+The Products view shows exact model photos. Room concepts are separate style references.
 
 ![Deskloom desktop planner](docs/screenshots/desktop.png)
 
@@ -52,16 +54,16 @@ The photo does not show the exact products in the shopping list.
 
 ## Product boundaries
 
-The maintained catalog contains 36 researched products. India is the first market.
+The maintained catalog contains 67 product records. India is the first market.
 Germany has its own catalog. The euro option does not imply coverage across Europe.
-The catalog research checked product references on 16 October 2026.
+The catalog repair checked product destinations and photos on 18 October 2026. See [the repair audit](docs/repair-audit.md).
 
 Prices use dated references. Final tax, delivery charges, stock, and seller terms need a retailer check.
 Deskloom does not claim the cheapest seller or predict future sales.
 
-Markers show suggested positions. They do not identify objects in a photo.
+Room concepts have no product markers. Original photos have only pins that the user places. The Products view numbers actual product photos.
 The layout map is a schematic and has no verified scale.
-Product drawings are category illustrations. Retailer pages contain the actual product details.
+Product photos come from their retailer or manufacturer. Their local product pages contain the purchase details.
 
 The inspiration photo and optional AI output are illustrative.
 Exact product appearance, room fit, and electrical compatibility need separate checks.
@@ -106,8 +108,9 @@ Keep every secret on the server. Never use a `NEXT_PUBLIC_` prefix for these val
 | `NEON_AUTH_BASE_URL` | HTTPS URL of the managed Neon Auth service. |
 | `NEON_AUTH_COOKIE_SECRET` | Random secret with at least 32 characters for the Auth SDK. |
 | `IMAGE_GENERATION_ENABLED` | Keep `false` until the owner approves image costs and verifies the provider. |
-| `OPENAI_API_KEY` | Optional server key for photo transformations. Leave empty when image generation stays inactive. |
-| `IMAGE_MODEL` | Optional image model name. The route defaults to `gpt-image-2`. |
+| `OPENAI_API_KEY` | Optional direct OpenAI server key. When absent, the route uses Vercel AI Gateway authentication. |
+| `AI_GATEWAY_API_KEY` | Optional gateway key for local development. Hosted deployments can use project OIDC. |
+| `IMAGE_MODEL` | Optional model. Defaults are `openai/gpt-image-2` through Gateway and `gpt-image-2` for direct OpenAI. |
 
 The server accepts `COOKIE_SECRET` as a legacy alias for `NEON_AUTH_COOKIE_SECRET`.
 Use the documented name for new deployments.
@@ -179,13 +182,14 @@ Browser and production evidence belongs in [the verification record](docs/verifi
 ## Deployment and activation
 
 Use [the deployment guide](docs/deployment.md) for Vercel and Neon setup.
-Keep image generation disabled for the first free-tier release.
+New local installs keep image generation disabled by default.
+The Deskloom owner approved uncapped image costs and explicitly approved project OIDC authentication on 18 October 2026.
 Approve paid services, third-party legal terms, and live financial transactions before any commitment.
 The app has no payment or subscription flow in this release.
 
 ## Roadmap
 
-- Exact product image rights and product appearance checks.
+- Broader licensed product imagery and product appearance checks.
 - Live retailer feeds, final delivered prices, and more sellers.
 - Better product coverage and explicit accessory bundles.
 - Calibrated room measurements and richer layout constraints.

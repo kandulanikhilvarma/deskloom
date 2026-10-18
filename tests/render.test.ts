@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { createRenderApi, type RenderStore } from "../lib/render/api";
+import { createRenderApi, imageCredential, type RenderStore } from "../lib/render/api";
 
 const requestId = "11111111-1111-4111-8111-111111111111";
 const photo = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAusB9Wl8kD8AAAAASUVORK5CYII=";
@@ -13,8 +13,15 @@ function store(): RenderStore { return { reserve: async () => "reserved", settle
 test("inactive image service never reaches auth, quota, or provider", async () => {
   const fail = async (): Promise<never> => { throw new Error("Must not run"); };
   const api = createRenderApi({ available: () => false, owner: fail, store: { reserve: fail, settle: fail }, fetcher: fail });
-  assert.deepEqual(await api.availability().json(), { available: false });
+  assert.deepEqual(await (await api.availability()).json(), { available: false });
   assert.equal((await api.render(request())).status, 503);
+});
+
+test('hosted image credentials use the request OIDC context without exposing a token', async () => {
+  assert.equal(await imageCredential({VERCEL:'1'},async()=>'request-token'),'request-token');
+  assert.equal(await imageCredential({VERCEL:'1'},async()=>{throw new Error('missing');}),undefined);
+  assert.equal(await imageCredential({},async()=>{throw new Error('must not run');}),undefined);
+  assert.equal(await imageCredential({AI_GATEWAY_API_KEY:'gateway-key'},async()=>{throw new Error('must not run');}),'gateway-key');
 });
 
 test("image edits need a session and explicit photo consent", async () => {
@@ -55,6 +62,13 @@ test("a provider rejection gives a safe error and a failed outcome", async () =>
   assert.doesNotMatch(await response.text(), /private-provider-data/);
 });
 
+test('provider activation failures explain recovery without forwarding private response fields',async()=>{
+ const api=createRenderApi({available:()=>true,owner:async()=>'account',store:store(),fetcher:async()=>Response.json({error:{code:'customer_verification_required',message:'private-provider-data'}},{status:403})});
+ const response=await api.render(request());const body=await response.json();
+ assert.equal(response.status,502);assert.equal(body.providerStatus,403);assert.equal(body.reason,'customer_verification_required');
+ assert.match(body.error,/complete Vercel AI Gateway customer verification/);assert.doesNotMatch(JSON.stringify(body),/private-provider-data/);
+});
+
 test("successful mock image output returns JPEG and records completion", async () => {
   const jpeg = Buffer.from([255, 216, 255, 224, 0, 16, 74, 70, 73, 70, 0, 1]).toString("base64");
   const statuses: string[] = [];
@@ -76,4 +90,17 @@ test("successful mock image output returns JPEG and records completion", async (
 test("invalid provider output gives no fabricated image", async () => {
   const api = createRenderApi({ available: () => true, owner: async () => "account", store: store(), fetcher: async () => Response.json({ data: [{ b64_json: "PHN2ZyBvbmxvYWQ9eC8+" }] }) });
   assert.equal((await api.render(request())).status, 502);
+});
+
+test('image requests use only canonical catalog reference images',async()=>{
+ let body:Record<string,unknown>={};
+ const api=createRenderApi({available:()=>true,owner:async()=>'account',store:store(),fetcher:async(_url,init)=>{
+  body=JSON.parse(init!.body as string);return new Response('',{status:403});
+ }});
+ assert.equal((await api.render(request({productIds:['de-lagkapten','de-s2725hsm']}))).status,502);
+ const images=body.images as {image_url:string}[];
+ assert.equal(images[0].image_url,photo);assert.equal(images.length,3);
+ assert.match(images[1].image_url,/ikea\.com\/de\/de\/images\/products/);
+ assert.match(images[2].image_url,/s2725hsm/);
+ assert.equal((await api.render(request({productIds:['https://attacker.example/steal']}))).status,400);
 });

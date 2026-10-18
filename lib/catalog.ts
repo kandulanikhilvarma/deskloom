@@ -16,6 +16,8 @@ export type Product = {
   stockStatus?: 'unverified' | 'unavailable';
   regularPrice?: number;
   imageUrl?: string | null;
+  linkStatus?: 'verified' | 'unverified';
+  verifiedTitle?: string;
   dimensions?: Record<string, number>;
   dims?: Record<string, number>;
   material?: string;
@@ -32,11 +34,11 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/sunnersta-container-white__0409165_pe601916_s5.jpg",
     "id": "in-sunnersta",
     "name": "SUNNERSTA container, white",
     "brand": "IKEA",
@@ -60,14 +62,16 @@ export const products: Product[] = [
     "notes": [
       "Not a verified live-plant pot.",
       "Rail is separate when used as a hanging container."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "SUNNERSTA container, white, 12x11 cm (43/4x43/8\")  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/rabalder-cable-tidy-white__0275902_pe414011_s5.jpg",
     "id": "in-rabalder",
     "name": "RABALDER cable tidy, 5 m",
     "brand": "IKEA",
@@ -86,14 +90,16 @@ export const products: Product[] = [
     "notes": [
       "Includes five cable ties.",
       "Check cable bend radius and equipment ventilation."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "RABALDER cable tidy, white, 5 m (16')  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/svallet-work-lamp-dark-grey-white__0703502_pe724751_s5.jpg",
     "id": "in-svallet",
     "name": "SVALLET work lamp",
     "brand": "IKEA",
@@ -120,14 +126,16 @@ export const products: Product[] = [
       "calm",
       "focus"
     ],
-    "tier": "budget"
+    "tier": "budget",
+    "linkStatus": "verified",
+    "verifiedTitle": "SVALLET work lamp, dark grey/white  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/tertial-work-lamp-dark-grey__0609306_pe684440_s5.jpg",
     "id": "in-tertial",
     "name": "TERTIAL work lamp, dark grey",
     "brand": "IKEA",
@@ -153,14 +161,16 @@ export const products: Product[] = [
     "recommendedModes": [
       "studio"
     ],
-    "tier": "mid"
+    "tier": "mid",
+    "linkStatus": "verified",
+    "verifiedTitle": "TERTIAL Work lamp, dark grey  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/elloven-monitor-stand-with-drawer-white__0955984_pe804426_s5.jpg",
     "id": "in-elloven",
     "name": "ELLOVEN monitor stand with drawer",
     "brand": "IKEA",
@@ -189,14 +199,16 @@ export const products: Product[] = [
     "recommendedModes": [
       "calm",
       "studio"
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "ELLOVEN monitor stand with drawer, white  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/skadis-pegboard-white__0710682_pe727708_s5.jpg",
     "id": "in-skadis",
     "name": "SKÅDIS pegboard, white, 56×56 cm",
     "brand": "IKEA",
@@ -220,14 +232,16 @@ export const products: Product[] = [
       "Accessories and wall screws sold separately.",
       "Use suitable wall fixings.",
       "Exclude this wall mount when the user cannot drill."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "SKÅDIS Pegboard, white. Get it here  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/markus-office-chair-vissle-dark-grey__0724714_pe734597_s5.jpg",
     "id": "in-markus",
     "name": "MARKUS office chair, Vissle dark grey",
     "brand": "IKEA",
@@ -257,14 +271,16 @@ export const products: Product[] = [
     "recommendedModes": [
       "studio"
     ],
-    "tier": "premium"
+    "tier": "premium",
+    "linkStatus": "verified",
+    "verifiedTitle": "MARKUS Office chair, Vissle dark grey  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/lagkapten-adils-desk-white__0977229_pe813472_s5.jpg",
     "id": "in-lagkapten",
     "name": "LAGKAPTEN / ADILS desk, white, 120×60 cm",
     "brand": "IKEA",
@@ -294,14 +310,16 @@ export const products: Product[] = [
     "recommendedModes": [
       "focus"
     ],
-    "tier": "budget"
+    "tier": "budget",
+    "linkStatus": "verified",
+    "verifiedTitle": "LAGKAPTEN / ADILS desk, white, 120x60 cm (471/4x235/8\")  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/lanespelare-gaming-mouse-pad-black__0961724_pe807730_s5.jpg",
     "id": "in-lanespelare",
     "name": "LÅNESPELARE mouse pad, black, 90×40 cm",
     "brand": "IKEA",
@@ -325,14 +343,16 @@ export const products: Product[] = [
     "notes": [
       "Check usable desk size.",
       "The manufacturer says to keep it out of direct sunlight."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "LÅNESPELARE gaming mouse pad, black, 90x40 cm (35 ½x15 ¾\")  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/fejka-artificial-potted-plant-in-outdoor-plantain-lily__1467005_pe995611_s5.jpg",
     "id": "in-fejka",
     "name": "FEJKA artificial plant, plantain lily, 9 cm",
     "brand": "IKEA",
@@ -357,14 +377,16 @@ export const products: Product[] = [
       "Artificial plant.",
       "No air quality or health claim.",
       "Observed sale price can expire."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "FEJKA artificial potted plant, in/outdoor/plantain lily, 9 cm (3 ½\")  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "uncertain",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/p-series/p2425h/mg/monitor-p2425h-black-gallery-1.psd?fmt=png-alpha&wid=1200&hei=630",
     "id": "in-dell-p2425h",
     "name": "Dell Pro 24 Plus Monitor P2425H",
     "brand": "Dell",
@@ -398,14 +420,16 @@ export const products: Product[] = [
       "Price came from an older indexed page snapshot.",
       "Verify the current retailer price before a strict budget includes it.",
       "The USB-C downstream port is not a laptop video input."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "Dell Pro 24 Inch Plus Monitor P2425H - FHD IPS Display | Dell India"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "unknown",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/m240/product-gallery/m240-mouse-top-view-off-white.png",
     "id": "in-m240",
     "name": "M240 Silent Bluetooth Mouse",
     "brand": "Logitech",
@@ -428,14 +452,16 @@ export const products: Product[] = [
       "The India source did not expose a price.",
       "Exclude this item from a strict known-price total.",
       "Check Bluetooth support on the computer."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "M240 Silent Bluetooth Mouse with Comfortable Shape"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "unknown",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/combos/mk235/gallery/mk235-gallery-01-new.png",
     "id": "in-mk235",
     "name": "MK235 wireless keyboard and mouse combo",
     "brand": "Logitech",
@@ -462,14 +488,16 @@ export const products: Product[] = [
     "coversCategories": [
       "keyboard",
       "mouse"
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "Logitech MK235 Durable Wireless Keyboard and Mouse Combo"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/us/en/images/products/elloven-monitor-stand-with-drawer-white__0955984_pe804426_s5.jpg",
     "id": "us-elloven",
     "name": "ELLOVEN monitor stand with drawer, white",
     "brand": "IKEA",
@@ -494,14 +522,16 @@ export const products: Product[] = [
     "notes": [
       "Final tax and delivery are unknown.",
       "Check eye height before use."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "ELLOVEN monitor stand with drawer, white  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/m240/product-gallery/m240-mouse-top-view-off-white.png",
     "id": "us-m240",
     "name": "M240 Silent Bluetooth Mouse",
     "brand": "Logitech",
@@ -524,14 +554,16 @@ export const products: Product[] = [
     "notes": [
       "Observed sale price can expire.",
       "Final tax and delivery are unknown."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "M240 Silent Bluetooth Mouse with Comfortable Shape"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/us/en/images/products/rissla-desk-pad-black__0715861_pe730632_s5.jpg",
     "id": "us-rissla",
     "name": "RISSLA desk pad, black",
     "brand": "IKEA",
@@ -549,14 +581,16 @@ export const products: Product[] = [
     "notes": [
       "Final tax and delivery are unknown.",
       "Check desk size before purchase."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "RISSLA desk pad, black  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/de/de/images/products/elloven-monitorerhoehung-mit-schublade-weiss__0955984_pe804426_s5.jpg",
     "id": "de-elloven",
     "name": "ELLOVEN monitor stand with drawer, white",
     "brand": "IKEA",
@@ -582,14 +616,16 @@ export const products: Product[] = [
       "German listing; availability elsewhere in the EU is not verified.",
       "VAT is included; delivery or collection costs are separate.",
       "Check eye height before use."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "ELLOVEN Monitorerhöhung mit Schublade, weiß  - IKEA Deutschland"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/de/de/images/products/tertial-arbeitsleuchte-weiss__0609308_pe684439_s5.jpg",
     "id": "de-tertial",
     "name": "TERTIAL work lamp, white",
     "brand": "IKEA",
@@ -614,14 +650,22 @@ export const products: Product[] = [
       "E27 bulb sold separately.",
       "VAT is included; delivery or collection costs are separate.",
       "German listing; availability elsewhere in the EU is not verified."
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "TERTIAL Arbeitsleuchte, weiß  - IKEA Deutschland",
+    "requiresProductIds": [
+      "de-e27"
+    ],
+    "recommendedModes": [
+      "focus"
     ]
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/de/de/images/products/sunnersta-behaelter-blaugrau__1391342_pe965754_s5.jpg",
     "id": "de-sunnersta",
     "name": "SUNNERSTA container, blue-grey",
     "brand": "IKEA",
@@ -646,14 +690,16 @@ export const products: Product[] = [
       "VAT is included; delivery or collection costs are separate.",
       "Not a verified live-plant pot.",
       "German listing; availability elsewhere in the EU is not verified."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "SUNNERSTA Behälter, blaugrau, 12x11 cm  - IKEA Deutschland"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://media.tatacroma.com/Croma%20Assets/Computers%20Peripherals/Computer%20Accessories%20and%20Tablets%20Accessories/Images/169717_jffthy.png",
     "id": "in-mk220",
     "name": "MK220 wireless keyboard and mouse combo",
     "brand": "Logitech",
@@ -687,16 +733,18 @@ export const products: Product[] = [
       "The mouse is included. Do not add a duplicate mouse.",
       "The source price comes from Croma's category page.",
       "Check the receiver port and local keyboard layout."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "Buy logitech MK220 Wireless Keyboard & Mouse Combo (Upto 5 Million Keystrokes, Black) Online - Croma"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.hp.com/in-en/shop/media/catalog/product/2/1/21c1_-_hp_230_wireless_mouse_keyboard_combo_snow_white_wireless_top_view_led_on_87f2f41f-0fd8-4c2d-83f7-94e5eb63532c.png.png",
     "id": "in-hp230",
-    "name": "HP 230 wireless mouse and keyboard combo",
+    "name": "HP 230 wireless keyboard and mouse combo, snow white",
     "brand": "HP",
     "category": "keyboard",
     "market": "IN",
@@ -732,14 +780,16 @@ export const products: Product[] = [
       "The mouse is included. Do not add a duplicate mouse.",
       "The listed operating systems are Windows 10 and Windows 11.",
       "Check battery and receiver contents with HP."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "HP 230 Wireless Mouse and Keyboard Combo | HP Store India"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://media.tatacroma.com/Croma%20Assets/Computers%20Peripherals/Computer%20Accessories%20and%20Tablets%20Accessories/Images/301491_0_zezpny.png",
     "id": "in-pebble-keys2",
     "name": "Pebble Keys 2 K380s keyboard, graphite",
     "brand": "Logitech",
@@ -770,14 +820,16 @@ export const products: Product[] = [
       "The source price comes from Croma's category page.",
       "Check the local keyboard layout.",
       "This item does not include a mouse."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "Buy logitech Pebble Keys 2 Bluetooth Wireless Keyboard with Multi Device Pairing (10 Customizable Keys, Tonal Graphite) Online - Croma"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://media.tatacroma.com/Croma%20Assets/Computers%20Peripherals/Computer%20Accessories%20and%20Tablets%20Accessories/Images/302591_0_boeouv.png",
     "id": "in-mxkeys-s",
     "name": "MX Keys S keyboard, graphite",
     "brand": "Logitech",
@@ -808,14 +860,16 @@ export const products: Product[] = [
       "The source price comes from Croma's category page.",
       "Check the local keyboard layout and receiver contents.",
       "This is a keyboard, not the keyboard and mouse combo."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "Buy logitech MX KEYS S Rechargeable Bluetooth Wireless Keyboard with Backlit Keys (Automate Repetitive Tasks, Graphite) Online - Croma"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/lift-vertical-ergonomic-mouse/2026-update/gallery/graphite/lift-mouse-top-angle-graphite-gallery-1.png",
     "id": "in-lift",
     "name": "Lift vertical ergonomic mouse, graphite",
     "brand": "Logitech",
@@ -826,7 +880,8 @@ export const products: Product[] = [
     "retailer": "VPLAK",
     "url": "https://www.vplak.com/logitech-lift-mouse-p11175",
     "sourceUrls": [
-      "https://www.logitech.com/en-in/shop/p/lift-vertical-ergonomic-mouse"
+      "https://www.logitech.com/en-in/shop/p/lift-vertical-ergonomic-mouse",
+      "https://www.logitech.com/de-de/shop/p/lift-vertical-ergonomic-mouse.910-006473"
     ],
     "description": "A vertical mouse with a thumb rest for small to medium hands.",
     "specifications": {
@@ -849,14 +904,16 @@ export const products: Product[] = [
       "Confirm the handed variant.",
       "The retailer quote excludes a postal-code delivery check.",
       "An ergonomic label does not establish personal fit or a medical benefit."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "Buy Logitech Lift wireless mouse Online in India at Lowest Price | VPLAK\n"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://media.tatacroma.com/Croma%20Assets/Computers%20Peripherals/Computer%20Accessories%20and%20Tablets%20Accessories/Images/258454_0_1bdnWCNcL.png?updatedAt=1758555097829",
     "id": "in-mxmaster3s",
     "name": "MX Master 3S mouse, graphite",
     "brand": "Logitech",
@@ -887,14 +944,16 @@ export const products: Product[] = [
       "The source price comes from Croma's category page.",
       "Check hand fit and handedness.",
       "An ergonomic shape does not establish a medical benefit."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "Buy logitech MX Master 3S Rechargeable Bluetooth Wireless Laser Performance Mouse with Thumb Wheel (8000 DPI Adjustable, Multi Device Connectivity, Graphite) Online - Croma"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.hp.com/in-en/shop/media/catalog/product/r/h/rhone_527pf_jetblack_catalog_whitebg_front_3229805.png",
     "id": "in-hp527pf",
     "name": "HP Series 5 Pro 27-inch monitor 527pf",
     "brand": "HP",
@@ -938,14 +997,16 @@ export const products: Product[] = [
       "The screen is FHD, not 4K.",
       "Confirm laptop video ports and the required cable.",
       "Check the desired text size at your normal screen distance."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "HP Series 5 Pro 27 inch FHD Monitor  - 527pf | HP Store India"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "unknown",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://images.samsung.com/is/image/samsung/p6pim/in/ls27d368gawxxl/gallery/in-essential-s3-s36gd-y-ls27d368gawxxl-thumb-550433584",
     "id": "in-samsung-s3-curved",
     "name": "Samsung Essential S3 27-inch curved monitor",
     "brand": "Samsung",
@@ -980,14 +1041,16 @@ export const products: Product[] = [
       "The India page contains invalid foreign-currency template prices.",
       "The India price is unknown. Exclude this item from automatic budget plans.",
       "Curve preference does not establish a health benefit."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "68.5 cm (27) FHD Curved Monitor with Game Mode | Samsung India"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.hp.com/in-en/shop/media/catalog/product/c/0/c08510542_1.png",
     "id": "in-hp15",
     "name": "HP Laptop 15-fd0624TU",
     "brand": "HP",
@@ -1019,13 +1082,15 @@ export const products: Product[] = [
       "The price excludes optional promo codes and bank offers.",
       "Check memory and performance needs for your work.",
       "A laptop purchase is optional when the user already owns a computer."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "HP Laptop 15-fd0624TU | HP Store India"
   },
   {
     "checkedAt": "2026-10-16",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
-    "stockStatus": "unverified",
+    "stockStatus": "unavailable",
     "imageUrl": null,
     "id": "in-muji-memo",
     "name": "Planting Tree Paper memo book",
@@ -1056,15 +1121,17 @@ export const products: Product[] = [
     ],
     "notes": [
       "Check the exact page style before purchase.",
-      "The page has an unrelated apparel size table. Use the memo product dimensions only."
-    ]
+      "The page has an unrelated apparel size table. Use the memo product dimensions only.",
+      "The product page could not be verified on 18 October 2026. This item stays out of new plans."
+    ],
+    "linkStatus": "unverified"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/billy-bookcase-white__1590306_pe1038945_s5.jpg",
     "id": "in-billy",
     "name": "BILLY bookcase, white, 80×28×106 cm",
     "brand": "IKEA",
@@ -1095,14 +1162,16 @@ export const products: Product[] = [
       "Use suitable screws and plugs for the wall.",
       "Exclude this item when the user cannot anchor furniture.",
       "Delivery and assembly are separate."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "BILLY bookcase, white, 80x28x106 cm (311/2x11x413/4\")  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/24567196/2024/3/7/6985415a-de23-4b02-ba1b-b16dd3da82b51709788545437-UGAOO-Spider-Plant-With-Grow-Pot---17-cm-141709788545103-1.jpg",
     "id": "in-spider-plant",
     "name": "Spider plant with grow pot",
     "brand": "Ugaoo",
@@ -1140,14 +1209,16 @@ export const products: Product[] = [
       "Use a pot with drainage. Keep water away from electronics.",
       "The app does not adopt the seller's air-purifier or fixed watering claims.",
       "Check postal-code delivery and the live-plant return policy."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "Buy UGAOO Spider Plant With Grow Pot   17 Cm  - Live Plants for Unisex 24567196 | Myntra"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/knoppslinga-led-bulb-e27-600-lumen-opal-white__1373562_pe960009_s5.jpg",
     "id": "in-knoppslinga-e27",
     "name": "KNOPPSLINGA E27 LED bulb, 600 lumen",
     "brand": "IKEA",
@@ -1179,22 +1250,24 @@ export const products: Product[] = [
       "Compatible socket for the catalog TERTIAL lamp.",
       "Cool white light is a preference, not a medical recommendation.",
       "Turn off power before bulb replacement."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "KNOPPSLINGA LED bulb E27 600 lumen, opal white, 6500 K  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/solhetta-led-bulb-e14-250-lumen-chandelier-clear__0989092_pe818356_s5.jpg",
     "id": "in-solhetta-e14",
-    "name": "SOLHETTA E14 LED bulb, 250 lumen, 2-pack",
+    "name": "SOLHETTA E14 LED bulb, 250 lumen, chandelier clear, 2-pack",
     "brand": "IKEA",
     "category": "bulb",
     "market": "IN",
     "currency": "INR",
-    "price": 299,
-    "url": "https://www.ikea.com/in/en/p/solhetta-led-bulb-e14-250-lumen-globe-opal-white-30498734/",
+    "price": 229,
+    "url": "https://www.ikea.com/in/en/p/solhetta-led-bulb-e14-250-lumen-chandelier-clear-10498773/",
     "description": "Two non-dimmable E14 bulbs with warm white light.",
     "material": "Polycarbonate plastic",
     "specifications": {
@@ -1214,18 +1287,17 @@ export const products: Product[] = [
       "calm"
     ],
     "notes": [
-      "Compatible socket for the catalog SVALLET lamp.",
-      "Budget the full two-pack price, not half the pack.",
-      "Warm white light is a preference, not a medical recommendation.",
-      "Turn off power before bulb replacement."
-    ]
+      "E14 base. Price covers the full pack. Check lamp compatibility."
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "SOLHETTA LED bulb E14 250 lumen, chandelier/clear  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/stenerik-laptop-support__1187968_pe899291_s5.jpg",
     "id": "in-stenerik",
     "name": "STENERIK laptop support",
     "brand": "IKEA",
@@ -1254,14 +1326,16 @@ export const products: Product[] = [
       "Use a separate keyboard and mouse for a raised laptop.",
       "Check laptop size and support stability.",
       "Check screen height before use."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "STENERIK laptop support  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/trotten-desk-sit-stand-white__1020756_pe831984_s5.jpg",
     "id": "in-trotten-adjustable",
     "name": "TROTTEN adjustable desk, white, 120×70 cm",
     "brand": "IKEA",
@@ -1293,14 +1367,16 @@ export const products: Product[] = [
       "Allow cable slack across the full height range.",
       "Delivery and assembly are separate.",
       "Alternate positions for comfort; the desk does not establish a health benefit."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "TROTTEN desk sit/stand, white, 120x70 cm (471/4x271/2\")  - IKEA"
   },
   {
-    "checkedAt": "2026-10-16",
+    "checkedAt": "2026-10-18",
     "priceStatus": "reference",
     "priceFreshness": "indexed-page",
     "stockStatus": "unverified",
-    "imageUrl": null,
+    "imageUrl": "https://www.ikea.com/in/en/images/products/flintan-office-chair-black__1007236_pe825956_s5.jpg",
     "id": "in-flintan",
     "name": "FLINTAN office chair, black",
     "brand": "IKEA",
@@ -1332,6 +1408,1071 @@ export const products: Product[] = [
       "Armrests are an extra option.",
       "Assess personal fit before purchase.",
       "Delivery and assembly are separate."
-    ]
+    ],
+    "linkStatus": "verified",
+    "verifiedTitle": "FLINTAN office chair, black  - IKEA"
+  },
+  {
+    "id": "de-lagkapten",
+    "name": "LAGKAPTEN / ADILS Schreibtisch - Eicheneff wlas/weiß 120x60 cm",
+    "brand": "IKEA",
+    "category": "desk",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 39.99,
+    "url": "https://www.ikea.com/de/de/p/lagkapten-adils-schreibtisch-eicheneff-wlas-weiss-s79416874/",
+    "description": "IKEA desk from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/lagkapten-adils-schreibtisch-eicheneff-wlas-weiss__0977232_pe813475_s5.jpg",
+    "retailer": "IKEA",
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/lagkapten-adils-schreibtisch-eicheneff-wlas-weiss-s79416874/"
+    ],
+    "priceSourceUrl": "https://www.ikea.com/de/de/p/lagkapten-adils-schreibtisch-eicheneff-wlas-weiss-s79416874/",
+    "recommendedModes": [
+      "calm"
+    ],
+    "tier": "budget",
+    "material": "Holz (inkl. Verbundmaterial), Metall",
+    "linkStatus": "verified",
+    "verifiedTitle": "LAGKAPTEN/ADILS Schreibtisch, Eiche/weiß, 120x60 cm  - IKEA Deutschland",
+    "dimensions": {
+      "widthCm": 120
+    }
+  },
+  {
+    "id": "de-trotten",
+    "name": "TROTTEN Schreibtisch sitz/steh - elektrisch/weiß 120x70 cm",
+    "brand": "IKEA",
+    "category": "desk",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 179,
+    "url": "https://www.ikea.com/de/de/p/trotten-schreibtisch-sitz-steh-elektrisch-weiss-s49621871/",
+    "description": "IKEA desk from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/trotten-schreibtisch-sitz-steh-elektrisch-weiss__1517359_pe1012263_s5.jpg",
+    "retailer": "IKEA",
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/trotten-schreibtisch-sitz-steh-elektrisch-weiss-s49621871/"
+    ],
+    "priceSourceUrl": "https://www.ikea.com/de/de/p/trotten-schreibtisch-sitz-steh-elektrisch-weiss-s49621871/",
+    "recommendedModes": [
+      "focus"
+    ],
+    "tier": "mid",
+    "linkStatus": "verified",
+    "verifiedTitle": "TROTTEN Schreibtisch sitz/steh, elektrisch/weiß, 120x70 cm  - IKEA Deutschland",
+    "dimensions": {
+      "widthCm": 120
+    }
+  },
+  {
+    "id": "de-mittzon",
+    "name": "MITTZON Schreibtisch sitz/steh - elektrisch Nussbaumfurnier/schwarz 120x80 cm",
+    "brand": "IKEA",
+    "category": "desk",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 409,
+    "url": "https://www.ikea.com/de/de/p/mittzon-schreibtisch-sitz-steh-elektrisch-nussbaumfurnier-schwarz-s09527903/",
+    "description": "IKEA desk from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/mittzon-schreibtisch-sitz-steh-elektrisch-nussbaumfurnier-schwarz__1205829_pe907243_s5.jpg",
+    "retailer": "IKEA",
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/mittzon-schreibtisch-sitz-steh-elektrisch-nussbaumfurnier-schwarz-s09527903/"
+    ],
+    "priceSourceUrl": "https://www.ikea.com/de/de/p/mittzon-schreibtisch-sitz-steh-elektrisch-nussbaumfurnier-schwarz-s09527903/",
+    "recommendedModes": [
+      "studio"
+    ],
+    "tier": "premium",
+    "material": "Metall, Holzfurnier",
+    "linkStatus": "verified",
+    "verifiedTitle": "MITTZON Schreibtisch sitz/steh, elektrisch Nussbaumfurnier/schwarz, 120x80 cm  - IKEA Deutschland",
+    "dimensions": {
+      "widthCm": 120
+    }
+  },
+  {
+    "id": "de-flintan",
+    "name": "FLINTAN Drehstuhl - schwarz",
+    "brand": "IKEA",
+    "category": "chair",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 79.99,
+    "url": "https://www.ikea.com/de/de/p/flintan-drehstuhl-schwarz-10489028/",
+    "description": "IKEA chair from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/flintan-drehstuhl-schwarz__1007236_pe825956_s5.jpg",
+    "retailer": "IKEA",
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/flintan-drehstuhl-schwarz-10489028/"
+    ],
+    "priceSourceUrl": "https://www.ikea.com/de/de/p/flintan-drehstuhl-schwarz-10489028/",
+    "recommendedModes": [
+      "calm"
+    ],
+    "tier": "budget",
+    "material": "Stoff",
+    "linkStatus": "verified",
+    "verifiedTitle": "FLINTAN Drehstuhl, schwarz  - IKEA Deutschland"
+  },
+  {
+    "id": "de-markus",
+    "name": "MARKUS Drehstuhl - Vissle dunkelgrau Mittelgroß",
+    "brand": "IKEA",
+    "category": "chair",
+    "market": "DE",
+    "currency": "EUR",
+    "price": null,
+    "url": "https://www.ikea.com/de/de/p/markus-drehstuhl-vissle-dunkelgrau-70261150/",
+    "description": "IKEA chair from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "unknown",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/markus-drehstuhl-vissle-dunkelgrau__0724714_pe734597_s5.jpg",
+    "retailer": "IKEA",
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/markus-drehstuhl-vissle-dunkelgrau-70261150/"
+    ],
+    "priceSourceUrl": "https://www.ikea.com/de/de/p/markus-drehstuhl-vissle-dunkelgrau-70261150/",
+    "recommendedModes": [
+      "focus"
+    ],
+    "tier": "mid",
+    "material": "Stoff, Metall",
+    "linkStatus": "verified",
+    "verifiedTitle": "MARKUS Drehstuhl, Vissle dunkelgrau  - IKEA Deutschland"
+  },
+  {
+    "id": "de-markus-light",
+    "name": "MARKUS Drehstuhl - Vissle hellgrau Mittelgroß",
+    "brand": "IKEA",
+    "category": "chair",
+    "market": "DE",
+    "currency": "EUR",
+    "price": null,
+    "url": "https://www.ikea.com/de/de/p/markus-drehstuhl-vissle-hellgrau-10521858/",
+    "description": "IKEA chair from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "unknown",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/markus-drehstuhl-vissle-hellgrau__1101440_pe866425_s5.jpg",
+    "retailer": "IKEA",
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/markus-drehstuhl-vissle-hellgrau-10521858/"
+    ],
+    "priceSourceUrl": "https://www.ikea.com/de/de/p/markus-drehstuhl-vissle-hellgrau-10521858/",
+    "recommendedModes": [
+      "studio"
+    ],
+    "tier": "premium",
+    "material": "Stoff, Metall",
+    "linkStatus": "verified",
+    "verifiedTitle": "MARKUS Drehstuhl, Vissle hellgrau  - IKEA Deutschland"
+  },
+  {
+    "id": "de-s2725hsm",
+    "name": "S2725HSM · 27-inch flat FHD monitor",
+    "brand": "Dell",
+    "category": "monitor",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 169,
+    "url": "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-",
+    "description": "Dell monitor from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/s-series/s2725hsm/media-gallery/monitor-dell-plus-s2725hsm-gy-gallery-1.psd?fmt=png-alpha&wid=1200&hei=630",
+    "retailer": "Dell",
+    "sourceUrls": [
+      "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-"
+    ],
+    "priceSourceUrl": "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-",
+    "recommendedModes": [
+      "calm"
+    ],
+    "tier": "budget",
+    "linkStatus": "verified",
+    "verifiedTitle": "Dell Plus-68,58 cm (27\")-Monitor - S2725HSM | Dell Deutschland",
+    "specifications": {
+      "shape": "Flat rectangular",
+      "model": "S2725HSM"
+    }
+  },
+  {
+    "id": "de-s3425dw",
+    "name": "S3425DW · 34-inch curved ultrawide monitor",
+    "brand": "Dell",
+    "category": "monitor",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 409,
+    "url": "https://www.dell.com/de-de/shop/monitors/apd/dell-34-plus-usbc-monitors3425dw/s3425dw_monitor/-",
+    "description": "Dell monitor from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/s-series/s3425dw/media-gallery/monitor-s3425dw-gray-gallery-1.psd?fmt=jpg&wid=1200&hei=630",
+    "retailer": "Dell",
+    "sourceUrls": [
+      "https://www.dell.com/de-de/shop/monitors/apd/dell-34-plus-usbc-monitors3425dw/s3425dw_monitor/-"
+    ],
+    "priceSourceUrl": "https://www.dell.com/de-de/shop/monitors/apd/dell-34-plus-usbc-monitors3425dw/s3425dw_monitor/-",
+    "recommendedModes": [
+      "focus"
+    ],
+    "tier": "mid",
+    "linkStatus": "verified",
+    "verifiedTitle": "Dell 34 Plus-USB-C-Monitor – S3425DW | Dell Deutschland",
+    "specifications": {
+      "shape": "Curved ultrawide",
+      "model": "S3425DW"
+    }
+  },
+  {
+    "id": "de-s2725qc",
+    "name": "S2725QC · 27-inch flat 4K USB-C monitor",
+    "brand": "Dell",
+    "category": "monitor",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 379,
+    "url": "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-",
+    "description": "Dell monitor from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/s-series/s2725qc/media-gallery/monitor-s2725qc-gray-gallery-1.psd?fmt=png-alpha&wid=1200&hei=630",
+    "retailer": "Dell",
+    "sourceUrls": [
+      "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-"
+    ],
+    "priceSourceUrl": "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-",
+    "recommendedModes": [
+      "studio"
+    ],
+    "tier": "premium",
+    "linkStatus": "verified",
+    "verifiedTitle": "Dell 27 Plus 4K USB-C-Monitor – S2725QC | Dell Deutschland",
+    "specifications": {
+      "shape": "Flat rectangular",
+      "model": "S2725QC"
+    }
+  },
+  {
+    "id": "de-pebble-keys2",
+    "name": "Pebble Keys 2 K380s, German QWERTZ, tonal rose",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 34.99,
+    "url": "https://www.logitech.com/de-de/shop/p/pebble-keys-2.920-011795",
+    "description": "Logitech keyboard from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [
+      "wireless"
+    ],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/pebble-keys-2-k380s/2026/gallery/tonal-rose/pebble-keys-k380s-2-tonal-rose-top-angle-gallery-1-deu.png",
+    "retailer": "Logitech",
+    "sourceUrls": [
+      "https://www.logitech.com/de-de/shop/p/pebble-keys-2.920-011795"
+    ],
+    "priceSourceUrl": "https://www.logitech.com/de-de/shop/p/pebble-keys-2.920-011795",
+    "recommendedModes": [
+      "calm"
+    ],
+    "tier": "budget",
+    "linkStatus": "verified",
+    "verifiedTitle": "Pebble Keys 2 K380s Bluetooth-Tastatur | Logitech®",
+    "specifications": {
+      "layout": "German QWERTZ",
+      "connection": "Bluetooth / wireless; check receiver inclusion"
+    }
+  },
+  {
+    "id": "de-k950",
+    "name": "Signature Slim K950 Tastatur",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 79.99,
+    "url": "https://www.logitech.com/de-de/shop/p/signature-slim-k950-keyboard",
+    "description": "Logitech keyboard from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [
+      "wireless"
+    ],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/signature-slim-k950/gallery/k950-graphite-gallery1-front-view-deu.png",
+    "retailer": "Logitech",
+    "sourceUrls": [
+      "https://www.logitech.com/de-de/shop/p/signature-slim-k950-keyboard"
+    ],
+    "priceSourceUrl": "https://www.logitech.com/de-de/shop/p/signature-slim-k950-keyboard",
+    "recommendedModes": [
+      "focus"
+    ],
+    "tier": "mid",
+    "linkStatus": "verified",
+    "verifiedTitle": "Signature Slim kabellose Tastatur K950 kaufen | Logitech®",
+    "specifications": {
+      "layout": "German QWERTZ",
+      "connection": "Bluetooth / wireless; check receiver inclusion"
+    }
+  },
+  {
+    "id": "de-mxkeys-s",
+    "name": "MX Keys S",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 99.99,
+    "url": "https://www.logitech.com/de-de/shop/p/mx-keys-s.920-011588",
+    "description": "Logitech keyboard from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [
+      "wireless"
+    ],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/mx-keys-s/migration-assets-for-delorean-2025/gallery/mx-keys-s-top-view-graphite-deu.png",
+    "retailer": "Logitech",
+    "sourceUrls": [
+      "https://www.logitech.com/de-de/shop/p/mx-keys-s.920-011588"
+    ],
+    "priceSourceUrl": "https://www.logitech.com/de-de/shop/p/mx-keys-s.920-011588",
+    "recommendedModes": [
+      "studio"
+    ],
+    "tier": "premium",
+    "linkStatus": "verified",
+    "verifiedTitle": "MX Keys S Tastatur kaufen – Standardgröße oder Mini | Logitech",
+    "specifications": {
+      "layout": "German QWERTZ",
+      "connection": "Bluetooth / wireless; check receiver inclusion"
+    }
+  },
+  {
+    "id": "de-m240",
+    "name": "M240 Silent Bluetooth mouse, off-white",
+    "brand": "Logitech",
+    "category": "mouse",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 22.99,
+    "url": "https://www.logitech.com/de-de/shop/p/m240-silent-bluetooth-mouse",
+    "description": "Logitech mouse from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [
+      "wireless"
+    ],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/m240/product-gallery/m240-mouse-top-view-off-white.png",
+    "retailer": "Logitech",
+    "sourceUrls": [
+      "https://www.logitech.com/de-de/shop/p/m240-silent-bluetooth-mouse"
+    ],
+    "priceSourceUrl": "https://www.logitech.com/de-de/shop/p/m240-silent-bluetooth-mouse",
+    "recommendedModes": [
+      "calm"
+    ],
+    "tier": "budget",
+    "linkStatus": "verified",
+    "verifiedTitle": "M240 Silent Bluetooth-Maus mit angenehmer Form"
+  },
+  {
+    "id": "de-mxmaster3s",
+    "name": "MX Master 3S Bluetooth Edition, graphite",
+    "brand": "Logitech",
+    "category": "mouse",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 79.99,
+    "url": "https://www.logitech.com/de-de/shop/p/mx-master-3s.910-006447",
+    "description": "Logitech mouse from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [
+      "wireless"
+    ],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/2025-update/mx-master-3s-bluetooth-edition-top-view-graphite-new-1.png",
+    "retailer": "Logitech",
+    "sourceUrls": [
+      "https://www.logitech.com/de-de/shop/p/mx-master-3s.910-006447"
+    ],
+    "priceSourceUrl": "https://www.logitech.com/de-de/shop/p/mx-master-3s.910-006447",
+    "recommendedModes": [
+      "focus"
+    ],
+    "tier": "mid",
+    "linkStatus": "verified",
+    "verifiedTitle": "MX Master 3S Bluetooth Edition kabellose Maus – optischer 8K-Sensor | Logitech"
+  },
+  {
+    "id": "de-lift",
+    "name": "Lift",
+    "brand": "Logitech",
+    "category": "mouse",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 52.99,
+    "url": "https://www.logitech.com/de-de/shop/p/lift-vertical-ergonomic-mouse.910-006473",
+    "description": "Logitech mouse from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [
+      "wireless"
+    ],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/lift-vertical-ergonomic-mouse/2026-update/gallery/graphite/lift-mouse-top-angle-graphite-gallery-1.png",
+    "retailer": "Logitech",
+    "sourceUrls": [
+      "https://www.logitech.com/de-de/shop/p/lift-vertical-ergonomic-mouse.910-006473"
+    ],
+    "priceSourceUrl": "https://www.logitech.com/de-de/shop/p/lift-vertical-ergonomic-mouse.910-006473",
+    "recommendedModes": [
+      "studio"
+    ],
+    "tier": "premium",
+    "linkStatus": "verified",
+    "verifiedTitle": "Lift vertikale ergonomische Maus | Logitech"
+  },
+  {
+    "id": "de-naevlinge",
+    "name": "NÄVLINGE Arbeitsleuchte, LED - weiß",
+    "brand": "IKEA",
+    "category": "lighting",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 17.99,
+    "url": "https://www.ikea.com/de/de/p/naevlinge-arbeitsleuchte-led-weiss-50404918/",
+    "description": "IKEA lighting from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer.",
+      "Integrated LED; no separate bulb purchase."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/naevlinge-arbeitsleuchte-led-weiss__0709828_pe727111_s5.jpg",
+    "retailer": "IKEA",
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/naevlinge-arbeitsleuchte-led-weiss-50404918/"
+    ],
+    "priceSourceUrl": "https://www.ikea.com/de/de/p/naevlinge-arbeitsleuchte-led-weiss-50404918/",
+    "recommendedModes": [
+      "calm"
+    ],
+    "tier": "budget",
+    "material": "Metall",
+    "linkStatus": "verified",
+    "verifiedTitle": "NÄVLINGE Arbeitsleuchte, LED, weiß  - IKEA Deutschland"
+  },
+  {
+    "id": "de-e27",
+    "name": "SOLHETTA LED-Leuchtmittel E27 470 lm - rund opalweiß",
+    "brand": "IKEA",
+    "category": "bulb",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 1.8,
+    "url": "https://www.ikea.com/de/de/p/solhetta-led-leuchtmittel-e27-470-lm-rund-opalweiss-50591482/",
+    "description": "IKEA bulb from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/solhetta-led-leuchtmittel-e27-470-lm-rund-opalweiss__0988838_pe818254_s5.jpg",
+    "retailer": "IKEA",
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/solhetta-led-leuchtmittel-e27-470-lm-rund-opalweiss-50591482/"
+    ],
+    "priceSourceUrl": "https://www.ikea.com/de/de/p/solhetta-led-leuchtmittel-e27-470-lm-rund-opalweiss-50591482/",
+    "recommendedModes": [
+      "focus"
+    ],
+    "tier": "mid",
+    "linkStatus": "verified",
+    "verifiedTitle": "SOLHETTA LED-Leuchtmittel E27 470 lm, rund opalweiß  - IKEA Deutschland"
+  },
+  {
+    "id": "de-fejka",
+    "name": "FEJKA Topfpflanze, künstlich - drinnen/draußen/Funkie 9 cm",
+    "brand": "IKEA",
+    "category": "plant",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 3.99,
+    "url": "https://www.ikea.com/de/de/p/fejka-topfpflanze-kuenstlich-drinnen-draussen-funkie-00610751/",
+    "description": "IKEA plant from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [
+      "green"
+    ],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/fejka-topfpflanze-kuenstlich-drinnen-draussen-funkie__1467005_pe995611_s5.jpg",
+    "retailer": "IKEA",
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/fejka-topfpflanze-kuenstlich-drinnen-draussen-funkie-00610751/"
+    ],
+    "priceSourceUrl": "https://www.ikea.com/de/de/p/fejka-topfpflanze-kuenstlich-drinnen-draussen-funkie-00610751/",
+    "recommendedModes": [
+      "calm"
+    ],
+    "tier": "budget",
+    "linkStatus": "verified",
+    "verifiedTitle": "FEJKA Topfpflanze, künstlich, drinnen/draußen/Funkie, 9 cm  - IKEA Deutschland"
+  },
+  {
+    "id": "de-rissla",
+    "name": "RISSLA Schreibunterlage - schwarz",
+    "brand": "IKEA",
+    "category": "mat",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 29.99,
+    "url": "https://www.ikea.com/de/de/p/rissla-schreibunterlage-schwarz-40246156/",
+    "description": "IKEA mat from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/rissla-schreibunterlage-schwarz__0715861_pe730632_s5.jpg",
+    "retailer": "IKEA",
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/rissla-schreibunterlage-schwarz-40246156/"
+    ],
+    "priceSourceUrl": "https://www.ikea.com/de/de/p/rissla-schreibunterlage-schwarz-40246156/",
+    "recommendedModes": [
+      "focus"
+    ],
+    "tier": "mid",
+    "material": "Metall",
+    "linkStatus": "verified",
+    "verifiedTitle": "RISSLA Schreibunterlage, schwarz  - IKEA Deutschland"
+  },
+  {
+    "id": "us-mittzon",
+    "name": "MITTZON Desk sit/stand - electric walnut veneer/black 47 1/4x31 1/2 \"",
+    "brand": "IKEA",
+    "category": "desk",
+    "market": "US",
+    "currency": "USD",
+    "price": 579.99,
+    "url": "https://www.ikea.com/us/en/p/mittzon-desk-sit-stand-electric-walnut-veneer-black-s69527900/",
+    "description": "IKEA desk from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/us/en/images/products/mittzon-desk-sit-stand-electric-walnut-veneer-black__1205829_pe907243_s5.jpg",
+    "retailer": "IKEA",
+    "sourceUrls": [
+      "https://www.ikea.com/us/en/p/mittzon-desk-sit-stand-electric-walnut-veneer-black-s69527900/"
+    ],
+    "priceSourceUrl": "https://www.ikea.com/us/en/p/mittzon-desk-sit-stand-electric-walnut-veneer-black-s69527900/",
+    "recommendedModes": [
+      "studio"
+    ],
+    "tier": "premium",
+    "material": "Metal, Wood veneer",
+    "linkStatus": "verified",
+    "verifiedTitle": "MITTZON desk sit/stand, electric walnut veneer/black, 471/4x311/2&quot;  - IKEA",
+    "dimensions": {
+      "widthCm": 120
+    }
+  },
+  {
+    "id": "us-mittzon-fixed",
+    "name": "MITTZON Desk - walnut veneer/black 55 1/8x23 5/8 \"",
+    "brand": "IKEA",
+    "category": "desk",
+    "market": "US",
+    "currency": "USD",
+    "price": 329.99,
+    "url": "https://www.ikea.com/us/en/p/mittzon-desk-walnut-veneer-black-s89528055/",
+    "description": "IKEA desk from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/us/en/images/products/mittzon-desk-walnut-veneer-black__1206040_pe907360_s5.jpg",
+    "retailer": "IKEA",
+    "sourceUrls": [
+      "https://www.ikea.com/us/en/p/mittzon-desk-walnut-veneer-black-s89528055/"
+    ],
+    "priceSourceUrl": "https://www.ikea.com/us/en/p/mittzon-desk-walnut-veneer-black-s89528055/",
+    "recommendedModes": [
+      "calm"
+    ],
+    "tier": "budget",
+    "material": "Metal, Wood veneer",
+    "linkStatus": "verified",
+    "verifiedTitle": "MITTZON desk, walnut veneer/black, 551/8x235/8&quot;  - IKEA",
+    "dimensions": {
+      "widthCm": 140
+    }
+  },
+  {
+    "id": "us-markus",
+    "name": "MARKUS Office chair - Vissle dark gray Medium",
+    "brand": "IKEA",
+    "category": "chair",
+    "market": "US",
+    "currency": "USD",
+    "price": 299.99,
+    "url": "https://www.ikea.com/us/en/p/markus-office-chair-vissle-dark-gray-90289172/",
+    "description": "IKEA chair from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/us/en/images/products/markus-office-chair-vissle-dark-gray__0724714_pe734597_s5.jpg",
+    "retailer": "IKEA",
+    "sourceUrls": [
+      "https://www.ikea.com/us/en/p/markus-office-chair-vissle-dark-gray-90289172/"
+    ],
+    "priceSourceUrl": "https://www.ikea.com/us/en/p/markus-office-chair-vissle-dark-gray-90289172/",
+    "recommendedModes": [
+      "focus"
+    ],
+    "tier": "mid",
+    "material": "Fabric, Metal",
+    "linkStatus": "verified",
+    "verifiedTitle": "MARKUS office chair, Vissle dark gray, Medium  - IKEA"
+  },
+  {
+    "id": "us-s2725hsm",
+    "name": "S2725HSM · 27-inch flat FHD monitor",
+    "brand": "Dell",
+    "category": "monitor",
+    "market": "US",
+    "currency": "USD",
+    "price": 149.99,
+    "url": "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-",
+    "description": "Dell monitor from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/s-series/s2725hsm/media-gallery/monitor-dell-plus-s2725hsm-gy-gallery-1.psd?fmt=png-alpha&wid=1200&hei=630",
+    "retailer": "Dell",
+    "sourceUrls": [
+      "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-"
+    ],
+    "priceSourceUrl": "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-",
+    "recommendedModes": [
+      "calm"
+    ],
+    "tier": "budget",
+    "linkStatus": "verified",
+    "verifiedTitle": "Dell Plus 27 Inch Monitor - S2725HSM​ | Dell USA",
+    "specifications": {
+      "shape": "Flat rectangular",
+      "model": "S2725HSM"
+    }
+  },
+  {
+    "id": "us-s3425dw",
+    "name": "S3425DW · 34-inch curved ultrawide monitor",
+    "brand": "Dell",
+    "category": "monitor",
+    "market": "US",
+    "currency": "USD",
+    "price": 419.99,
+    "url": "https://www.dell.com/en-us/shop/monitors/apd/dell-34-plus-usb-c-monitor-s3425dw/s3425dw_monitor/-",
+    "description": "Dell monitor from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/s-series/s3425dw/media-gallery/monitor-s3425dw-gray-gallery-1.psd?fmt=jpg&wid=1200&hei=630",
+    "retailer": "Dell",
+    "sourceUrls": [
+      "https://www.dell.com/en-us/shop/monitors/apd/dell-34-plus-usb-c-monitor-s3425dw/s3425dw_monitor/-"
+    ],
+    "priceSourceUrl": "https://www.dell.com/en-us/shop/monitors/apd/dell-34-plus-usb-c-monitor-s3425dw/s3425dw_monitor/-",
+    "recommendedModes": [
+      "focus"
+    ],
+    "tier": "mid",
+    "linkStatus": "verified",
+    "verifiedTitle": "Dell S 34 Inch USB-C Computer Monitor - S3425DW | Dell USA",
+    "specifications": {
+      "shape": "Curved ultrawide",
+      "model": "S3425DW"
+    }
+  },
+  {
+    "id": "us-s2725qc",
+    "name": "S2725QC · 27-inch flat 4K USB-C monitor",
+    "brand": "Dell",
+    "category": "monitor",
+    "market": "US",
+    "currency": "USD",
+    "price": 349.99,
+    "url": "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-",
+    "description": "Dell monitor from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://i.dell.com/assetlink/img/global/monitor-s2725qc-gray-gallery-1-dl1exsx-large.png?hei=630&wid=1200",
+    "retailer": "Dell",
+    "sourceUrls": [
+      "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-"
+    ],
+    "priceSourceUrl": "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-",
+    "recommendedModes": [
+      "studio"
+    ],
+    "tier": "premium",
+    "linkStatus": "verified",
+    "verifiedTitle": "Dell 27 Plus 4K USB-C Monitor - S2725QC | Dell USA",
+    "specifications": {
+      "shape": "Flat rectangular",
+      "model": "S2725QC"
+    }
+  },
+  {
+    "id": "us-pebble-keys2",
+    "name": "Pebble Keys 2 K380s",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "market": "US",
+    "currency": "USD",
+    "price": 39.99,
+    "url": "https://www.logitech.com/en-us/shop/p/pebble-keys-2",
+    "description": "Logitech keyboard from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [
+      "wireless"
+    ],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/pebble-keys-2-k380s/2026/gallery/tonal-rose/pebble-keys-k380s-2-tonal-rose-top-angle-gallery-1.png",
+    "retailer": "Logitech",
+    "sourceUrls": [
+      "https://www.logitech.com/en-us/shop/p/pebble-keys-2"
+    ],
+    "priceSourceUrl": "https://www.logitech.com/en-us/shop/p/pebble-keys-2",
+    "recommendedModes": [
+      "calm"
+    ],
+    "tier": "budget",
+    "linkStatus": "verified",
+    "verifiedTitle": "Pebble Keys 2 K380s Bluetooth Keyboard | Logitech",
+    "specifications": {
+      "layout": "US English QWERTY",
+      "connection": "Bluetooth / wireless; check receiver inclusion"
+    }
+  },
+  {
+    "id": "us-k950",
+    "name": "Signature Slim Keyboard K950",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "market": "US",
+    "currency": "USD",
+    "price": 79.99,
+    "url": "https://www.logitech.com/en-us/shop/p/signature-slim-k950-keyboard",
+    "description": "Logitech keyboard from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [
+      "wireless"
+    ],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/signature-slim-k950/gallery/k950-graphite-gallery1-front-view-amr-us.png",
+    "retailer": "Logitech",
+    "sourceUrls": [
+      "https://www.logitech.com/en-us/shop/p/signature-slim-k950-keyboard"
+    ],
+    "priceSourceUrl": "https://www.logitech.com/en-us/shop/p/signature-slim-k950-keyboard",
+    "recommendedModes": [
+      "focus"
+    ],
+    "tier": "mid",
+    "linkStatus": "verified",
+    "verifiedTitle": "Buy Signature Slim Wireless Keyboard K950 | Logitech",
+    "specifications": {
+      "layout": "US English QWERTY",
+      "connection": "Bluetooth / wireless; check receiver inclusion"
+    }
+  },
+  {
+    "id": "us-mxkeys-s",
+    "name": "MX Keys S",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "market": "US",
+    "currency": "USD",
+    "price": 119.99,
+    "url": "https://www.logitech.com/en-us/shop/p/mx-keys-s",
+    "description": "Logitech keyboard from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [
+      "wireless"
+    ],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/mx-keys-s/migration-assets-for-delorean-2025/gallery/mx-keys-s-top-view-graphite-us.png",
+    "retailer": "Logitech",
+    "sourceUrls": [
+      "https://www.logitech.com/en-us/shop/p/mx-keys-s"
+    ],
+    "priceSourceUrl": "https://www.logitech.com/en-us/shop/p/mx-keys-s",
+    "recommendedModes": [
+      "studio"
+    ],
+    "tier": "premium",
+    "linkStatus": "verified",
+    "verifiedTitle": "Buy MX Keys S Keyboard  | Logitech",
+    "specifications": {
+      "layout": "US English QWERTY",
+      "connection": "Bluetooth / wireless; check receiver inclusion"
+    }
+  },
+  {
+    "id": "us-mxmaster3s",
+    "name": "MX Master 3S Bluetooth Edition, black",
+    "brand": "Logitech",
+    "category": "mouse",
+    "market": "US",
+    "currency": "USD",
+    "price": 79.99,
+    "url": "https://www.logitech.com/en-us/shop/p/mx-master-3s",
+    "description": "Logitech mouse from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [
+      "wireless"
+    ],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/mx-master-3s/2025-update/mx-master-3s-bluetooth-edition-top-view-black-new-1.png",
+    "retailer": "Logitech",
+    "sourceUrls": [
+      "https://www.logitech.com/en-us/shop/p/mx-master-3s"
+    ],
+    "priceSourceUrl": "https://www.logitech.com/en-us/shop/p/mx-master-3s",
+    "recommendedModes": [
+      "focus"
+    ],
+    "tier": "mid",
+    "linkStatus": "verified",
+    "verifiedTitle": "MX Master 3s Wireless Mouse - 8K Optical Sensor | Logitech"
+  },
+  {
+    "id": "us-lift",
+    "name": "Lift",
+    "brand": "Logitech",
+    "category": "mouse",
+    "market": "US",
+    "currency": "USD",
+    "price": 69.99,
+    "url": "https://www.logitech.com/en-us/shop/p/lift-vertical-ergonomic-mouse",
+    "description": "Logitech mouse from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [
+      "wireless"
+    ],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://resource.logitech.com/c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/lift-vertical-ergonomic-mouse/2026-update/gallery/graphite/lift-mouse-top-angle-graphite-gallery-1.png",
+    "retailer": "Logitech",
+    "sourceUrls": [
+      "https://www.logitech.com/en-us/shop/p/lift-vertical-ergonomic-mouse"
+    ],
+    "priceSourceUrl": "https://www.logitech.com/en-us/shop/p/lift-vertical-ergonomic-mouse",
+    "recommendedModes": [
+      "studio"
+    ],
+    "tier": "premium",
+    "linkStatus": "verified",
+    "verifiedTitle": "Lift Vertical Ergonomic Mouse | Logitech"
+  },
+  {
+    "id": "in-mittzon",
+    "name": "MITTZON Desk - black stained ash veneer/black 140x60 cm (55 1/8x23 5/8 \")",
+    "brand": "IKEA",
+    "category": "desk",
+    "market": "IN",
+    "currency": "INR",
+    "price": 18990,
+    "url": "https://www.ikea.com/in/en/p/mittzon-desk-black-stained-ash-veneer-black-s99528045/",
+    "description": "IKEA desk from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "tags": [],
+    "notes": [
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+    ],
+    "checkedAt": "2026-10-18",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/in/en/images/products/mittzon-desk-black-stained-ash-veneer-black__1206036_pe907356_s5.jpg",
+    "retailer": "IKEA",
+    "sourceUrls": [
+      "https://www.ikea.com/in/en/p/mittzon-desk-black-stained-ash-veneer-black-s99528045/"
+    ],
+    "priceSourceUrl": "https://www.ikea.com/in/en/p/mittzon-desk-black-stained-ash-veneer-black-s99528045/",
+    "recommendedModes": [
+      "focus"
+    ],
+    "tier": "mid",
+    "material": "Metal, Wood veneer",
+    "linkStatus": "verified",
+    "verifiedTitle": "MITTZON desk, black stained ash veneer/black, 140x60 cm (551/8x235/8&quot;)  - IKEA",
+    "dimensions": {
+      "widthCm": 140
+    }
   }
 ];

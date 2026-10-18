@@ -8,9 +8,12 @@ The palette uses warm paper, dark green, clay, and oak. Manrope is the interface
 
 The design supports a dark theme for evening use. Mobile views stack the controls, preview, and product list. Primary touch controls have a minimum touch area of 44 pixels.
 
-The main interaction links a numbered marker to its product row. A user can move the marker to match a photo.
+Each direction has a distinct room concept. The product board shows retailer photos with a number on each product card.
+The user can place pins on the original photo. Concepts do not have product pins.
 
-The preview labels distinguish inspiration, a user photo, and a schematic layout. No image claims exact product fidelity.
+The preview labels distinguish a room concept, exact product photos, the original room, and a schematic layout.
+Live edits keep a separate image for each direction and use product photos as appearance references.
+The three concepts use pale oak and daylight, graphite and architectural light, and walnut with a warm studio palette.
 
 Alternative directions considered: an equipment bench, a furniture catalog, a room survey, a garden guide, a project sheet, and a shopping ledger.
 The material library combines spatial context with clear product comparison. Decorative map shapes and dense technical rails reduce clarity here.
