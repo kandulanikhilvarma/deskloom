@@ -62,6 +62,13 @@ test("a provider rejection gives a safe error and a failed outcome", async () =>
   assert.doesNotMatch(await response.text(), /private-provider-data/);
 });
 
+test('provider activation failures explain recovery without forwarding private response fields',async()=>{
+ const api=createRenderApi({available:()=>true,owner:async()=>'account',store:store(),fetcher:async()=>Response.json({error:{code:'customer_verification_required',message:'private-provider-data'}},{status:403})});
+ const response=await api.render(request());const body=await response.json();
+ assert.equal(response.status,502);assert.equal(body.providerStatus,403);assert.equal(body.reason,'customer_verification_required');
+ assert.match(body.error,/complete Vercel AI Gateway customer verification/);assert.doesNotMatch(JSON.stringify(body),/private-provider-data/);
+});
+
 test("successful mock image output returns JPEG and records completion", async () => {
   const jpeg = Buffer.from([255, 216, 255, 224, 0, 16, 74, 70, 73, 70, 0, 1]).toString("base64");
   const statuses: string[] = [];

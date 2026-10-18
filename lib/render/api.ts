@@ -97,10 +97,16 @@ export function createRenderApi(deps: {
           signal: AbortSignal.timeout(150_000),
         });
         if (!response.ok) {
-          await response.body?.cancel();
+          const detail = await limitedProviderJson(response).catch(() => null) as {error?:{code?:string;type?:string}} | null;
+          const codes = ['customer_verification_required','insufficient_funds','quota_for_entity_exceeded','invalid_api_key','model_not_found'];
+          const reason = [detail?.error?.code,detail?.error?.type].find(code=>code&&codes.includes(code));
           await deps.store.settle(owner, requestId, "failed");
           reserved = false;
-          return json({ error: "The image provider did not return a photo. This request will not retry automatically. Your plan is safe." }, 502);
+          const explanation = reason==='customer_verification_required'?'The app owner must complete Vercel AI Gateway customer verification.'
+            :reason==='insufficient_funds'||reason==='quota_for_entity_exceeded'?'The app owner must check Vercel AI Gateway credits and spend limits.'
+            :response.status===401||response.status===403?'The image provider rejected server access. The app owner must check provider activation.'
+            :'The image provider did not return a photo.';
+          return json({ error: explanation+" This request will not retry automatically. Your plan is safe.", providerStatus:response.status, ...(reason?{reason}:{}) }, 502);
         }
         const output = await limitedProviderJson(response);
         const parsed = z.object({ data: z.array(z.object({ b64_json: z.string().min(16).max(4_000_000) })).min(1).max(1) }).safeParse(output);
