@@ -5,7 +5,7 @@ export type Mode = 'calm' | 'focus' | 'studio';
 export const markets = {
   IN: { name: 'India', currency: 'INR', symbol: '₹', defaultBudget: 15000 },
   US: { name: 'United States', currency: 'USD', symbol: '$', defaultBudget: 150 },
-  EU: { name: 'Germany', currency: 'EUR', symbol: '€', defaultBudget: 100 },
+  EU: { name: 'Germany', currency: 'EUR', symbol: '€', defaultBudget: 1500 },
 } as const;
 export const modes = {
   calm: { name: 'Quiet mornings', description: 'Natural touches, a clear surface, and softer light.', color: '#697b55', priorities: ['plant', 'lighting', 'cable', 'storage', 'book', 'stand', 'mat', 'desk', 'chair', 'monitor', 'keyboard', 'mouse', 'shelf', 'laptop'] },
@@ -29,7 +29,7 @@ export function currency(value: number, market: Market) {
   }).format(value);
 }
 export function catalogFor(market: Market) {
-  return products.filter(p => p.market === (market === 'EU' ? 'DE' : market));
+  return products.filter(p => p.market === (market === 'EU' ? 'DE' : market) && p.linkStatus !== 'unverified' && p.stockStatus !== 'unavailable');
 }
 function categories(p: Product): string[] {
   return [...new Set([p.category, ...(p.coversCategories ?? [])])];
@@ -50,6 +50,7 @@ function budgetLimit(budget: number, c: Constraints) {
   return Math.floor(budget * (1 - c.reserve / 100) * 100 + 0.0000001) / 100;
 }
 function eligibilityError(p: Product, owned: string[], c: Constraints): string | undefined {
+  if (p.linkStatus === 'unverified') return 'This retailer link needs verification. Choose another product.';
   const duplicate = categories(p).find(category => owned.includes(category));
   if (duplicate) return 'This product includes a ' + duplicate + ' that you already own.';
   if (!knownPrice(p)) return 'This product needs a price check before it can enter a budget plan.';
@@ -186,11 +187,11 @@ export function validateAddition(
 }
 
 function compareProducts(a: Product, b: Product, mode: Mode) {
+  const recommended = Number(b.recommendedModes?.includes(mode) ?? false) - Number(a.recommendedModes?.includes(mode) ?? false);
+  if (recommended) return recommended;
   const order = mode === 'studio' ? ['premium', 'mid', 'budget'] : ['budget', 'mid', 'premium'];
   const tier = order.indexOf(a.tier ?? 'budget') - order.indexOf(b.tier ?? 'budget');
   if (tier) return tier;
-  const recommended = Number(b.recommendedModes?.includes(mode) ?? false) - Number(a.recommendedModes?.includes(mode) ?? false);
-  if (recommended) return recommended;
   if (mode === 'calm') {
     const natural = (p: Product) => p.tags.includes('natural') || p.tags.includes('green');
     const preference = Number(natural(b)) - Number(natural(a));
@@ -205,10 +206,11 @@ export function plan(market: Market, budget: number, mode: Mode, owned: string[]
   const core = ['desk', 'chair', 'laptop'];
   const priorities = [...core, ...modes[mode].priorities];
   for (const category of priorities) {
+    if (mode === 'focus' && category === 'plant') continue;
     const available = availableCategories(owned, selected);
     if (available.has(category)) continue;
     if (category === 'laptop' && (available.has('desktop') || available.has('computer'))) continue;
-    if (category === 'monitor' && !['laptop', 'computer', 'desktop'].some(key => available.has(key))) continue;
+    // A monitor can be planned before a computer. Missing computer coverage stays explicit.
     const matches = candidates.filter(p => p.category === category).sort((a, b) => compareProducts(a, b, mode));
     for (const match of matches) {
       const addition = validateAddition(match, selected, market, budget, owned, c);

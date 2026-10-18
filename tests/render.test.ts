@@ -77,3 +77,16 @@ test("invalid provider output gives no fabricated image", async () => {
   const api = createRenderApi({ available: () => true, owner: async () => "account", store: store(), fetcher: async () => Response.json({ data: [{ b64_json: "PHN2ZyBvbmxvYWQ9eC8+" }] }) });
   assert.equal((await api.render(request())).status, 502);
 });
+
+test('image requests use only canonical catalog reference images',async()=>{
+ let body:Record<string,unknown>={};
+ const api=createRenderApi({available:()=>true,owner:async()=>'account',store:store(),fetcher:async(_url,init)=>{
+  body=JSON.parse(init!.body as string);return new Response('',{status:403});
+ }});
+ assert.equal((await api.render(request({productIds:['de-lagkapten','de-s2725hsm']}))).status,502);
+ const images=body.images as {image_url:string}[];
+ assert.equal(images[0].image_url,photo);assert.equal(images.length,3);
+ assert.match(images[1].image_url,/ikea\.com\/de\/de\/images\/products/);
+ assert.match(images[2].image_url,/s2725hsm/);
+ assert.equal((await api.render(request({productIds:['https://attacker.example/steal']}))).status,400);
+});

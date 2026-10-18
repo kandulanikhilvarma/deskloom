@@ -27,8 +27,8 @@ Enable the intended verification policy in the Neon console after email delivery
 The release checks use a separate verification branch and do not send test email to real users.
 
 Use a separate branch for development or preview data.
-The current production and preview Vercel variables both point to the production branch.
-Use the local verification branch for test fixtures until preview variables have a separate database and Auth service.
+Production variables point to the production branch.
+Preview variables now use the separate verification database and Auth service.
 Do not put database credentials in public browser variables.
 The application uses the server connection only.
 
@@ -90,8 +90,8 @@ Image requests can cost money. Get owner approval for the provider and spend lim
 The owner must accept any new provider terms directly.
 
 1. Set a provider budget or hard limit where the provider supports it.
-2. Add the approved `OPENAI_API_KEY` as a server secret.
-3. Confirm the approved model name in `IMAGE_MODEL`.
+2. Enable Deskloom project OIDC for Vercel AI Gateway, or add an approved server API key.
+3. Confirm the model in `IMAGE_MODEL`, or leave it empty for the provider-specific default.
 4. Verify the render table and its private permissions.
 5. Set `IMAGE_GENERATION_ENABLED=true` in a preview environment.
 6. Run one approved request with a non-sensitive fixture photo.
