@@ -65,12 +65,15 @@ test('regional budgets, constraints, dark mode, keyboard access, and mobile layo
 
 test('desktop and mobile light and dark interfaces have no serious accessibility violations',async({page})=>{
  for(const [width,height] of [[1440,1050],[390,844]]){
-  await page.setViewportSize({width,height});await page.goto('/');await page.locator('.scene-photo').waitFor();
+  await page.setViewportSize({width,height});await page.goto('/');await page.locator('.product-board').waitFor();
   await page.evaluate(()=>document.fonts.ready);
   for(const dark of [false,true]){
    if(dark)await page.getByRole('button',{name:'Use dark theme'}).click();
+   for(const view of ['Products','Compare all']){
+   await page.getByRole('button',{name:view,exact:true}).click();
    const results=await new AxeBuilder({page}).withTags(['wcag2a','wcag2aa','wcag21aa']).analyze();
    expect(results.violations.map(v=>({id:v.id,nodes:v.nodes.map(n=>n.target)}))).toEqual([]);
+   }
   }
  }
 });
@@ -83,8 +86,10 @@ test('private APIs reject guests and the inactive image provider returns an accu
 
 test('save representative desktop and mobile screenshots',async({page})=>{
  await page.setViewportSize({width:1440,height:1050});await page.goto('/');
- for(const item of ['desk','chair','laptop','monitor','keyboard','mouse'])await page.getByRole('button',{name:item,exact:true}).click();
- await page.evaluate(()=>document.fonts.ready);await page.locator('.scene-photo').evaluate(async(el)=>{await (el as HTMLImageElement).decode();});
+ await page.getByLabel('Where you shop').selectOption('EU');await page.getByRole('button',{name:'laptop',exact:true}).click();
+ await page.evaluate(()=>document.fonts.ready);await page.locator('.product-board').waitFor();
+ for(const photo of await page.locator('.product-board img').all()){await photo.scrollIntoViewIfNeeded();await expect.poll(()=>photo.evaluate(el=>(el as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);}
+ await page.evaluate(()=>window.scrollTo(0,0));
  await page.screenshot({path:'docs/screenshots/desktop.png',fullPage:true});
  await page.setViewportSize({width:390,height:844});await page.screenshot({path:'docs/screenshots/mobile.png',fullPage:true});
 });

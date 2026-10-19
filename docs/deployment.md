@@ -91,7 +91,8 @@ The owner must accept any new provider terms directly.
 The current Gateway request returns `customer_verification_required` with HTTP 403.
 Complete customer verification for the kandula team at [Vercel AI Gateway](https://vercel.com/kandula/~/ai-gateway).
 Add or verify the payment method if Vercel requests it. Review any legal terms directly.
-The existing owner approval covers uncapped image costs and Deskloom OIDC.
+The later owner requirement is no payment and no payment card. Do not use the earlier cost approval for new requests.
+Use a verified card-free provider before any new activation work. Project OIDC remains configured.
 Keep the production image flag disabled until the isolated live test succeeds.
 
 1. Set a provider budget or hard limit where the provider supports it.

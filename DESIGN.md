@@ -2,7 +2,10 @@
 
 The editor follows a material library in a residential design studio. This direction suits people who compare objects in their own rooms.
 
-The large photo occupies the center. A quiet control rail holds the budget and owned equipment. Product details occupy a separate panel.
+Actual product photos occupy the center. Three direction controls sit above the preview so a choice has an immediate visible result.
+A control rail holds the budget and owned equipment. Product details occupy a separate panel.
+Photo upload opens three product plans and keeps the original photo visible as a reference.
+Each version retains its edits within the browser session. Comparison rows and product cards have direct retailer links.
 
 The palette uses warm paper, dark green, clay, and oak. Manrope is the interface typeface. Fraunces gives the main title its character.
 

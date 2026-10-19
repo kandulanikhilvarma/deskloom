@@ -13,10 +13,27 @@ An implemented route does not establish a successful live integration.
 | Private plans | Isolated Neon accounts passed signup, photo save, restore, sign-out, sign-in, isolation, and deletion. | Check public deployment access. |
 | Verification email | Neon permits signup without email verification by default. | Configure verification, then receive a real code before a claim of verified email ownership. |
 | Password recovery | Application code needs browser acceptance. | Complete the email link and new-password flow. |
-| Image provider | Hosted OIDC credentials work. Gateway rejected the real request with HTTP 403 and `customer_verification_required`. Production remains disabled. | Complete team verification in Vercel AI Gateway, then repeat the isolated three-version acceptance test. |
+| Image provider | Hosted OIDC credentials work. Gateway rejected the real request with HTTP 403 and `customer_verification_required`. Generation remains disabled under the later no-card requirement. | Connect a verified card-free runtime, then complete the three-version image acceptance test. |
 | Checkout and stock | No checkout or live inventory integration exists. | Users must confirm the final order on the retailer site. |
 
 ## Required automated checks
+
+Workflow repair checks on 19 October 2026:
+
+- A new browser regression test failed against the old public Products view before the repair.
+- All 12 local browser tests passed after the repair, with the isolated account test enabled.
+- The tests covered persistent per-direction edits, direct retailer links, photo-to-product comparison, dimensions, and export of all three lists.
+- Product and comparison views passed selected WCAG checks on desktop and phone, in light and dark themes.
+- Lint, TypeScript, and the production build passed.
+- Both Mermaid diagrams and all three YAML documents parsed.
+- The changed prose documents passed STE lint without errors. Dictionary compliance remains unchecked.
+- The URL audit checked all 66 selectable destinations. See [product readiness](product-readiness.md) for HTTP and browser evidence.
+
+The local unit suite passed 46 tests, including two local streaming-command tests from a separate task.
+The published application suite contains 44 unit tests. The separate streaming-command files remain outside this repair.
+The current screenshots show real model photos and a three-way product comparison.
+
+### Earlier visual repair checks
 
 Repair checks on 18 October 2026:
 
