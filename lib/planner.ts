@@ -203,7 +203,7 @@ export function plan(market: Market, budget: number, mode: Mode, owned: string[]
   if (configurationError(budget, c)) return [];
   let selected: Product[] = [];
   const candidates = catalogFor(market).filter(p => isEligible(p, owned, c));
-  const core = ['desk', 'chair', 'laptop'];
+  const core = ['desk', 'chair', 'laptop', 'keyboard', 'mouse', 'monitor'];
   const priorities = [...core, ...modes[mode].priorities];
   for (const category of priorities) {
     if (mode === 'focus' && category === 'plant') continue;

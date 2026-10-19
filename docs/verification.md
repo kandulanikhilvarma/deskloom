@@ -3,6 +3,25 @@
 The release record separates source implementation, automated checks, provider acceptance, and public activation.
 An implemented route does not establish a successful live integration.
 
+## Electronics release checks, 19 October 2026
+
+- The final production build passed 14 guest browser tests. The run explicitly skipped the account test.
+- All 32 regional electronics photos loaded in the browser.
+- India exposes six keyboards, three mice, and three monitors. Germany and the US each expose four keyboards, three mice, and three monitors.
+- Tests covered tiny budgets, product-type filters, search recovery, detailed specifications, local links, comparison tables, replacements, and undo.
+- Tests confirmed that owned categories remain visible and blocked additions do not change a plan.
+- Desktop and phone checks passed for light and dark themes, keyboard use, overflow, and selected WCAG A and AA rules.
+- All 50 local unit tests passed. Two belong to separate unpublished text-stream work; this release contains 48 application tests.
+- Lint, TypeScript, and the production build passed.
+- Two Mermaid diagrams and three YAML documents parsed.
+- The new mechanical-keyboard destinations returned HTTP 200, matching model titles, and no redirects.
+- See [the new destination audit](electronics-link-check-2026-10-19.json) and [the earlier complete catalog audit](catalog-check-2026-10-19.json).
+
+This change adds no dependencies, database schema changes, or image-provider calls.
+The account and database integration tests were not repeated for this repair.
+The skill folder does not contain the GitHub hygiene helper script. Direct checks covered identity, manifest, license, CI, diagrams, YAML, ignored secrets, and the scoped diff.
+The STE linter reported no errors in the changed prose. Its warnings need human judgment; the approved dictionary was not checked.
+
 ## Activation status
 
 | Area | Current evidence | Next check |
