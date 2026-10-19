@@ -2,14 +2,11 @@
 /* eslint-disable @next/next/no-img-element -- Manufacturer photos stay on their source hosts. */
 import {useState} from 'react';
 import {ImageOff, ArrowUpRight} from 'lucide-react';
+import {roomIdeas,roomPhotoUrl} from '@/lib/room-ideas';
 import type {Product} from '@/lib/catalog';
 import {currency, missingEssentials, modes, total, type Market, type Mode} from '@/lib/planner';
 
-export const scenes:Record<Mode,{src:string;alt:string;materials:string}>={
- calm:{src:'/scenes/calm.webp',alt:'Quiet Mornings room concept with a pale oak desk, flat monitor, white keyboard, and daylight',materials:'Pale oak · flat display · soft daylight'},
- focus:{src:'/scenes/focus.webp',alt:'Room to Focus room concept with a graphite desk, curved ultrawide monitor, black keyboard, and architectural lighting',materials:'Graphite · curved ultrawide · concealed cables'},
- studio:{src:'/scenes/studio.webp',alt:'Creative Corner room concept with a walnut desk, two flat displays, compact keyboard, and warm lighting',materials:'Walnut · studio displays · warm light'},
-};
+export const scenes:Record<Mode,{src:string;alt:string;materials:string;source:string;photographer:string}>=Object.fromEntries((['calm','focus','studio'] as Mode[]).map((mode,index)=>{const idea=roomIdeas[index];return [mode,{src:roomPhotoUrl(idea),alt:idea.alt,materials:idea.summary,source:idea.source,photographer:idea.photographer}];})) as Record<Mode,{src:string;alt:string;materials:string;source:string;photographer:string}>;
 
 export function ProductImage({product,className='',eager=false}:{product:Product;className?:string;eager?:boolean}){
  const [failed,setFailed]=useState(false);

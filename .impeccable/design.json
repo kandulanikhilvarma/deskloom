@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T18:43:11.760130+00:00",
+  "title": "Design System: Deskloom",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.00528 106.50)",
+          "oklch(26.43% 0.00528 106.50)",
+          "oklch(37.86% 0.00528 106.50)",
+          "oklch(49.29% 0.00528 106.50)",
+          "oklch(60.71% 0.00528 106.50)",
+          "oklch(72.14% 0.00528 106.50)",
+          "oklch(83.57% 0.00528 106.50)",
+          "oklch(95.00% 0.00528 106.50)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "White surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 89.88)",
+          "oklch(26.43% 0.00000 89.88)",
+          "oklch(37.86% 0.00000 89.88)",
+          "oklch(49.29% 0.00000 89.88)",
+          "oklch(60.71% 0.00000 89.88)",
+          "oklch(72.14% 0.00000 89.88)",
+          "oklch(83.57% 0.00000 89.88)",
+          "oklch(95.00% 0.00000 89.88)"
+        ]
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft paper",
+        "tonalRamp": [
+          "oklch(15.00% 0.01065 112.37)",
+          "oklch(26.43% 0.01065 112.37)",
+          "oklch(37.86% 0.01065 112.37)",
+          "oklch(49.29% 0.01065 112.37)",
+          "oklch(60.71% 0.01065 112.37)",
+          "oklch(72.14% 0.01065 112.37)",
+          "oklch(83.57% 0.01065 112.37)",
+          "oklch(95.00% 0.01065 112.37)"
+        ]
+      },
+      "ink": {
+        "role": "primary",
+        "displayName": "Ink green",
+        "tonalRamp": [
+          "oklch(15.00% 0.03409 168.69)",
+          "oklch(26.43% 0.03409 168.69)",
+          "oklch(37.86% 0.03409 168.69)",
+          "oklch(49.29% 0.03409 168.69)",
+          "oklch(60.71% 0.03409 168.69)",
+          "oklch(72.14% 0.03409 168.69)",
+          "oklch(83.57% 0.03409 168.69)",
+          "oklch(95.00% 0.03409 168.69)"
+        ]
+      },
+      "body": {
+        "role": "primary",
+        "displayName": "Body green",
+        "tonalRamp": [
+          "oklch(15.00% 0.02517 160.41)",
+          "oklch(26.43% 0.02517 160.41)",
+          "oklch(37.86% 0.02517 160.41)",
+          "oklch(49.29% 0.02517 160.41)",
+          "oklch(60.71% 0.02517 160.41)",
+          "oklch(72.14% 0.02517 160.41)",
+          "oklch(83.57% 0.02517 160.41)",
+          "oklch(95.00% 0.02517 160.41)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted green",
+        "tonalRamp": [
+          "oklch(15.00% 0.02092 155.41)",
+          "oklch(26.43% 0.02092 155.41)",
+          "oklch(37.86% 0.02092 155.41)",
+          "oklch(49.29% 0.02092 155.41)",
+          "oklch(60.71% 0.02092 155.41)",
+          "oklch(72.14% 0.02092 155.41)",
+          "oklch(83.57% 0.02092 155.41)",
+          "oklch(95.00% 0.02092 155.41)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Pale border",
+        "tonalRamp": [
+          "oklch(15.00% 0.01566 126.83)",
+          "oklch(26.43% 0.01566 126.83)",
+          "oklch(37.86% 0.01566 126.83)",
+          "oklch(49.29% 0.01566 126.83)",
+          "oklch(60.71% 0.01566 126.83)",
+          "oklch(72.14% 0.01566 126.83)",
+          "oklch(83.57% 0.01566 126.83)",
+          "oklch(95.00% 0.01566 126.83)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "Accent green",
+        "tonalRamp": [
+          "oklch(15.00% 0.05181 172.62)",
+          "oklch(26.43% 0.05181 172.62)",
+          "oklch(37.86% 0.05181 172.62)",
+          "oklch(49.29% 0.05181 172.62)",
+          "oklch(60.71% 0.05181 172.62)",
+          "oklch(72.14% 0.05181 172.62)",
+          "oklch(83.57% 0.05181 172.62)",
+          "oklch(95.00% 0.05181 172.62)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "Deep hover green",
+        "tonalRamp": [
+          "oklch(15.00% 0.04477 172.30)",
+          "oklch(26.43% 0.04477 172.30)",
+          "oklch(37.86% 0.04477 172.30)",
+          "oklch(49.29% 0.04477 172.30)",
+          "oklch(60.71% 0.04477 172.30)",
+          "oklch(72.14% 0.04477 172.30)",
+          "oklch(83.57% 0.04477 172.30)",
+          "oklch(95.00% 0.04477 172.30)"
+        ]
+      },
+      "tint": {
+        "role": "neutral",
+        "displayName": "Tint green",
+        "tonalRamp": [
+          "oklch(15.00% 0.01430 128.63)",
+          "oklch(26.43% 0.01430 128.63)",
+          "oklch(37.86% 0.01430 128.63)",
+          "oklch(49.29% 0.01430 128.63)",
+          "oklch(60.71% 0.01430 128.63)",
+          "oklch(72.14% 0.01430 128.63)",
+          "oklch(83.57% 0.01430 128.63)",
+          "oklch(95.00% 0.01430 128.63)"
+        ]
+      },
+      "clay": {
+        "role": "secondary",
+        "displayName": "Clay",
+        "tonalRamp": [
+          "oklch(15.00% 0.09613 44.06)",
+          "oklch(26.43% 0.09613 44.06)",
+          "oklch(37.86% 0.09613 44.06)",
+          "oklch(49.29% 0.09613 44.06)",
+          "oklch(60.71% 0.09613 44.06)",
+          "oklch(72.14% 0.09613 44.06)",
+          "oklch(83.57% 0.09613 44.06)",
+          "oklch(95.00% 0.09613 44.06)"
+        ]
+      },
+      "danger": {
+        "role": "secondary",
+        "displayName": "Danger red",
+        "tonalRamp": [
+          "oklch(15.00% 0.13694 28.00)",
+          "oklch(26.43% 0.13694 28.00)",
+          "oklch(37.86% 0.13694 28.00)",
+          "oklch(49.29% 0.13694 28.00)",
+          "oklch(60.71% 0.13694 28.00)",
+          "oklch(72.14% 0.13694 28.00)",
+          "oklch(83.57% 0.13694 28.00)",
+          "oklch(95.00% 0.13694 28.00)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Preference introduction",
+        "purpose": "Fraunces title for the preference rail."
+      },
+      "headline": {
+        "displayName": "Editor headline",
+        "purpose": "Manrope introduction for the main editor."
+      },
+      "title": {
+        "displayName": "Room story title",
+        "purpose": "Fraunces title beside a credited photograph."
+      },
+      "body": {
+        "displayName": "Interface body",
+        "purpose": "Ordinary interface text."
+      },
+      "label": {
+        "displayName": "Catalog label",
+        "purpose": "Filter labels above search and select fields."
+      }
+    },
+    "shadows": [
+      {
+        "name": "dialog",
+        "value": "var(--shadow)",
+        "purpose": "Ambient depth beneath dialogs."
+      },
+      {
+        "name": "segmented-active",
+        "value": "0 2px 7px #2031220e",
+        "purpose": "Lift the selected preview tab."
+      }
+    ],
+    "motion": [
+      {
+        "name": "direction-border",
+        "value": "border-color .2s",
+        "purpose": "Pointer feedback on direction cards."
+      },
+      {
+        "name": "budget-width",
+        "value": "width .4s cubic-bezier(.16,1,.3,1)",
+        "purpose": "Update the budget track."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transition:none;animation:none;scroll-behavior:auto",
+        "purpose": "Honor the reduced-motion preference."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-editor",
+        "value": "1500px"
+      },
+      {
+        "name": "compact-rails",
+        "value": "1180px"
+      },
+      {
+        "name": "two-rail-editor",
+        "value": "960px"
+      },
+      {
+        "name": "stack-room-story",
+        "value": "900px"
+      },
+      {
+        "name": "phone-discovery",
+        "value": "700px"
+      },
+      {
+        "name": "stack-editor",
+        "value": "680px"
+      },
+      {
+        "name": "single-catalog-column-container",
+        "value": "420px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "description": "Commit the current plan action.",
+      "html": "<button class=\"ds-primary\">Save plan</button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:11px 15px;border-radius:7px;font:650 11px/1.6 Manrope,sans-serif;cursor:pointer;border:0;background:var(--accent);color:var(--bg)}.ds-primary:hover{background:var(--accent-hover)}.ds-primary:focus-visible{outline:3px solid var(--clay);outline-offset:4px}",
+      "refersTo": "button-primary"
+    },
+    {
+      "name": "Secondary button",
+      "kind": "button",
+      "description": "Inspect or apply a supporting choice.",
+      "html": "<button class=\"ds-secondary\">Details and options</button>",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:11px 15px;border-radius:7px;font:650 11px/1.6 Manrope,sans-serif;cursor:pointer;border:1px solid var(--line);background:var(--surface);color:var(--ink)}.ds-secondary:hover{background:var(--tint)}.ds-secondary:focus-visible{outline:3px solid var(--clay);outline-offset:4px}",
+      "refersTo": "button-secondary"
+    },
+    {
+      "name": "Search field",
+      "kind": "input",
+      "description": "Search the local catalog.",
+      "html": "<label class=\"ds-field\">Search models<input type=\"search\" placeholder=\"Model or material\"></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:8px;font:650 12px/1.6 Manrope,sans-serif;color:var(--ink)}.ds-field input{min-height:44px;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit}.ds-field input:hover{border-color:var(--accent)}.ds-field input:focus-visible{outline:3px solid var(--clay);outline-offset:4px}",
+      "refersTo": "field"
+    },
+    {
+      "name": "Catalog group navigation",
+      "kind": "nav",
+      "description": "Move between workspace product families.",
+      "html": "<nav class=\"ds-groups\" aria-label=\"Product families\"><button aria-pressed=\"true\">Electronics</button><button aria-pressed=\"false\">Desks and chairs</button></nav>",
+      "css": ".ds-groups{display:flex;flex-wrap:wrap;gap:0 18px;border-bottom:1px solid var(--line)}.ds-groups button{min-height:44px;padding:8px 0;border:0;border-bottom:2px solid transparent;background:transparent;color:var(--muted);font:400 12px/1.6 Manrope,sans-serif;cursor:pointer}.ds-groups button[aria-pressed=true]{color:var(--ink);border-bottom-color:var(--accent);font-weight:750}.ds-groups button:hover{color:var(--accent)}.ds-groups button:focus-visible{outline:3px solid var(--clay);outline-offset:4px}"
+    },
+    {
+      "name": "Category control",
+      "kind": "chip",
+      "description": "Select a category within a product family.",
+      "html": "<button class=\"ds-category\" aria-pressed=\"true\">Keyboards <span>Local choices</span></button>",
+      "css": ".ds-category{min-height:44px;padding:10px 15px;border:1px solid var(--accent);border-radius:8px;background:var(--accent);color:var(--bg);font:650 13px/1.6 Manrope,sans-serif;cursor:pointer}.ds-category span{margin-left:8px}.ds-category:hover{background:var(--accent-hover)}.ds-category:focus-visible{outline:3px solid var(--clay);outline-offset:4px}"
+    },
+    {
+      "name": "Catalog card",
+      "kind": "card",
+      "description": "Keep model details and actions within one bounded surface.",
+      "html": "<article class=\"ds-card\"><h4>Model name</h4><p>Material and local price</p><button>Details and options</button></article>",
+      "css": ".ds-card{min-width:0;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:10px;padding:16px;font:400 12px/1.7 Manrope,sans-serif}.ds-card h4{font-size:15px;line-height:1.6;margin:6px 0 12px;font-weight:650}.ds-card p{color:var(--muted)}.ds-card button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:11px 15px;border-radius:7px;font:650 11px/1.6 Manrope,sans-serif;cursor:pointer;width:100%;border:1px solid var(--line);background:var(--surface);color:var(--ink)}.ds-card button:hover{background:var(--tint)}.ds-card button:focus-visible{outline:3px solid var(--clay);outline-offset:4px}",
+      "refersTo": "catalog-card"
+    },
+    {
+      "name": "Family choice",
+      "kind": "custom",
+      "description": "Pair a photo slot with an explicit family label.",
+      "html": "<button class=\"ds-family\"><span class=\"ds-photo\">Photo unavailable</span><span><strong>Desks</strong><small>Local choices · photos and details</small></span><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M5 12h14M12 5l7 7-7 7\"/></svg></button>",
+      "css": ".ds-family{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:14px;border:1px solid var(--line);border-radius:10px;text-align:left;min-width:0;background:var(--surface);color:var(--ink);font:400 13px/1.6 Manrope,sans-serif;cursor:pointer}.ds-family:hover{border-color:var(--accent)}.ds-family:focus-visible{outline:2px solid var(--accent);outline-offset:3px}.ds-photo{display:grid;place-items:center;min-height:78px;width:100%;background:var(--soft);color:var(--muted);font-size:11px}.ds-family strong{display:block;font-size:14px}.ds-family small{display:block;font-size:11px;line-height:1.7;margin-top:6px;color:var(--muted)}.ds-family svg{align-self:flex-end}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The residential material library",
+    "overview": "Deskloom follows a material library in a residential design studio. Warm paper surfaces surround real product photographs and practical choices. The interface stays compact so users can compare objects in their own rooms.\n\nCredited room photographs give context for materials, light, and useful furniture. Product photographs show exact models separately. The existing identity uses dark green controls, clay accents, Manrope interface text, and Fraunces titles.",
+    "keyCharacteristics": [
+      "Six photo-led entry choices expose the range of workspace products.",
+      "Real room stories keep photographer credits and source links.",
+      "Separate rails keep preferences and the current product total close to the editor.",
+      "Visible borders and quiet surfaces organize dense product information."
+    ],
+    "rules": [
+      {
+        "name": "The Surface Rule",
+        "body": "Use the existing semantic variables for interface surfaces and text. Keep product and room photographs separate from interface color treatments.",
+        "section": "colors"
+      },
+      {
+        "name": "The Model Name Rule",
+        "body": "Use Manrope for product names and specifications. Reserve Fraunces for editorial titles and introductions.",
+        "section": "typography"
+      },
+      {
+        "name": "The Discovery Order Rule",
+        "body": "Keep the six product choices before phone preferences. Keep product discovery near the top of the desktop center rail.",
+        "section": "layout"
+      },
+      {
+        "name": "The Quiet Depth Rule",
+        "body": "Use borders and tonal separation for ordinary content. Reserve the shared ambient shadow for overlays.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve paper surfaces, dark green controls, clay emphasis, and the existing type pairing.",
+      "Do use real product photographs with visible model names and local product links.",
+      "Do keep photographer credits directly beside room photographs.",
+      "Do keep the six product choices ahead of preferences on phones.",
+      "Do show budget context beside product decisions and plan actions.",
+      "Do keep visible keyboard focus and reduced-motion behavior."
+    ],
+    "donts": [
+      "Do not describe the six room photographs as AI room concepts or exact product matches.",
+      "Do not replace product photographs with decorative silhouettes when a photograph fails.",
+      "Do not tint photographs to imitate the interface palette.",
+      "Do not hide model specifications or materials behind a family photograph alone."
+    ]
+  }
+}

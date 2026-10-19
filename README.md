@@ -24,7 +24,7 @@ Neon currently permits password signup without email verification. Email ownersh
 Password recovery and verification email delivery still need an operator acceptance check.
 Live photo transformations require an accepted image-provider request. The owner approved Deskloom OIDC authentication.
 The hosted request reached Vercel AI Gateway but returned `customer_verification_required` on 18 October 2026.
-Production photo generation remains disabled until the team completes verification and a live request passes.
+Production photo generation remains disabled. A verified card-free runtime and a successful live acceptance request are still needed.
 
 The public planner is available at [deskloom.vercel.app](https://deskloom.vercel.app).
 Desktop and phone guest flows passed on Vercel. Cloud account flows passed against an isolated Neon branch.
@@ -48,28 +48,37 @@ Users can change this reserve. The planner excludes unknown or uncertain prices 
 A small budget can produce free suggestions and no new item.
 The interface names missing essentials when the catalog cannot support a complete setup.
 
-## Electronics
+## Product choices and room ideas
 
-Use the visible Keyboards, Mice, or Monitors cards to open the local catalog.
-The catalog stays visible at every budget, including products you already own.
-Search model names or specifications. Filter by product type.
-Compare up to three models in a specification table.
-Open Details and options before you change a plan.
-The dialog explains price, budget, and ownership restrictions.
-A keyboard and mouse combo replaces overlapping input products as one change.
+Open Electronics, Desks, Chairs, Rugs, Curtains and fabrics, or Desk elements from the photographed family controls.
+On phones, these controls appear before the preferences.
+Browse products groups the full catalog into electronics, furniture, fabrics, desk elements, and comfort.
+Search model names or specifications. Filter by brand, product type, or additions that fit the current budget.
+Compare up to three models, including dimensions and materials where the source supplies them.
+Open Details and options before a purchase or replacement.
+The dialog explains unknown prices, ownership conflicts, support requirements, and budget limits.
 Undo restores the previous product list.
 
-India has six keyboards, three mice, and three monitors.
+India has seven keyboards, four mice, and three monitors, including wired and wireless input choices.
 Germany and the US each have four keyboards, three mice, and three monitors.
-Mechanical keyboards have local manufacturer pages, but their exact variant prices still need a check.
+All three countries also have multiple desks, chairs, and rugs, plus local window fabrics.
 Unknown prices stay outside plan totals.
+Confirm a suitable existing rug underlay or curtain support before those products enter a plan.
+Their separate support costs do not disappear into a fabricated complete bundle.
+
+Room ideas shows six credited photographs of real spaces, with practical fit notes and local product shortlists.
+Users can apply one shortlist within the current budget and keep owned equipment.
+The photographs do not represent exact product matches or an assessment of personal health.
+See [the photograph credits, community references, and workstation sources](docs/room-sources.md).
 
 ## Screenshots
 
 The screenshots show the responsive planner with actual model photos.
-The Products view and three-way comparison have direct retailer links. Room concepts are separate style references.
+The Products view and three-way comparison have direct retailer links. Room ideas use separate credited reference photographs.
 
-![Deskloom electronics catalog](docs/screenshots/electronics.png)
+![Deskloom room ideas](docs/screenshots/room-ideas.png)
+
+![Deskloom room product catalog](docs/screenshots/room-catalog.png)
 
 ![Deskloom desktop planner](docs/screenshots/desktop.png)
 
@@ -77,18 +86,19 @@ The Products view and three-way comparison have direct retailer links. Room conc
 
 ## Product boundaries
 
-The maintained catalog contains 70 product records. India is the first market.
+The maintained catalog contains 93 regional product records. India is the first market.
 Germany has its own catalog. The euro option does not imply coverage across Europe.
 The catalog repair checked product destinations and photos on 18 October 2026. See [the repair audit](docs/repair-audit.md).
 
 Prices use dated references. Final tax, delivery charges, stock, and seller terms need a retailer check.
 Deskloom does not claim the cheapest seller or predict future sales.
 
-Room concepts have no product markers. Original photos have only pins that the user places. The Products view numbers actual product photos.
+Reference photographs have no product markers. Original photos have only pins that the user places. The Products view numbers actual product photos.
 The layout map is a schematic and has no verified scale.
 Product photos come from their retailer or manufacturer. Their local product pages contain the purchase details.
 
-The inspiration photo and optional AI output are illustrative.
+Reference photographs show real spaces. They do not show the exact products in a selected local plan.
+Optional AI output remains illustrative and inactive.
 Exact product appearance, room fit, and electrical compatibility need separate checks.
 
 Comfort guidance cites workstation and eye-care sources.

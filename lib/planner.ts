@@ -59,10 +59,12 @@ function eligibilityError(p: Product, owned: string[], c: Constraints): string |
   if (c.wireless && categories(p).some(category => ['keyboard', 'mouse'].includes(category)) && !p.tags.includes('wireless')) {
     return 'Choose a wireless keyboard or mouse for this plan.';
   }
-  if (p.dimensions?.widthCm && p.dimensions.widthCm > c.width) return 'This product is wider than the desk width you entered.';
+  if (!['rug','curtain','chair','footrest','shelf'].includes(p.category) && p.dimensions?.widthCm && p.dimensions.widthCm > c.width) return 'This product is wider than the desk width you entered.';
   if (p.tags.includes('living') && c.daylight !== 'indirect') {
     return 'This live plant needs indirect daylight. Change its position or choose an artificial plant.';
   }
+  if (p.category === 'curtain' && !owned.includes('curtain-rail')) return 'Confirm a compatible existing curtain rod or rail before this fabric enters the plan.';
+  if (p.category === 'rug' && !owned.includes('rug-underlay')) return 'Confirm a suitable rug underlay before this rug enters the plan.';
   if (p.category === 'stand') {
     if (p.tags.includes('laptop-support')) {
       if (!['laptop', 'keyboard', 'mouse'].every(category => owned.includes(category))) {

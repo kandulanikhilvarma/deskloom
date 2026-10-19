@@ -1,12 +1,11 @@
 import {test,expect} from '@playwright/test';
-test('each direction changes the actual room image and never pins nonexistent products to it',async({page})=>{
- await page.goto('/');await page.getByRole('button',{name:'Room concept',exact:true}).click();const images:string[]=[];
- for(const button of await page.locator('.direction').all()){
-  await button.click();await expect(button).toHaveAttribute('aria-pressed','true');
-  images.push((await page.locator('.scene-photo').getAttribute('src'))!);
-  await expect(page.locator('.scene .hotspot')).toHaveCount(0);
- }
- expect(new Set(images).size).toBe(3);
+test('real room ideas show six credited photographs without fabricated product markers',async({page})=>{
+ await page.goto('/');await page.getByRole('button',{name:'Room ideas',exact:true}).click();
+ await expect(page.locator('.room-story')).toHaveCount(6);
+ const sources=await page.locator('.room-story img').evaluateAll(images=>images.map(image=>image.getAttribute('src')));
+ expect(new Set(sources).size).toBe(6);expect(sources.every(src=>src?.startsWith('https://images.pexels.com/'))).toBe(true);
+ await expect(page.locator('.room-story .hotspot')).toHaveCount(0);
+ for(const story of await page.locator('.room-story').all())await expect(story.locator('figcaption a')).toHaveAttribute('href',/^https:\/\/www\.pexels\.com\/photo\//);
  await page.getByLabel('Upload a space photo').setInputFiles('public/desk-inspiration.png');
  await expect(page.getByAltText('Your uploaded workspace photo')).toBeVisible();
  await expect(page.locator('.scene .hotspot')).toHaveCount(0);

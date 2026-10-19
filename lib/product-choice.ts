@@ -1,8 +1,8 @@
 import type {Product} from './catalog';
 import {removeFromPlan, validateAddition, type Constraints, type Market} from './planner';
 
-export function productSpecs(product: Product) {
-  return {...(product.dimensions ?? product.dims), ...(product.specifications ?? product.specs)};
+export function productSpecs(product: Product): Record<string, string | number | boolean | string[]> {
+  return {...(product.material?{material:product.material}:{}), ...(product.dimensions ?? product.dims), ...(product.specifications ?? product.specs)};
 }
 
 export function specLabel(key: string) {
