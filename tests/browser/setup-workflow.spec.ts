@@ -46,7 +46,7 @@ test('photo upload opens three real product plans with direct regional purchase 
  const cards=page.locator('.board-product');expect(await cards.count()).toBeGreaterThan(5);
  await expect(cards.first().locator('.board-buy')).toHaveAttribute('href',/^https:\/\//);
  await cards.filter({has:page.locator('small',{hasText:' · desk'})}).first().click();
- await expect(page.locator('.spec-list')).toContainText('width');
+ await expect(page.locator('.spec-list')).toContainText('Width \u00b7 cm');
  await expect(page.locator('.product-detail')).toContainText('Price reference checked');
  // Preference changes must discard cached plans from the old country.
  await page.getByLabel('Where you shop').selectOption('IN');

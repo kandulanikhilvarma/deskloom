@@ -34,6 +34,19 @@ Budget, market, and room-preference changes reset the drafts to prevent stale pr
 Within one browser session, direction changes preserve custom edits.
 Cloud Save plan still saves the current version only. It does not save all three drafts as one project.
 
+## Electronics repair
+
+The default low budget selected accessories before work inputs.
+The collapsed catalog hid electronics and lacked details before an addition.
+The new electronics browser shows all local models independently of budget and owned categories.
+Product cards show specifications, model photos, price status, and direct local links.
+Users can search, filter by type, and compare up to three models.
+A detail dialog explains each add or replacement before it changes the plan.
+Unknown prices stay outside totals. Owned categories need an explicit change in the preferences.
+The planner now gives keyboards, mice, and monitors priority over optional accessories.
+Mechanical keyboard records add local manufacturer destinations for all three countries.
+Their exact local variants and prices still need a check before a budget plan can include them.
+
 ## Real pending work
 
 | Priority | Requirement | Current status | Exact next step |

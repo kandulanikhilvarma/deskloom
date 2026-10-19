@@ -1,0 +1,26 @@
+[
+  {
+    "id": "in-mx-mechanical",
+    "status": 200,
+    "url": "https://www.logitech.com/en-in/shop/p/mx-mechanical.920-010761",
+    "final": "https://www.logitech.com/en-in/shop/p/mx-mechanical.920-010761",
+    "title": "MX Mechanical Wireless Keyboard | Logitech",
+    "checkedAt": "2026-10-19T11:40:52.122Z"
+  },
+  {
+    "id": "us-mx-mechanical",
+    "status": 200,
+    "url": "https://www.logitech.com/en-us/shop/p/mx-mechanical",
+    "final": "https://www.logitech.com/en-us/shop/p/mx-mechanical",
+    "title": "MX Mechanical Wireless Keyboard | Logitech",
+    "checkedAt": "2026-10-19T11:40:52.142Z"
+  },
+  {
+    "id": "de-mx-mechanical",
+    "status": 200,
+    "url": "https://www.logitech.com/de-de/shop/p/mx-mechanical",
+    "final": "https://www.logitech.com/de-de/shop/p/mx-mechanical",
+    "title": "MX Mechanical kabellose Tastatur | Logitech®",
+    "checkedAt": "2026-10-19T11:40:52.147Z"
+  }
+]

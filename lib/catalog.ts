@@ -409,7 +409,8 @@ export const products: Product[] = [
         "USB-B upstream",
         "USB-A downstream",
         "USB-C downstream, data only, up to 15 W"
-      ]
+      ],
+      "type": "Flat monitor"
     },
     "tags": [
       "adjustable",
@@ -441,7 +442,9 @@ export const products: Product[] = [
     "description": "A compact Bluetooth mouse for left- or right-handed use.",
     "specifications": {
       "connection": "Bluetooth",
-      "battery": "One AA battery"
+      "battery": "One AA battery",
+      "type": "Compact silent mouse",
+      "shape": "Compact, left- or right-handed"
     },
     "tags": [
       "wireless",
@@ -473,7 +476,8 @@ export const products: Product[] = [
     "description": "A full-size wireless keyboard with a mouse and USB receiver.",
     "specifications": {
       "connection": "Wireless USB receiver",
-      "layout": "Full size with number pad"
+      "layout": "Full size with number pad",
+      "type": "Keyboard and mouse combo"
     },
     "tags": [
       "wireless",
@@ -544,7 +548,9 @@ export const products: Product[] = [
     "description": "A compact Bluetooth mouse with quiet buttons.",
     "specifications": {
       "connection": "Bluetooth",
-      "battery": "One AA battery"
+      "battery": "One AA battery",
+      "type": "Compact silent mouse",
+      "shape": "Compact, left- or right-handed"
     },
     "tags": [
       "wireless",
@@ -713,7 +719,8 @@ export const products: Product[] = [
     "description": "A compact keyboard and mouse set with one USB receiver.",
     "specifications": {
       "connection": "2.4 GHz wireless USB receiver",
-      "layout": "Compact"
+      "layout": "Compact",
+      "type": "Keyboard and mouse combo"
     },
     "tags": [
       "wireless",
@@ -760,7 +767,8 @@ export const products: Product[] = [
     "specifications": {
       "connection": "2.4 GHz wireless USB receiver",
       "layout": "Full size",
-      "model": "3L1F0AA#UUF"
+      "model": "3L1F0AA#UUF",
+      "type": "Keyboard and mouse combo"
     },
     "tags": [
       "wireless",
@@ -803,7 +811,9 @@ export const products: Product[] = [
     "description": "A compact Bluetooth keyboard with three device profiles.",
     "specifications": {
       "connection": "Bluetooth",
-      "layout": "Compact"
+      "layout": "Compact",
+      "type": "Compact keyboard",
+      "size": "Compact, without number pad"
     },
     "tags": [
       "wireless",
@@ -844,7 +854,9 @@ export const products: Product[] = [
     "specifications": {
       "connection": "Bluetooth and Logi Bolt",
       "layout": "Full size",
-      "power": "Rechargeable"
+      "power": "Rechargeable",
+      "type": "Full-size keyboard",
+      "size": "Full size with number pad"
     },
     "tags": [
       "wireless",
@@ -885,9 +897,10 @@ export const products: Product[] = [
     ],
     "description": "A vertical mouse with a thumb rest for small to medium hands.",
     "specifications": {
-      "connection": "Bluetooth and Logi Bolt USB receiver",
+      "connection": "Bluetooth and Logi Bolt",
       "battery": "One AA battery",
-      "shape": "Vertical, 57 degrees"
+      "shape": "Vertical, 57 degrees",
+      "type": "Vertical mouse"
     },
     "tags": [
       "wireless",
@@ -928,7 +941,10 @@ export const products: Product[] = [
     "specifications": {
       "connection": "Bluetooth and Logi Bolt USB receiver",
       "power": "Rechargeable",
-      "maxDpi": 8000
+      "maxDpi": 8000,
+      "type": "Productivity mouse",
+      "shape": "Contoured, right-handed",
+      "scroll": "Main scroll wheel and thumb wheel"
     },
     "tags": [
       "wireless",
@@ -980,7 +996,8 @@ export const products: Product[] = [
         "DisplayPort",
         "USB hub"
       ],
-      "model": "B28F5UT#ACJ"
+      "model": "B28F5UT#ACJ",
+      "type": "Flat monitor"
     },
     "tags": [
       "premium",
@@ -1026,7 +1043,8 @@ export const products: Product[] = [
         "HDMI",
         "D-sub"
       ],
-      "model": "LS27D368GAWXXL"
+      "model": "LS27D368GAWXXL",
+      "type": "Curved monitor"
     },
     "tags": [
       "curved",
@@ -1621,7 +1639,7 @@ export const products: Product[] = [
     "currency": "EUR",
     "price": 169,
     "url": "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-",
-    "description": "Dell monitor from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "description": "A flat 27-inch FHD IPS monitor with a 144 Hz refresh rate and an adjustable stand.",
     "tags": [],
     "notes": [
       "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
@@ -1633,7 +1651,8 @@ export const products: Product[] = [
     "imageUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/s-series/s2725hsm/media-gallery/monitor-dell-plus-s2725hsm-gy-gallery-1.psd?fmt=png-alpha&wid=1200&hei=630",
     "retailer": "Dell",
     "sourceUrls": [
-      "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-"
+      "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-",
+      "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-"
     ],
     "priceSourceUrl": "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-",
     "recommendedModes": [
@@ -1644,7 +1663,21 @@ export const products: Product[] = [
     "verifiedTitle": "Dell Plus-68,58 cm (27\")-Monitor - S2725HSM | Dell Deutschland",
     "specifications": {
       "shape": "Flat rectangular",
-      "model": "S2725HSM"
+      "model": "S2725HSM",
+      "type": "Flat monitor",
+      "diagonalInch": 27,
+      "resolution": "1920 × 1080 (FHD)",
+      "refreshHz": 144,
+      "panel": "IPS",
+      "ports": [
+        "2 × HDMI 1.4"
+      ],
+      "adjustments": [
+        "Height",
+        "Tilt",
+        "Swivel",
+        "Pivot"
+      ]
     }
   },
   {
@@ -1656,7 +1689,7 @@ export const products: Product[] = [
     "currency": "EUR",
     "price": 409,
     "url": "https://www.dell.com/de-de/shop/monitors/apd/dell-34-plus-usbc-monitors3425dw/s3425dw_monitor/-",
-    "description": "Dell monitor from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "description": "A curved 34-inch ultrawide VA monitor with a 120 Hz refresh rate and USB-C video input.",
     "tags": [],
     "notes": [
       "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
@@ -1668,7 +1701,8 @@ export const products: Product[] = [
     "imageUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/s-series/s3425dw/media-gallery/monitor-s3425dw-gray-gallery-1.psd?fmt=jpg&wid=1200&hei=630",
     "retailer": "Dell",
     "sourceUrls": [
-      "https://www.dell.com/de-de/shop/monitors/apd/dell-34-plus-usbc-monitors3425dw/s3425dw_monitor/-"
+      "https://www.dell.com/de-de/shop/monitors/apd/dell-34-plus-usbc-monitors3425dw/s3425dw_monitor/-",
+      "https://www.dell.com/en-us/shop/monitors/apd/dell-s-34-usb-c-monitor-s3425dw/s3425dw_monitor/-"
     ],
     "priceSourceUrl": "https://www.dell.com/de-de/shop/monitors/apd/dell-34-plus-usbc-monitors3425dw/s3425dw_monitor/-",
     "recommendedModes": [
@@ -1679,7 +1713,16 @@ export const products: Product[] = [
     "verifiedTitle": "Dell 34 Plus-USB-C-Monitor – S3425DW | Dell Deutschland",
     "specifications": {
       "shape": "Curved ultrawide",
-      "model": "S3425DW"
+      "model": "S3425DW",
+      "type": "Curved monitor",
+      "diagonalInch": 34,
+      "resolution": "3440 × 1440 (ultrawide)",
+      "refreshHz": 120,
+      "panel": "VA",
+      "ports": [
+        "HDMI 2.1",
+        "USB-C video and up to 65 W power delivery"
+      ]
     }
   },
   {
@@ -1691,7 +1734,7 @@ export const products: Product[] = [
     "currency": "EUR",
     "price": 379,
     "url": "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-",
-    "description": "Dell monitor from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "description": "A flat 27-inch 4K monitor with a 120 Hz refresh rate and USB-C video input.",
     "tags": [],
     "notes": [
       "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
@@ -1703,7 +1746,8 @@ export const products: Product[] = [
     "imageUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/s-series/s2725qc/media-gallery/monitor-s2725qc-gray-gallery-1.psd?fmt=png-alpha&wid=1200&hei=630",
     "retailer": "Dell",
     "sourceUrls": [
-      "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-"
+      "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-",
+      "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-4k-usbc-monitor-s2725qc/s2725qc_monitor/-"
     ],
     "priceSourceUrl": "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-",
     "recommendedModes": [
@@ -1714,7 +1758,15 @@ export const products: Product[] = [
     "verifiedTitle": "Dell 27 Plus 4K USB-C-Monitor – S2725QC | Dell Deutschland",
     "specifications": {
       "shape": "Flat rectangular",
-      "model": "S2725QC"
+      "model": "S2725QC",
+      "type": "Flat monitor",
+      "diagonalInch": 27,
+      "resolution": "3840 × 2160 (4K UHD)",
+      "refreshHz": 120,
+      "ports": [
+        "HDMI",
+        "USB-C video and up to 65 W power delivery"
+      ]
     }
   },
   {
@@ -1751,7 +1803,9 @@ export const products: Product[] = [
     "verifiedTitle": "Pebble Keys 2 K380s Bluetooth-Tastatur | Logitech®",
     "specifications": {
       "layout": "German QWERTZ",
-      "connection": "Bluetooth / wireless; check receiver inclusion"
+      "connection": "Bluetooth / wireless; check receiver inclusion",
+      "type": "Compact keyboard",
+      "size": "Compact, without number pad"
     }
   },
   {
@@ -1788,7 +1842,9 @@ export const products: Product[] = [
     "verifiedTitle": "Signature Slim kabellose Tastatur K950 kaufen | Logitech®",
     "specifications": {
       "layout": "German QWERTZ",
-      "connection": "Bluetooth / wireless; check receiver inclusion"
+      "connection": "Bluetooth / wireless; check receiver inclusion",
+      "type": "Full-size keyboard",
+      "size": "Full size with number pad"
     }
   },
   {
@@ -1825,7 +1881,9 @@ export const products: Product[] = [
     "verifiedTitle": "MX Keys S Tastatur kaufen – Standardgröße oder Mini | Logitech",
     "specifications": {
       "layout": "German QWERTZ",
-      "connection": "Bluetooth / wireless; check receiver inclusion"
+      "connection": "Bluetooth / wireless; check receiver inclusion",
+      "type": "Full-size keyboard",
+      "size": "Full size with number pad"
     }
   },
   {
@@ -1859,7 +1917,13 @@ export const products: Product[] = [
     ],
     "tier": "budget",
     "linkStatus": "verified",
-    "verifiedTitle": "M240 Silent Bluetooth-Maus mit angenehmer Form"
+    "verifiedTitle": "M240 Silent Bluetooth-Maus mit angenehmer Form",
+    "specifications": {
+      "type": "Compact silent mouse",
+      "shape": "Compact, left- or right-handed",
+      "connection": "Bluetooth",
+      "battery": "One AA battery"
+    }
   },
   {
     "id": "de-mxmaster3s",
@@ -1875,7 +1939,8 @@ export const products: Product[] = [
       "wireless"
     ],
     "notes": [
-      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer.",
+      "Bluetooth Edition: do not assume a USB receiver is included."
     ],
     "checkedAt": "2026-10-18",
     "priceFreshness": "retailer-page",
@@ -1892,7 +1957,15 @@ export const products: Product[] = [
     ],
     "tier": "mid",
     "linkStatus": "verified",
-    "verifiedTitle": "MX Master 3S Bluetooth Edition kabellose Maus – optischer 8K-Sensor | Logitech"
+    "verifiedTitle": "MX Master 3S Bluetooth Edition kabellose Maus – optischer 8K-Sensor | Logitech",
+    "specifications": {
+      "type": "Productivity mouse",
+      "shape": "Contoured, right-handed",
+      "connection": "Bluetooth",
+      "power": "Rechargeable",
+      "maxDpi": 8000,
+      "scroll": "Main scroll wheel and thumb wheel"
+    }
   },
   {
     "id": "de-lift",
@@ -1925,7 +1998,13 @@ export const products: Product[] = [
     ],
     "tier": "premium",
     "linkStatus": "verified",
-    "verifiedTitle": "Lift vertikale ergonomische Maus | Logitech"
+    "verifiedTitle": "Lift vertikale ergonomische Maus | Logitech",
+    "specifications": {
+      "type": "Vertical mouse",
+      "shape": "Vertical, 57 degrees",
+      "connection": "Bluetooth and Logi Bolt",
+      "battery": "One AA battery"
+    }
   },
   {
     "id": "de-naevlinge",
@@ -2167,7 +2246,7 @@ export const products: Product[] = [
     "currency": "USD",
     "price": 149.99,
     "url": "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-",
-    "description": "Dell monitor from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "description": "A flat 27-inch FHD IPS monitor with a 144 Hz refresh rate and an adjustable stand.",
     "tags": [],
     "notes": [
       "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
@@ -2190,7 +2269,21 @@ export const products: Product[] = [
     "verifiedTitle": "Dell Plus 27 Inch Monitor - S2725HSM​ | Dell USA",
     "specifications": {
       "shape": "Flat rectangular",
-      "model": "S2725HSM"
+      "model": "S2725HSM",
+      "type": "Flat monitor",
+      "diagonalInch": 27,
+      "resolution": "1920 × 1080 (FHD)",
+      "refreshHz": 144,
+      "panel": "IPS",
+      "ports": [
+        "2 × HDMI 1.4"
+      ],
+      "adjustments": [
+        "Height",
+        "Tilt",
+        "Swivel",
+        "Pivot"
+      ]
     }
   },
   {
@@ -2202,7 +2295,7 @@ export const products: Product[] = [
     "currency": "USD",
     "price": 419.99,
     "url": "https://www.dell.com/en-us/shop/monitors/apd/dell-34-plus-usb-c-monitor-s3425dw/s3425dw_monitor/-",
-    "description": "Dell monitor from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "description": "A curved 34-inch ultrawide VA monitor with a 120 Hz refresh rate and USB-C video input.",
     "tags": [],
     "notes": [
       "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
@@ -2214,7 +2307,8 @@ export const products: Product[] = [
     "imageUrl": "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/peripherals/monitors/s-series/s3425dw/media-gallery/monitor-s3425dw-gray-gallery-1.psd?fmt=jpg&wid=1200&hei=630",
     "retailer": "Dell",
     "sourceUrls": [
-      "https://www.dell.com/en-us/shop/monitors/apd/dell-34-plus-usb-c-monitor-s3425dw/s3425dw_monitor/-"
+      "https://www.dell.com/en-us/shop/monitors/apd/dell-34-plus-usb-c-monitor-s3425dw/s3425dw_monitor/-",
+      "https://www.dell.com/en-us/shop/monitors/apd/dell-s-34-usb-c-monitor-s3425dw/s3425dw_monitor/-"
     ],
     "priceSourceUrl": "https://www.dell.com/en-us/shop/monitors/apd/dell-34-plus-usb-c-monitor-s3425dw/s3425dw_monitor/-",
     "recommendedModes": [
@@ -2225,7 +2319,16 @@ export const products: Product[] = [
     "verifiedTitle": "Dell S 34 Inch USB-C Computer Monitor - S3425DW | Dell USA",
     "specifications": {
       "shape": "Curved ultrawide",
-      "model": "S3425DW"
+      "model": "S3425DW",
+      "type": "Curved monitor",
+      "diagonalInch": 34,
+      "resolution": "3440 × 1440 (ultrawide)",
+      "refreshHz": 120,
+      "panel": "VA",
+      "ports": [
+        "HDMI 2.1",
+        "USB-C video and up to 65 W power delivery"
+      ]
     }
   },
   {
@@ -2237,7 +2340,7 @@ export const products: Product[] = [
     "currency": "USD",
     "price": 349.99,
     "url": "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-",
-    "description": "Dell monitor from the local retailer catalog. Compare the exact model and dimensions before purchase.",
+    "description": "A flat 27-inch 4K monitor with a 120 Hz refresh rate and USB-C video input.",
     "tags": [],
     "notes": [
       "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
@@ -2249,7 +2352,8 @@ export const products: Product[] = [
     "imageUrl": "https://i.dell.com/assetlink/img/global/monitor-s2725qc-gray-gallery-1-dl1exsx-large.png?hei=630&wid=1200",
     "retailer": "Dell",
     "sourceUrls": [
-      "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-"
+      "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-",
+      "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-4k-usbc-monitor-s2725qc/s2725qc_monitor/-"
     ],
     "priceSourceUrl": "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-",
     "recommendedModes": [
@@ -2260,7 +2364,15 @@ export const products: Product[] = [
     "verifiedTitle": "Dell 27 Plus 4K USB-C Monitor - S2725QC | Dell USA",
     "specifications": {
       "shape": "Flat rectangular",
-      "model": "S2725QC"
+      "model": "S2725QC",
+      "type": "Flat monitor",
+      "diagonalInch": 27,
+      "resolution": "3840 × 2160 (4K UHD)",
+      "refreshHz": 120,
+      "ports": [
+        "HDMI",
+        "USB-C video and up to 65 W power delivery"
+      ]
     }
   },
   {
@@ -2297,7 +2409,9 @@ export const products: Product[] = [
     "verifiedTitle": "Pebble Keys 2 K380s Bluetooth Keyboard | Logitech",
     "specifications": {
       "layout": "US English QWERTY",
-      "connection": "Bluetooth / wireless; check receiver inclusion"
+      "connection": "Bluetooth / wireless; check receiver inclusion",
+      "type": "Compact keyboard",
+      "size": "Compact, without number pad"
     }
   },
   {
@@ -2334,7 +2448,9 @@ export const products: Product[] = [
     "verifiedTitle": "Buy Signature Slim Wireless Keyboard K950 | Logitech",
     "specifications": {
       "layout": "US English QWERTY",
-      "connection": "Bluetooth / wireless; check receiver inclusion"
+      "connection": "Bluetooth / wireless; check receiver inclusion",
+      "type": "Full-size keyboard",
+      "size": "Full size with number pad"
     }
   },
   {
@@ -2371,7 +2487,9 @@ export const products: Product[] = [
     "verifiedTitle": "Buy MX Keys S Keyboard  | Logitech",
     "specifications": {
       "layout": "US English QWERTY",
-      "connection": "Bluetooth / wireless; check receiver inclusion"
+      "connection": "Bluetooth / wireless; check receiver inclusion",
+      "type": "Full-size keyboard",
+      "size": "Full size with number pad"
     }
   },
   {
@@ -2388,7 +2506,8 @@ export const products: Product[] = [
       "wireless"
     ],
     "notes": [
-      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer."
+      "Price is a dated local reference. Confirm delivery, stock, and final price with the retailer.",
+      "Bluetooth Edition: do not assume a USB receiver is included."
     ],
     "checkedAt": "2026-10-18",
     "priceFreshness": "retailer-page",
@@ -2405,7 +2524,15 @@ export const products: Product[] = [
     ],
     "tier": "mid",
     "linkStatus": "verified",
-    "verifiedTitle": "MX Master 3s Wireless Mouse - 8K Optical Sensor | Logitech"
+    "verifiedTitle": "MX Master 3s Wireless Mouse - 8K Optical Sensor | Logitech",
+    "specifications": {
+      "type": "Productivity mouse",
+      "shape": "Contoured, right-handed",
+      "connection": "Bluetooth",
+      "power": "Rechargeable",
+      "maxDpi": 8000,
+      "scroll": "Main scroll wheel and thumb wheel"
+    }
   },
   {
     "id": "us-lift",
@@ -2438,7 +2565,13 @@ export const products: Product[] = [
     ],
     "tier": "premium",
     "linkStatus": "verified",
-    "verifiedTitle": "Lift Vertical Ergonomic Mouse | Logitech"
+    "verifiedTitle": "Lift Vertical Ergonomic Mouse | Logitech",
+    "specifications": {
+      "type": "Vertical mouse",
+      "shape": "Vertical, 57 degrees",
+      "connection": "Bluetooth and Logi Bolt",
+      "battery": "One AA battery"
+    }
   },
   {
     "id": "in-mittzon",
@@ -2474,5 +2607,122 @@ export const products: Product[] = [
     "dimensions": {
       "widthCm": 140
     }
+  },
+  {
+    "id": "in-mx-mechanical",
+    "name": "MX Mechanical low-profile keyboard",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "market": "IN",
+    "currency": "INR",
+    "price": null,
+    "url": "https://www.logitech.com/en-in/shop/p/mx-mechanical.920-010761",
+    "description": "A full-size mechanical keyboard with low-profile keys, backlight, and three device profiles.",
+    "specifications": {
+      "type": "Mechanical keyboard",
+      "size": "Full size with number pad",
+      "switchType": "Tactile Quiet, Clicky, or Linear; select the exact variant",
+      "connection": "Bluetooth or Logi Bolt",
+      "backlight": true,
+      "layout": "Confirm the local layout and switch variant before purchase"
+    },
+    "tags": [
+      "wireless",
+      "mechanical",
+      "backlit"
+    ],
+    "notes": [
+      "Local price and exact switch variant need a seller check. This model stays outside automatic budget plans.",
+      "The manufacturer photo can show a different regional key layout. Confirm the layout at checkout.",
+      "Switch options depend on local availability."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceStatus": "unknown",
+    "priceFreshness": "manufacturer-page",
+    "stockStatus": "unverified",
+    "linkStatus": "verified",
+    "verifiedTitle": "MX Mechanical",
+    "imageUrl": "https://resource.logitech.com/content/dam/logitech/en/products/keyboards/mx-mechanical/migration-assets-for-delorean-2025/gallery/mx-mechanical-top-view-graphite-us.png",
+    "sourceUrls": [
+      "https://www.logitech.com/en-in/shop/p/mx-mechanical.920-010761"
+    ]
+  },
+  {
+    "id": "us-mx-mechanical",
+    "name": "MX Mechanical low-profile keyboard",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "market": "US",
+    "currency": "USD",
+    "price": null,
+    "url": "https://www.logitech.com/en-us/shop/p/mx-mechanical",
+    "description": "A full-size mechanical keyboard with low-profile keys, backlight, and three device profiles.",
+    "specifications": {
+      "type": "Mechanical keyboard",
+      "size": "Full size with number pad",
+      "switchType": "Tactile Quiet, Clicky, or Linear; select the exact variant",
+      "connection": "Bluetooth or Logi Bolt",
+      "backlight": true,
+      "layout": "Confirm the local layout and switch variant before purchase"
+    },
+    "tags": [
+      "wireless",
+      "mechanical",
+      "backlit"
+    ],
+    "notes": [
+      "Local price and exact switch variant need a seller check. This model stays outside automatic budget plans.",
+      "The manufacturer photo can show a different regional key layout. Confirm the layout at checkout.",
+      "Switch options depend on local availability."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceStatus": "unknown",
+    "priceFreshness": "manufacturer-page",
+    "stockStatus": "unverified",
+    "linkStatus": "verified",
+    "verifiedTitle": "MX Mechanical",
+    "imageUrl": "https://resource.logitech.com/content/dam/logitech/en/products/keyboards/mx-mechanical/migration-assets-for-delorean-2025/gallery/mx-mechanical-top-view-graphite-us.png",
+    "sourceUrls": [
+      "https://www.logitech.com/en-us/shop/p/mx-mechanical"
+    ]
+  },
+  {
+    "id": "de-mx-mechanical",
+    "name": "MX Mechanical low-profile keyboard",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "market": "DE",
+    "currency": "EUR",
+    "price": null,
+    "url": "https://www.logitech.com/de-de/shop/p/mx-mechanical",
+    "description": "A full-size mechanical keyboard with low-profile keys, backlight, and three device profiles.",
+    "specifications": {
+      "type": "Mechanical keyboard",
+      "size": "Full size with number pad",
+      "switchType": "Tactile Quiet, Clicky, or Linear; select the exact variant",
+      "connection": "Bluetooth or Logi Bolt",
+      "backlight": true,
+      "layout": "Confirm the local layout and switch variant before purchase"
+    },
+    "tags": [
+      "wireless",
+      "mechanical",
+      "backlit"
+    ],
+    "notes": [
+      "Local price and exact switch variant need a seller check. This model stays outside automatic budget plans.",
+      "The manufacturer photo can show a different regional key layout. Confirm the layout at checkout.",
+      "Switch options depend on local availability."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceStatus": "unknown",
+    "priceFreshness": "manufacturer-page",
+    "stockStatus": "unverified",
+    "linkStatus": "verified",
+    "verifiedTitle": "MX Mechanical",
+    "imageUrl": "https://resource.logitech.com/content/dam/logitech/en/products/keyboards/mx-mechanical/migration-assets-for-delorean-2025/gallery/mx-mechanical-top-view-graphite-us.png",
+    "sourceUrls": [
+      "https://www.logitech.com/de-de/shop/p/mx-mechanical"
+    ]
   }
 ];

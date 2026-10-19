@@ -48,10 +48,28 @@ Users can change this reserve. The planner excludes unknown or uncertain prices 
 A small budget can produce free suggestions and no new item.
 The interface names missing essentials when the catalog cannot support a complete setup.
 
+## Electronics
+
+Use the visible Keyboards, Mice, or Monitors cards to open the local catalog.
+The catalog stays visible at every budget, including products you already own.
+Search model names or specifications. Filter by product type.
+Compare up to three models in a specification table.
+Open Details and options before you change a plan.
+The dialog explains price, budget, and ownership restrictions.
+A keyboard and mouse combo replaces overlapping input products as one change.
+Undo restores the previous product list.
+
+India has six keyboards, three mice, and three monitors.
+Germany and the US each have four keyboards, three mice, and three monitors.
+Mechanical keyboards have local manufacturer pages, but their exact variant prices still need a check.
+Unknown prices stay outside plan totals.
+
 ## Screenshots
 
 The screenshots show the responsive planner with actual model photos.
 The Products view and three-way comparison have direct retailer links. Room concepts are separate style references.
+
+![Deskloom electronics catalog](docs/screenshots/electronics.png)
 
 ![Deskloom desktop planner](docs/screenshots/desktop.png)
 
@@ -59,7 +77,7 @@ The Products view and three-way comparison have direct retailer links. Room conc
 
 ## Product boundaries
 
-The maintained catalog contains 67 product records. India is the first market.
+The maintained catalog contains 70 product records. India is the first market.
 Germany has its own catalog. The euro option does not imply coverage across Europe.
 The catalog repair checked product destinations and photos on 18 October 2026. See [the repair audit](docs/repair-audit.md).
 
