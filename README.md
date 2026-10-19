@@ -11,13 +11,18 @@ Explore each suggestion. Change product positions or swap products. Export a sho
 
 ## Release status
 
+See [the current requirements, repaired bugs, and pending work](docs/product-readiness.md).
+The complete photo-to-personal-room-design workflow is not active.
+The current owner requirement is no payment and no payment card.
+Product plans and actual model photos work independently of AI image generation.
+
 The interactive planner works without a cloud account or an image provider.
 Private saved plans need active Neon Auth and Postgres services.
 Neon contains both application tables. Vercel has encrypted production and preview configuration.
 Account services still need public deployment verification.
 Neon currently permits password signup without email verification. Email ownership is not verified.
 Password recovery and verification email delivery still need an operator acceptance check.
-Live photo transformations require an accepted image-provider request. The owner approved uncapped image costs and Deskloom OIDC authentication.
+Live photo transformations require an accepted image-provider request. The owner approved Deskloom OIDC authentication.
 The hosted request reached Vercel AI Gateway but returned `customer_verification_required` on 18 October 2026.
 Production photo generation remains disabled until the team completes verification and a live request passes.
 
@@ -45,8 +50,8 @@ The interface names missing essentials when the catalog cannot support a complet
 
 ## Screenshots
 
-The screenshots show the responsive planner with a room concept.
-The Products view shows exact model photos. Room concepts are separate style references.
+The screenshots show the responsive planner with actual model photos.
+The Products view and three-way comparison have direct retailer links. Room concepts are separate style references.
 
 ![Deskloom desktop planner](docs/screenshots/desktop.png)
 
@@ -183,7 +188,8 @@ Browser and production evidence belongs in [the verification record](docs/verifi
 
 Use [the deployment guide](docs/deployment.md) for Vercel and Neon setup.
 New local installs keep image generation disabled by default.
-The Deskloom owner approved uncapped image costs and explicitly approved project OIDC authentication on 18 October 2026.
+The current requirement is no payment and no payment card. Earlier cost approval does not authorize new paid requests.
+Project OIDC authentication remains configured; image generation remains disabled.
 Approve paid services, third-party legal terms, and live financial transactions before any commitment.
 The app has no payment or subscription flow in this release.
 

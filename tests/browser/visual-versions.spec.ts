@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test';
 test('each direction changes the actual room image and never pins nonexistent products to it',async({page})=>{
- await page.goto('/');const images:string[]=[];
+ await page.goto('/');await page.getByRole('button',{name:'Room concept',exact:true}).click();const images:string[]=[];
  for(const button of await page.locator('.direction').all()){
   await button.click();await expect(button).toHaveAttribute('aria-pressed','true');
   images.push((await page.locator('.scene-photo').getAttribute('src'))!);

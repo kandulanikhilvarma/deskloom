@@ -1,0 +1,464 @@
+[
+  {
+    "id": "in-svallet",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/svallet-work-lamp-dark-grey-white-50358493/",
+    "final": "https://www.ikea.com/in/en/p/svallet-work-lamp-dark-grey-white-50358493/",
+    "title": "SVALLET work lamp, dark grey/white - IKEA"
+  },
+  {
+    "id": "in-tertial",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/tertial-work-lamp-dark-grey-20450803/",
+    "final": "https://www.ikea.com/in/en/p/tertial-work-lamp-dark-grey-20450803/",
+    "title": "TERTIAL Work lamp, dark grey - IKEA"
+  },
+  {
+    "id": "in-sunnersta",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/sunnersta-container-white-30303736/",
+    "final": "https://www.ikea.com/in/en/p/sunnersta-container-white-30303736/",
+    "title": "SUNNERSTA container, white, 12x11 cm (43/4x43/8&quot;) - IKEA"
+  },
+  {
+    "id": "in-rabalder",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/rabalder-cable-tidy-white-00281420/",
+    "final": "https://www.ikea.com/in/en/p/rabalder-cable-tidy-white-00281420/",
+    "title": "RABALDER cable tidy, white, 5 m (16') - IKEA"
+  },
+  {
+    "id": "in-elloven",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/elloven-monitor-stand-with-drawer-white-80474783/",
+    "final": "https://www.ikea.com/in/en/p/elloven-monitor-stand-with-drawer-white-80474783/",
+    "title": "ELLOVEN monitor stand with drawer, white - IKEA"
+  },
+  {
+    "id": "in-skadis",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/skadis-pegboard-white-30320806/",
+    "final": "https://www.ikea.com/in/en/p/skadis-pegboard-white-30320806/",
+    "title": "SKÅDIS Pegboard, white. Get it here - IKEA"
+  },
+  {
+    "id": "in-dell-p2425h",
+    "status": 403,
+    "url": "https://www.dell.com/en-in/shop/dell-pro-24-plus-monitor-p2425h/apd/210-bmlz/",
+    "final": "https://www.dell.com/en-in/shop/dell-pro-24-plus-monitor-p2425h/apd/210-bmlz/",
+    "title": "Access Denied"
+  },
+  {
+    "id": "in-markus",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/markus-office-chair-vissle-dark-grey-50261151/",
+    "final": "https://www.ikea.com/in/en/p/markus-office-chair-vissle-dark-grey-50261151/",
+    "title": "MARKUS Office chair, Vissle dark grey - IKEA"
+  },
+  {
+    "id": "in-m240",
+    "status": 200,
+    "url": "https://www.logitech.com/en-in/shop/p/m240-silent-bluetooth-mouse",
+    "final": "https://www.logitech.com/en-in/shop/p/m240-silent-bluetooth-mouse",
+    "title": "M240 Silent Bluetooth Mouse with Comfortable Shape"
+  },
+  {
+    "id": "in-mk235",
+    "status": 200,
+    "url": "https://www.logitech.com/en-in/shop/p/mk235-durable-keyboard-mouse",
+    "final": "https://www.logitech.com/en-in/shop/p/mk235-durable-keyboard-mouse",
+    "title": "Logitech MK235 Durable Wireless Keyboard and Mouse Combo"
+  },
+  {
+    "id": "us-m240",
+    "status": 200,
+    "url": "https://www.logitech.com/en-us/shop/p/m240-silent-bluetooth-mouse",
+    "final": "https://www.logitech.com/en-us/shop/p/m240-silent-bluetooth-mouse",
+    "title": "M240 Silent Bluetooth Mouse with Comfortable Shape"
+  },
+  {
+    "id": "in-lanespelare",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/lanespelare-gaming-mouse-pad-black-60498389/",
+    "final": "https://www.ikea.com/in/en/p/lanespelare-gaming-mouse-pad-black-60498389/",
+    "title": "LÅNESPELARE gaming mouse pad, black, 90x40 cm (35 ½x15 ¾&quot;) - IKEA"
+  },
+  {
+    "id": "de-elloven",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/elloven-monitorerhoehung-mit-schublade-weiss-50474770/",
+    "final": "https://www.ikea.com/de/de/p/elloven-monitorerhoehung-mit-schublade-weiss-50474770/",
+    "title": "ELLOVEN Monitorerhöhung mit Schublade, weiß - IKEA Deutschland"
+  },
+  {
+    "id": "in-lagkapten",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/lagkapten-adils-desk-white-s09416759/",
+    "final": "https://www.ikea.com/in/en/p/lagkapten-adils-desk-white-s09416759/",
+    "title": "LAGKAPTEN / ADILS desk, white, 120x60 cm (471/4x235/8&quot;) - IKEA"
+  },
+  {
+    "id": "us-rissla",
+    "status": 200,
+    "url": "https://www.ikea.com/us/en/p/rissla-desk-pad-black-40246156/",
+    "final": "https://www.ikea.com/us/en/p/rissla-desk-pad-black-40246156/",
+    "title": "RISSLA desk pad, black - IKEA"
+  },
+  {
+    "id": "de-sunnersta",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/sunnersta-behaelter-blaugrau-30606050/",
+    "final": "https://www.ikea.com/de/de/p/sunnersta-behaelter-blaugrau-30606050/",
+    "title": "SUNNERSTA Behälter, blaugrau, 12x11 cm - IKEA Deutschland"
+  },
+  {
+    "id": "de-tertial",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/tertial-arbeitsleuchte-weiss-70355455/",
+    "final": "https://www.ikea.com/de/de/p/tertial-arbeitsleuchte-weiss-70355455/",
+    "title": "TERTIAL Arbeitsleuchte, weiß - IKEA Deutschland"
+  },
+  {
+    "id": "us-elloven",
+    "status": 200,
+    "url": "https://www.ikea.com/us/en/p/elloven-monitor-stand-with-drawer-white-50474770/",
+    "final": "https://www.ikea.com/us/en/p/elloven-monitor-stand-with-drawer-white-50474770/",
+    "title": "ELLOVEN monitor stand with drawer, white - IKEA"
+  },
+  {
+    "id": "in-mk220",
+    "status": 200,
+    "url": "https://www.croma.com/logitech-mk220-wireless-keyboard-mouse-combo-upto-5-million-keystrokes-black-/p/169717",
+    "final": "https://www.croma.com/logitech-mk220-wireless-keyboard-mouse-combo-upto-5-million-keystrokes-black-/p/169717",
+    "title": "Buy logitech MK220 Wireless Keyboard & Mouse Combo (Upto 5 Million Keystrokes, Black) Online - Croma"
+  },
+  {
+    "id": "in-fejka",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/fejka-artificial-potted-plant-in-outdoor-plantain-lily-00610746/",
+    "final": "https://www.ikea.com/in/en/p/fejka-artificial-potted-plant-in-outdoor-plantain-lily-00610746/",
+    "title": "FEJKA artificial potted plant, in/outdoor/plantain lily, 9 cm (3 ½&quot;) - IKEA"
+  },
+  {
+    "id": "in-hp230",
+    "status": 200,
+    "url": "https://www.hp.com/in-en/shop/products/accessories/hp-230-wireless-mouse-and-keyboard-combo-3l1f0aa-uuf",
+    "final": "https://www.hp.com/in-en/shop/products/accessories/hp-230-wireless-mouse-and-keyboard-combo-3l1f0aa-uuf",
+    "title": "HP 230 Wireless Mouse and Keyboard Combo | HP Store India"
+  },
+  {
+    "id": "in-mxkeys-s",
+    "status": 200,
+    "url": "https://www.croma.com/logitech-mx-keys-s-rechargeable-bluetooth-wireless-keyboard-with-backlit-keys-automate-repetitive-tasks-graphite-/p/302591",
+    "final": "https://www.croma.com/logitech-mx-keys-s-rechargeable-bluetooth-wireless-keyboard-with-backlit-keys-automate-repetitive-tasks-graphite-/p/302591",
+    "title": "Buy logitech MX KEYS S Rechargeable Bluetooth Wireless Keyboard with Backlit Keys (Automate Repetitive Tasks, Graphite) Online - Croma"
+  },
+  {
+    "id": "in-pebble-keys2",
+    "status": 200,
+    "url": "https://www.croma.com/logitech-pebble-keys-2-bluetooth-wireless-keyboard-with-multi-device-pairing-10-customizable-keys-tonal-graphite-/p/301491",
+    "final": "https://www.croma.com/logitech-pebble-keys-2-bluetooth-wireless-keyboard-with-multi-device-pairing-10-customizable-keys-tonal-graphite-/p/301491",
+    "title": "Buy logitech Pebble Keys 2 Bluetooth Wireless Keyboard with Multi Device Pairing (10 Customizable Keys, Tonal Graphite) Online - Croma"
+  },
+  {
+    "id": "in-lift",
+    "status": 200,
+    "url": "https://www.vplak.com/logitech-lift-mouse-p11175",
+    "final": "https://www.vplak.com/logitech-lift-mouse-p11175",
+    "title": "Buy Logitech Lift wireless mouse Online in India at Lowest Price | VPLAK"
+  },
+  {
+    "id": "in-samsung-s3-curved",
+    "status": 200,
+    "url": "https://www.samsung.com/in/monitors/curved/essential-monitor-s3-27-inch-100hz-ls27d368gawxxl/",
+    "final": "https://www.samsung.com/in/monitors/curved/essential-monitor-s3-27-inch-100hz-ls27d368gawxxl/",
+    "title": "68.5 cm (27) FHD Curved Monitor with Game Mode | Samsung India"
+  },
+  {
+    "id": "in-hp527pf",
+    "status": 200,
+    "url": "https://www.hp.com/in-en/shop/products/monitors/hp-series-5-pro-27-inch-fhd-monitor-527pf-b28f5ut-acj",
+    "final": "https://www.hp.com/in-en/shop/products/monitors/hp-series-5-pro-27-inch-fhd-monitor-527pf-b28f5ut-acj",
+    "title": "HP Series 5 Pro 27 inch FHD Monitor - 527pf | HP Store India"
+  },
+  {
+    "id": "in-mxmaster3s",
+    "status": 200,
+    "url": "https://www.croma.com/logitech-mx-master-3s-rechargeable-bluetooth-wireless-laser-performance-mouse-with-thumb-wheel-8000-dpi-adjustable-multi-device-connectivity-graphite-/p/258454",
+    "final": "https://www.croma.com/logitech-mx-master-3s-rechargeable-bluetooth-wireless-laser-performance-mouse-with-thumb-wheel-8000-dpi-adjustable-multi-device-connectivity-graphite-/p/258454",
+    "title": "Buy logitech MX Master 3S Rechargeable Bluetooth Wireless Laser Performance Mouse with Thumb Wheel (8000 DPI Adjustable, Multi Device Connectivity, Graphite) Online - Croma"
+  },
+  {
+    "id": "in-spider-plant",
+    "status": 200,
+    "url": "https://www.myntra.com/live-plants/ugaoo/ugaoo-spider-plant-with-grow-pot---17-cm/24567196/buy",
+    "final": "https://www.myntra.com/live-plants/ugaoo/ugaoo-spider-plant-with-grow-pot---17-cm/24567196/buy",
+    "title": "Buy UGAOO Spider Plant With Grow Pot 17 Cm - Live Plants for Unisex 24567196 | Myntra"
+  },
+  {
+    "id": "in-hp15",
+    "status": 200,
+    "url": "https://www.hp.com/in-en/shop/products/laptops/hp-laptop-15-fd0624tu-bv2w3pa-acj",
+    "final": "https://www.hp.com/in-en/shop/products/laptops/hp-laptop-15-fd0624tu-bv2w3pa-acj",
+    "title": "HP Laptop 15-fd0624TU | HP Store India"
+  },
+  {
+    "id": "in-knoppslinga-e27",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/knoppslinga-led-bulb-e27-600-lumen-opal-white-20595448/",
+    "final": "https://www.ikea.com/in/en/p/knoppslinga-led-bulb-e27-600-lumen-opal-white-20595448/",
+    "title": "KNOPPSLINGA LED bulb E27 600 lumen, opal white, 6500 K - IKEA"
+  },
+  {
+    "id": "in-billy",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/billy-bookcase-white-70522044/",
+    "final": "https://www.ikea.com/in/en/p/billy-bookcase-white-70522044/",
+    "title": "BILLY bookcase, white, 80x28x106 cm (311/2x11x413/4&quot;) - IKEA"
+  },
+  {
+    "id": "de-lagkapten",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/lagkapten-adils-schreibtisch-eicheneff-wlas-weiss-s79416874/",
+    "final": "https://www.ikea.com/de/de/p/lagkapten-adils-schreibtisch-eicheneff-wlas-weiss-s79416874/",
+    "title": "LAGKAPTEN/ADILS Schreibtisch, Eiche/weiß, 120x60 cm - IKEA Deutschland"
+  },
+  {
+    "id": "in-solhetta-e14",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/solhetta-led-bulb-e14-250-lumen-chandelier-clear-10498773/",
+    "final": "https://www.ikea.com/in/en/p/solhetta-led-bulb-e14-250-lumen-chandelier-clear-10498773/",
+    "title": "SOLHETTA LED bulb E14 250 lumen, chandelier/clear - IKEA"
+  },
+  {
+    "id": "de-trotten",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/trotten-schreibtisch-sitz-steh-elektrisch-weiss-s49621871/",
+    "final": "https://www.ikea.com/de/de/p/trotten-schreibtisch-sitz-steh-elektrisch-weiss-s49621871/",
+    "title": "TROTTEN Schreibtisch sitz/steh, elektrisch/weiß, 120x70 cm - IKEA Deutschland"
+  },
+  {
+    "id": "in-stenerik",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/stenerik-laptop-support-60564015/",
+    "final": "https://www.ikea.com/in/en/p/stenerik-laptop-support-60564015/",
+    "title": "STENERIK laptop support - IKEA"
+  },
+  {
+    "id": "in-trotten-adjustable",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/trotten-desk-sit-stand-white-s79429579/",
+    "final": "https://www.ikea.com/in/en/p/trotten-desk-sit-stand-white-s79429579/",
+    "title": "TROTTEN desk sit/stand, white, 120x70 cm (471/4x271/2&quot;) - IKEA"
+  },
+  {
+    "id": "de-markus",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/markus-drehstuhl-vissle-dunkelgrau-70261150/",
+    "final": "https://www.ikea.com/de/de/p/markus-drehstuhl-vissle-dunkelgrau-70261150/",
+    "title": "MARKUS Drehstuhl, Vissle dunkelgrau - IKEA Deutschland"
+  },
+  {
+    "id": "de-flintan",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/flintan-drehstuhl-schwarz-10489028/",
+    "final": "https://www.ikea.com/de/de/p/flintan-drehstuhl-schwarz-10489028/",
+    "title": "FLINTAN Drehstuhl, schwarz - IKEA Deutschland"
+  },
+  {
+    "id": "in-flintan",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/flintan-office-chair-black-30489032/",
+    "final": "https://www.ikea.com/in/en/p/flintan-office-chair-black-30489032/",
+    "title": "FLINTAN office chair, black - IKEA"
+  },
+  {
+    "id": "de-s2725hsm",
+    "status": 403,
+    "url": "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-",
+    "final": "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-",
+    "title": "Access Denied"
+  },
+  {
+    "id": "de-s2725qc",
+    "status": 403,
+    "url": "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-",
+    "final": "https://www.dell.com/de-de/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-",
+    "title": "Access Denied"
+  },
+  {
+    "id": "de-s3425dw",
+    "status": 403,
+    "url": "https://www.dell.com/de-de/shop/monitors/apd/dell-34-plus-usbc-monitors3425dw/s3425dw_monitor/-",
+    "final": "https://www.dell.com/de-de/shop/monitors/apd/dell-34-plus-usbc-monitors3425dw/s3425dw_monitor/-",
+    "title": "Access Denied"
+  },
+  {
+    "id": "de-pebble-keys2",
+    "status": 200,
+    "url": "https://www.logitech.com/de-de/shop/p/pebble-keys-2.920-011795",
+    "final": "https://www.logitech.com/de-de/shop/p/pebble-keys-2.920-011795",
+    "title": "Pebble Keys 2 K380s Bluetooth-Tastatur | Logitech®"
+  },
+  {
+    "id": "de-markus-light",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/markus-drehstuhl-vissle-hellgrau-10521858/",
+    "final": "https://www.ikea.com/de/de/p/markus-drehstuhl-vissle-hellgrau-10521858/",
+    "title": "MARKUS Drehstuhl, Vissle hellgrau - IKEA Deutschland"
+  },
+  {
+    "id": "de-m240",
+    "status": 200,
+    "url": "https://www.logitech.com/de-de/shop/p/m240-silent-bluetooth-mouse",
+    "final": "https://www.logitech.com/de-de/shop/p/m240-silent-bluetooth-mouse",
+    "title": "M240 Silent Bluetooth-Maus mit angenehmer Form"
+  },
+  {
+    "id": "de-mxkeys-s",
+    "status": 200,
+    "url": "https://www.logitech.com/de-de/shop/p/mx-keys-s.920-011588",
+    "final": "https://www.logitech.com/de-de/shop/p/mx-keys-s.920-011588",
+    "title": "MX Keys S Tastatur kaufen – Standardgröße oder Mini | Logitech"
+  },
+  {
+    "id": "de-k950",
+    "status": 200,
+    "url": "https://www.logitech.com/de-de/shop/p/signature-slim-k950-keyboard",
+    "final": "https://www.logitech.com/de-de/shop/p/signature-slim-k950-keyboard",
+    "title": "Signature Slim kabellose Tastatur K950 kaufen | Logitech®"
+  },
+  {
+    "id": "de-mittzon",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/mittzon-schreibtisch-sitz-steh-elektrisch-nussbaumfurnier-schwarz-s09527903/",
+    "final": "https://www.ikea.com/de/de/p/mittzon-schreibtisch-sitz-steh-elektrisch-nussbaumfurnier-schwarz-s09527903/",
+    "title": "MITTZON Schreibtisch sitz/steh, elektrisch Nussbaumfurnier/schwarz, 120x80 cm - IKEA Deutschland"
+  },
+  {
+    "id": "de-mxmaster3s",
+    "status": 200,
+    "url": "https://www.logitech.com/de-de/shop/p/mx-master-3s.910-006447",
+    "final": "https://www.logitech.com/de-de/shop/p/mx-master-3s.910-006447",
+    "title": "MX Master 3S Bluetooth Edition kabellose Maus – optischer 8K-Sensor | Logitech"
+  },
+  {
+    "id": "de-lift",
+    "status": 200,
+    "url": "https://www.logitech.com/de-de/shop/p/lift-vertical-ergonomic-mouse.910-006473",
+    "final": "https://www.logitech.com/de-de/shop/p/lift-vertical-ergonomic-mouse.910-006473",
+    "title": "Lift vertikale ergonomische Maus | Logitech"
+  },
+  {
+    "id": "de-naevlinge",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/naevlinge-arbeitsleuchte-led-weiss-50404918/",
+    "final": "https://www.ikea.com/de/de/p/naevlinge-arbeitsleuchte-led-weiss-50404918/",
+    "title": "NÄVLINGE Arbeitsleuchte, LED, weiß - IKEA Deutschland"
+  },
+  {
+    "id": "de-e27",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/solhetta-led-leuchtmittel-e27-470-lm-rund-opalweiss-50591482/",
+    "final": "https://www.ikea.com/de/de/p/solhetta-led-leuchtmittel-e27-470-lm-rund-opalweiss-50591482/",
+    "title": "SOLHETTA LED-Leuchtmittel E27 470 lm, rund opalweiß - IKEA Deutschland"
+  },
+  {
+    "id": "de-rissla",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/rissla-schreibunterlage-schwarz-40246156/",
+    "final": "https://www.ikea.com/de/de/p/rissla-schreibunterlage-schwarz-40246156/",
+    "title": "RISSLA Schreibunterlage, schwarz - IKEA Deutschland"
+  },
+  {
+    "id": "us-s2725hsm",
+    "status": 403,
+    "url": "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-",
+    "final": "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-monitor-s2725hsm/s2725hsm/-",
+    "title": "Access Denied"
+  },
+  {
+    "id": "us-s3425dw",
+    "status": 403,
+    "url": "https://www.dell.com/en-us/shop/monitors/apd/dell-34-plus-usb-c-monitor-s3425dw/s3425dw_monitor/-",
+    "final": "https://www.dell.com/en-us/shop/monitors/apd/dell-34-plus-usb-c-monitor-s3425dw/s3425dw_monitor/-",
+    "title": "Access Denied"
+  },
+  {
+    "id": "us-s2725qc",
+    "status": 403,
+    "url": "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-",
+    "final": "https://www.dell.com/en-us/shop/monitors/apd/dell-27-plus-4k-usb-c-monitor-s2725qc/s2725qc_monitor/-",
+    "title": "Access Denied"
+  },
+  {
+    "id": "us-mittzon-fixed",
+    "status": 200,
+    "url": "https://www.ikea.com/us/en/p/mittzon-desk-walnut-veneer-black-s89528055/",
+    "final": "https://www.ikea.com/us/en/p/mittzon-desk-walnut-veneer-black-s89528055/",
+    "title": "MITTZON desk, walnut veneer/black, 551/8x235/8&quot; - IKEA"
+  },
+  {
+    "id": "de-fejka",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/fejka-topfpflanze-kuenstlich-drinnen-draussen-funkie-00610751/",
+    "final": "https://www.ikea.com/de/de/p/fejka-topfpflanze-kuenstlich-drinnen-draussen-funkie-00610751/",
+    "title": "FEJKA Topfpflanze, künstlich, drinnen/draußen/Funkie, 9 cm - IKEA Deutschland"
+  },
+  {
+    "id": "us-pebble-keys2",
+    "status": 200,
+    "url": "https://www.logitech.com/en-us/shop/p/pebble-keys-2",
+    "final": "https://www.logitech.com/en-us/shop/p/pebble-keys-2",
+    "title": "Pebble Keys 2 K380s Bluetooth Keyboard | Logitech"
+  },
+  {
+    "id": "us-mxmaster3s",
+    "status": 200,
+    "url": "https://www.logitech.com/en-us/shop/p/mx-master-3s",
+    "final": "https://www.logitech.com/en-us/shop/p/mx-master-3s",
+    "title": "MX Master 3s Wireless Mouse - 8K Optical Sensor | Logitech"
+  },
+  {
+    "id": "us-mxkeys-s",
+    "status": 200,
+    "url": "https://www.logitech.com/en-us/shop/p/mx-keys-s",
+    "final": "https://www.logitech.com/en-us/shop/p/mx-keys-s",
+    "title": "Buy MX Keys S Keyboard | Logitech"
+  },
+  {
+    "id": "us-lift",
+    "status": 200,
+    "url": "https://www.logitech.com/en-us/shop/p/lift-vertical-ergonomic-mouse",
+    "final": "https://www.logitech.com/en-us/shop/p/lift-vertical-ergonomic-mouse",
+    "title": "Lift Vertical Ergonomic Mouse | Logitech"
+  },
+  {
+    "id": "us-markus",
+    "status": 200,
+    "url": "https://www.ikea.com/us/en/p/markus-office-chair-vissle-dark-gray-90289172/",
+    "final": "https://www.ikea.com/us/en/p/markus-office-chair-vissle-dark-gray-90289172/",
+    "title": "MARKUS office chair, Vissle dark gray, Medium - IKEA"
+  },
+  {
+    "id": "us-k950",
+    "status": 200,
+    "url": "https://www.logitech.com/en-us/shop/p/signature-slim-k950-keyboard",
+    "final": "https://www.logitech.com/en-us/shop/p/signature-slim-k950-keyboard",
+    "title": "Buy Signature Slim Wireless Keyboard K950 | Logitech"
+  },
+  {
+    "id": "us-mittzon",
+    "status": 200,
+    "url": "https://www.ikea.com/us/en/p/mittzon-desk-sit-stand-electric-walnut-veneer-black-s69527900/",
+    "final": "https://www.ikea.com/us/en/p/mittzon-desk-sit-stand-electric-walnut-veneer-black-s69527900/",
+    "title": "MITTZON desk sit/stand, electric walnut veneer/black, 471/4x311/2&quot; - IKEA"
+  },
+  {
+    "id": "in-mittzon",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/mittzon-desk-black-stained-ash-veneer-black-s99528045/",
+    "final": "https://www.ikea.com/in/en/p/mittzon-desk-black-stained-ash-veneer-black-s99528045/",
+    "title": "MITTZON desk, black stained ash veneer/black, 140x60 cm (551/8x235/8&quot;) - IKEA"
+  }
+]
