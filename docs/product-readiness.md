@@ -1,6 +1,6 @@
 # Deskloom requirements and pending work
 
-Review date: 19 October 2026.
+Review date: 20 October 2026.
 
 ## The required outcome
 
@@ -10,7 +10,7 @@ Product changes must update the selected design and its total together.
 A finished product must preserve the room geometry and show which physical model each clickable object represents.
 
 The current product does not complete that full outcome.
-It offers product plans, example room concepts, manual photo pins, and private saved plans.
+It offers product plans, credited room photographs, six room recipes, manual photo pins, and private saved plans.
 Automatic room analysis and accepted live room-image generation remain missing.
 The current owner requirement is no payment and no payment card.
 
@@ -46,6 +46,22 @@ Unknown prices stay outside totals. Owned categories need an explicit change in 
 The planner now gives keyboards, mice, and monitors priority over optional accessories.
 Mechanical keyboard records add local manufacturer destinations for all three countries.
 Their exact local variants and prices still need a check before a budget plan can include them.
+
+## Room library expansion
+
+The catalog contains 93 regional records: 42 for India, 30 for Germany, and 21 for the US.
+The update adds 21 furniture and textile records, plus an HP wired input combo and Bluetooth mouse.
+The local catalog covers desks, chairs, rugs, curtains, desk elements, and footrests alongside electronics.
+Model photos, materials, dimensions, brand filters, type filters, comparisons, and local purchase links support manual choices.
+The catalog does not treat rug width or curtain width as desk width.
+Rugs and curtains require confirmation of suitable existing supports before an addition.
+
+Six real-room photographs replace the generated concept images in the visible room-idea flow.
+Each photograph has a creator credit and original source link.
+Each recipe creates a local shortlist within the budget and owned-equipment rules.
+An application changes one editable direction and supports undo.
+These are reference photographs, not exact matches to the selected shopping list or the uploaded room.
+See [room sources](room-sources.md) and [the new catalog audit](room-catalog-audit-2026-10-20.json).
 
 ## Real pending work
 

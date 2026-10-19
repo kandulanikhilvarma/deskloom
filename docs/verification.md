@@ -3,6 +3,33 @@
 The release record separates source implementation, automated checks, provider acceptance, and public activation.
 An implemented route does not establish a successful live integration.
 
+## Room library checks, 20 October 2026
+
+- All 54 local unit tests passed. Two belong to separate unpublished text-stream work; this release contains 52 application tests.
+- Lint, TypeScript, and the production build passed.
+- The final local browser run passed 17 guest checks and explicitly skipped the account test.
+- Checks loaded all 34 regional electronics photos, the added furniture and fabric model photos, and six room photographs.
+- Phone and desktop checks covered light and dark themes, selected WCAG A and AA rules, and overflow.
+- Six family controls fit in the first phone viewport.
+- Browser checks passed product comparison, local links, support requirements, budget filters, room-plan application, undo, and photo failure recovery.
+- Two Mermaid diagrams and three YAML documents parsed successfully. The STE linter reported zero errors; the approved dictionary was not checked.
+- The catalog contains 93 regional records: 42 for India, 30 for Germany, and 21 for the US.
+- India exposes seven keyboards, four mice, and three monitors. Germany and the US each expose four keyboards, three mice, and three monitors.
+- Each market has at least three desks, three chairs, two rugs, and one curtain choice.
+- Six credited room photographs have local product recipes. Tests confirm budget, market, owned equipment, and price rules.
+- Rug additions need existing underlay confirmation. Curtain additions need existing rod or rail confirmation.
+- The separate design review resolved both findings: mobile discovery order and the design record. Its final disposition is `ship`.
+
+The source audit covers 21 added IKEA records and two HP input devices.
+See [the destination audit](room-catalog-audit-2026-10-20.json) and [room sources](room-sources.md).
+Each price has an observation date. They do not establish current stock or delivery eligibility.
+One US rug has no reliable selected-variant price and cannot enter a budgeted plan.
+
+This update adds no dependencies or database schema changes.
+The account and database integration tests were not repeated for this catalog update.
+Paid image requests remain disabled under the owner's no-card requirement.
+Reference photographs do not identify every object or show an exact selected product plan.
+
 ## Electronics release checks, 19 October 2026
 
 - The final production build passed 14 guest browser tests. The run explicitly skipped the account test.

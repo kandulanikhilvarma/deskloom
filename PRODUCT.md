@@ -18,9 +18,9 @@ Turn a space photo and personal constraints into useful desk plans with real pro
 Users capture a photo on a phone or upload one on a computer. They compare alternatives, retain owned equipment, swap products, and save a plan.
 
 ## Capabilities and Constraints
-The first release has three design directions, budget checks, region-specific products, interactive layouts, private saved plans, and an export.
+The app has three editable product directions and six room recipes based on credited photographs. The catalog covers electronics, desks, chairs, rugs, curtains, desk elements, and footrests. Users can compare models, materials, local links, and dated prices. Budget checks, private saved plans, manual layouts, and text export remain available.
 India is the assumed first market. US and Germany catalogs are separate. Euro prices describe Germany, not every EU country.
-Photorealistic AI transformations need an activated image provider. A schematic preview must not imply exact product appearance or dimensions.
+Personal AI room transformations remain inactive under the no-payment and no-card requirement. Reference photographs do not represent exact product matches or ergonomic assessments. A schematic preview must not imply exact product appearance or dimensions.
 No paid commitment, legal acceptance, affiliate claim, stock claim, or medical claim is authorized.
 
 ## Evidence on Hand

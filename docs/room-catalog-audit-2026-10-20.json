@@ -1,0 +1,228 @@
+[
+  {
+    "id": "in-flintan-arms",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/flintan-office-chair-with-armrests-black-s69424469/",
+    "final": "https://www.ikea.com/in/en/p/flintan-office-chair-with-armrests-black-s69424469/",
+    "title": "FLINTAN office chair with armrests, black  - IKEA",
+    "price": 9490.0,
+    "currency": "INR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "in-dagotto",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/dagotto-foot-rest-black-20240990/",
+    "final": "https://www.ikea.com/in/en/p/dagotto-foot-rest-black-20240990/",
+    "title": "DAGOTTO foot-rest, black  - IKEA",
+    "price": 1290.0,
+    "currency": "INR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "in-micke",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/micke-desk-white-80354281/",
+    "final": "https://www.ikea.com/in/en/p/micke-desk-white-80354281/",
+    "title": "MICKE Desk, white, 73x50 cm  - IKEA",
+    "price": 5990.0,
+    "currency": "INR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "in-tiphede",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/tiphede-rug-flatwoven-natural-black-00456759/",
+    "final": "https://www.ikea.com/in/en/p/tiphede-rug-flatwoven-natural-black-00456759/",
+    "title": "TIPHEDE rug, flatwoven, natural/black, 120x180 cm (3'11&quot;x5'11&quot;)  - IKEA",
+    "price": 899.0,
+    "currency": "INR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "in-lohals",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/lohals-rug-flatwoven-natural-50511287/",
+    "final": "https://www.ikea.com/in/en/p/lohals-rug-flatwoven-natural-50511287/",
+    "title": "LOHALS rug, flatwoven, natural, 133x195 cm (4'4&quot;x6'5&quot;)  - IKEA",
+    "price": 3990.0,
+    "currency": "INR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "in-stoense",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/stoense-rug-low-pile-off-white-90425527/",
+    "final": "https://www.ikea.com/in/en/p/stoense-rug-low-pile-off-white-90425527/",
+    "title": "STOENSE Rug, low pile, off-white, 133x195 cm  - IKEA",
+    "price": 6490.0,
+    "currency": "INR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "in-bengta-beige",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/bengta-block-out-curtain-1-piece-beige-with-heading-tape-50602150/",
+    "final": "https://www.ikea.com/in/en/p/bengta-block-out-curtain-1-piece-beige-with-heading-tape-50602150/",
+    "title": "BENGTA block-out curtain, 1 piece, beige/with heading tape, 210x250 cm (83x98&quot;)  - IKEA",
+    "price": 999.0,
+    "currency": "INR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "in-lill",
+    "status": 200,
+    "url": "https://www.ikea.com/in/en/p/lill-net-curtains-1-pair-white-with-rod-pocket-70171927/",
+    "final": "https://www.ikea.com/in/en/p/lill-net-curtains-1-pair-white-with-rod-pocket-70171927/",
+    "title": "LILL net curtains, 1 pair, white/with rod pocket, 280x250 cm (110x98&quot;)  - IKEA",
+    "price": 399.0,
+    "currency": "INR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "us-flintan-beige",
+    "status": 200,
+    "url": "https://www.ikea.com/us/en/p/flintan-office-chair-beige-00492205/",
+    "final": "https://www.ikea.com/us/en/p/flintan-office-chair-beige-00492205/",
+    "title": "FLINTAN office chair, beige  - IKEA",
+    "price": 99.99,
+    "currency": "USD",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "us-flintan-arms",
+    "status": 200,
+    "url": "https://www.ikea.com/us/en/p/flintan-office-chair-with-armrests-black-s29424471/",
+    "final": "https://www.ikea.com/us/en/p/flintan-office-chair-with-armrests-black-s29424471/",
+    "title": "FLINTAN office chair with armrests, black  - IKEA",
+    "price": 119.99,
+    "currency": "USD",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "us-micke",
+    "status": 200,
+    "url": "https://www.ikea.com/us/en/p/micke-desk-white-30213076/",
+    "final": "https://www.ikea.com/us/en/p/micke-desk-white-30213076/",
+    "title": "MICKE Desk, white, 28 3/4x19 5/8&quot;  - IKEA",
+    "price": 69.99,
+    "currency": "USD",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "us-lohals",
+    "status": 200,
+    "url": "https://www.ikea.com/us/en/p/lohals-rug-flatwoven-natural-50277393/",
+    "final": "https://www.ikea.com/us/en/p/lohals-rug-flatwoven-natural-50277393/",
+    "title": "LOHALS rug, flatwoven, natural, 5'3&quot;x7'7&quot;  - IKEA",
+    "price": 129.99,
+    "currency": "USD",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "us-stoense",
+    "status": 200,
+    "url": "https://www.ikea.com/us/en/p/stoense-rug-low-pile-off-white-20426808/",
+    "final": "https://www.ikea.com/us/en/p/stoense-rug-low-pile-off-white-20426808/",
+    "title": "STOENSE rug, low pile, off-white, 6'7&quot;x9'10&quot;  - IKEA",
+    "price": null,
+    "currency": "USD",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "de-flintan-arms",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/flintan-drehstuhl-mit-armlehnen-schwarz-s89424468/",
+    "final": "https://www.ikea.com/de/de/p/flintan-drehstuhl-mit-armlehnen-schwarz-s89424468/",
+    "title": "FLINTAN Drehstuhl mit Armlehnen, schwarz  - IKEA Deutschland",
+    "price": 99.99,
+    "currency": "EUR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "de-dagotto",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/dagotto-fussstuetze-schwarz-40240989/",
+    "final": "https://www.ikea.com/de/de/p/dagotto-fussstuetze-schwarz-40240989/",
+    "title": "DAGOTTO Fußstütze, schwarz  - IKEA Deutschland",
+    "price": 19.99,
+    "currency": "EUR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "de-tiphede",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/tiphede-teppich-flach-gewebt-natur-schwarz-40456757/",
+    "final": "https://www.ikea.com/de/de/p/tiphede-teppich-flach-gewebt-natur-schwarz-40456757/",
+    "title": "TIPHEDE Teppich flach gewebt, natur/schwarz, 120x180 cm  - IKEA Deutschland",
+    "price": 8.99,
+    "currency": "EUR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "de-stoense",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/stoense-teppich-kurzflor-elfenbeinweiss-20426808/",
+    "final": "https://www.ikea.com/de/de/p/stoense-teppich-kurzflor-elfenbeinweiss-20426808/",
+    "title": "STOENSE Kurzflor-Teppich, elfenbeinweiß, 200x300 cm  - IKEA Deutschland",
+    "price": 139.0,
+    "currency": "EUR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "de-bengta-beige",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/bengta-1-gardinenschal-verdunk-beige-mit-gardinenband-20602137/",
+    "final": "https://www.ikea.com/de/de/p/bengta-1-gardinenschal-verdunk-beige-mit-gardinenband-20602137/",
+    "title": "BENGTA 1 Gardinenschal (verdunk.), beige/mit Gardinenband, 210x250 cm  - IKEA Deutschland",
+    "price": 9.99,
+    "currency": "EUR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "de-lill",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/lill-gardinenstore-2-schals-weiss-mit-tunnelsaum-90111980/",
+    "final": "https://www.ikea.com/de/de/p/lill-gardinenstore-2-schals-weiss-mit-tunnelsaum-90111980/",
+    "title": "LILL Gardinenstore/2 Schals, weiß/mit Tunnelsaum, 280x250 cm  - IKEA Deutschland",
+    "price": 3.5,
+    "currency": "EUR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "us-lill",
+    "status": 200,
+    "url": "https://www.ikea.com/us/en/p/lill-sheer-curtains-1-pair-white-with-rod-pocket-90111980/",
+    "final": "https://www.ikea.com/us/en/p/lill-sheer-curtains-1-pair-white-with-rod-pocket-90111980/",
+    "title": "LILL Sheer curtains, 1 pair, white/with rod pocket, 110x98&quot;  - IKEA",
+    "price": 4.99,
+    "currency": "USD",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "de-lohals",
+    "status": 200,
+    "url": "https://www.ikea.com/de/de/p/lohals-teppich-flach-gewebt-natur-30511288/",
+    "final": "https://www.ikea.com/de/de/p/lohals-teppich-flach-gewebt-natur-30511288/",
+    "title": "LOHALS Teppich flach gewebt, natur, 133x195 cm  - IKEA Deutschland",
+    "price": 59.99,
+    "currency": "EUR",
+    "checkedAt": "2026-10-19"
+  },
+  {
+    "id": "in-hp-km160",
+    "url": "https://www.hp.com/in-en/shop/products/accessories/hp-km160-wired-mouse-and-keyboard-combo-99y13aa-acj",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "price": 864,
+    "currency": "INR"
+  },
+  {
+    "id": "in-hp240",
+    "url": "https://www.hp.com/in-en/shop/products/accessories/hp-240-pike-silver-bluetooth-mouse-43n04aa-uuf",
+    "status": 200,
+    "checkedAt": "2026-10-20",
+    "price": 1178.01,
+    "currency": "INR"
+  }
+]

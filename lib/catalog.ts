@@ -273,7 +273,10 @@ export const products: Product[] = [
     ],
     "tier": "premium",
     "linkStatus": "verified",
-    "verifiedTitle": "MARKUS Office chair, Vissle dark grey  - IKEA"
+    "verifiedTitle": "MARKUS Office chair, Vissle dark grey  - IKEA",
+    "specifications": {
+      "type": "High-back office chair"
+    }
   },
   {
     "checkedAt": "2026-10-18",
@@ -312,7 +315,10 @@ export const products: Product[] = [
     ],
     "tier": "budget",
     "linkStatus": "verified",
-    "verifiedTitle": "LAGKAPTEN / ADILS desk, white, 120x60 cm (471/4x235/8\")  - IKEA"
+    "verifiedTitle": "LAGKAPTEN / ADILS desk, white, 120x60 cm (471/4x235/8\")  - IKEA",
+    "specifications": {
+      "type": "Fixed-height desk"
+    }
   },
   {
     "checkedAt": "2026-10-18",
@@ -1387,7 +1393,10 @@ export const products: Product[] = [
       "Alternate positions for comfort; the desk does not establish a health benefit."
     ],
     "linkStatus": "verified",
-    "verifiedTitle": "TROTTEN desk sit/stand, white, 120x70 cm (471/4x271/2\")  - IKEA"
+    "verifiedTitle": "TROTTEN desk sit/stand, white, 120x70 cm (471/4x271/2\")  - IKEA",
+    "specifications": {
+      "type": "Height-adjustable desk"
+    }
   },
   {
     "checkedAt": "2026-10-18",
@@ -1428,7 +1437,10 @@ export const products: Product[] = [
       "Delivery and assembly are separate."
     ],
     "linkStatus": "verified",
-    "verifiedTitle": "FLINTAN office chair, black  - IKEA"
+    "verifiedTitle": "FLINTAN office chair, black  - IKEA",
+    "specifications": {
+      "type": "Mesh office chair"
+    }
   },
   {
     "id": "de-lagkapten",
@@ -1463,6 +1475,9 @@ export const products: Product[] = [
     "verifiedTitle": "LAGKAPTEN/ADILS Schreibtisch, Eiche/weiß, 120x60 cm  - IKEA Deutschland",
     "dimensions": {
       "widthCm": 120
+    },
+    "specifications": {
+      "type": "Fixed-height desk"
     }
   },
   {
@@ -1497,6 +1512,9 @@ export const products: Product[] = [
     "verifiedTitle": "TROTTEN Schreibtisch sitz/steh, elektrisch/weiß, 120x70 cm  - IKEA Deutschland",
     "dimensions": {
       "widthCm": 120
+    },
+    "specifications": {
+      "type": "Height-adjustable desk"
     }
   },
   {
@@ -1532,6 +1550,9 @@ export const products: Product[] = [
     "verifiedTitle": "MITTZON Schreibtisch sitz/steh, elektrisch Nussbaumfurnier/schwarz, 120x80 cm  - IKEA Deutschland",
     "dimensions": {
       "widthCm": 120
+    },
+    "specifications": {
+      "type": "Height-adjustable desk"
     }
   },
   {
@@ -1564,7 +1585,10 @@ export const products: Product[] = [
     "tier": "budget",
     "material": "Stoff",
     "linkStatus": "verified",
-    "verifiedTitle": "FLINTAN Drehstuhl, schwarz  - IKEA Deutschland"
+    "verifiedTitle": "FLINTAN Drehstuhl, schwarz  - IKEA Deutschland",
+    "specifications": {
+      "type": "Mesh office chair"
+    }
   },
   {
     "id": "de-markus",
@@ -1596,7 +1620,10 @@ export const products: Product[] = [
     "tier": "mid",
     "material": "Stoff, Metall",
     "linkStatus": "verified",
-    "verifiedTitle": "MARKUS Drehstuhl, Vissle dunkelgrau  - IKEA Deutschland"
+    "verifiedTitle": "MARKUS Drehstuhl, Vissle dunkelgrau  - IKEA Deutschland",
+    "specifications": {
+      "type": "High-back office chair"
+    }
   },
   {
     "id": "de-markus-light",
@@ -1628,7 +1655,10 @@ export const products: Product[] = [
     "tier": "premium",
     "material": "Stoff, Metall",
     "linkStatus": "verified",
-    "verifiedTitle": "MARKUS Drehstuhl, Vissle hellgrau  - IKEA Deutschland"
+    "verifiedTitle": "MARKUS Drehstuhl, Vissle hellgrau  - IKEA Deutschland",
+    "specifications": {
+      "type": "High-back office chair"
+    }
   },
   {
     "id": "de-s2725hsm",
@@ -2168,6 +2198,9 @@ export const products: Product[] = [
     "verifiedTitle": "MITTZON desk sit/stand, electric walnut veneer/black, 471/4x311/2&quot;  - IKEA",
     "dimensions": {
       "widthCm": 120
+    },
+    "specifications": {
+      "type": "Height-adjustable desk"
     }
   },
   {
@@ -2203,6 +2236,9 @@ export const products: Product[] = [
     "verifiedTitle": "MITTZON desk, walnut veneer/black, 551/8x235/8&quot;  - IKEA",
     "dimensions": {
       "widthCm": 140
+    },
+    "specifications": {
+      "type": "Fixed-height desk"
     }
   },
   {
@@ -2235,7 +2271,10 @@ export const products: Product[] = [
     "tier": "mid",
     "material": "Fabric, Metal",
     "linkStatus": "verified",
-    "verifiedTitle": "MARKUS office chair, Vissle dark gray, Medium  - IKEA"
+    "verifiedTitle": "MARKUS office chair, Vissle dark gray, Medium  - IKEA",
+    "specifications": {
+      "type": "High-back office chair"
+    }
   },
   {
     "id": "us-s2725hsm",
@@ -2606,6 +2645,9 @@ export const products: Product[] = [
     "verifiedTitle": "MITTZON desk, black stained ash veneer/black, 140x60 cm (551/8x235/8&quot;)  - IKEA",
     "dimensions": {
       "widthCm": 140
+    },
+    "specifications": {
+      "type": "Fixed-height desk"
     }
   },
   {
@@ -2723,6 +2765,902 @@ export const products: Product[] = [
     "imageUrl": "https://resource.logitech.com/content/dam/logitech/en/products/keyboards/mx-mechanical/migration-assets-for-delorean-2025/gallery/mx-mechanical-top-view-graphite-us.png",
     "sourceUrls": [
       "https://www.logitech.com/de-de/shop/p/mx-mechanical"
+    ]
+  },
+  {
+    "id": "in-flintan-arms",
+    "name": "FLINTAN Office chair with armrests - black",
+    "brand": "IKEA",
+    "category": "chair",
+    "market": "IN",
+    "currency": "INR",
+    "price": 9490.0,
+    "url": "https://www.ikea.com/in/en/p/flintan-office-chair-with-armrests-black-s69424469/",
+    "description": "An office chair with a mesh back and adjustable seat height. Try the seat, arm clearance, and adjustment range for your body.",
+    "tags": [
+      "dark"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "The product label does not establish personal fit or a medical benefit."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/in/en/images/products/flintan-office-chair-with-armrests-black__1007241_pe825960_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "FLINTAN office chair with armrests, black  - IKEA",
+    "material": "Fabric, Metal",
+    "dimensions": {
+      "widthCm": 71.0,
+      "depthCm": 71.0
+    },
+    "specifications": {
+      "type": "Mesh office chair",
+      "model": "694.244.69"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/in/en/p/flintan-office-chair-with-armrests-black-s69424469/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "in-dagotto",
+    "name": "DAGOTTO Foot-rest - black",
+    "brand": "IKEA",
+    "category": "footrest",
+    "market": "IN",
+    "currency": "INR",
+    "price": 1290.0,
+    "url": "https://www.ikea.com/in/en/p/dagotto-foot-rest-black-20240990/",
+    "description": "A separate foot support with a tilting platform. Use only if your feet need support after chair adjustment.",
+    "tags": [
+      "dark"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/in/en/images/products/dagotto-foot-rest-black__0156454_pe315498_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "DAGOTTO foot-rest, black  - IKEA",
+    "material": "Stainless steel, Plastic",
+    "dimensions": {
+      "widthCm": 38.0,
+      "depthCm": 49.0,
+      "heightCm": 15.0
+    },
+    "specifications": {
+      "type": "Tilting footrest",
+      "model": "202.409.90"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/in/en/p/dagotto-foot-rest-black-20240990/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "in-micke",
+    "name": "MICKE Desk - white 73x50 cm (28 3/4x19 5/8 \")",
+    "brand": "IKEA",
+    "category": "desk",
+    "market": "IN",
+    "currency": "INR",
+    "price": 5990.0,
+    "url": "https://www.ikea.com/in/en/p/micke-desk-white-80354281/",
+    "description": "A compact desk with a drawer and rear cable outlet. Check screen distance and leg clearance before purchase.",
+    "tags": [
+      "white"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/in/en/images/products/micke-desk-white__0736022_pe740349_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "MICKE Desk, white, 73x50 cm  - IKEA",
+    "material": "Wood (including board), Metal",
+    "dimensions": {
+      "widthCm": 73.0,
+      "depthCm": 50.0,
+      "heightCm": 75.0
+    },
+    "specifications": {
+      "type": "Compact desk",
+      "model": "803.542.81"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/in/en/p/micke-desk-white-80354281/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "in-tiphede",
+    "name": "TIPHEDE Rug, flatwoven - natural/black 120x180 cm (3 ' 11 \"x5 ' 11 \")",
+    "brand": "IKEA",
+    "category": "rug",
+    "market": "IN",
+    "currency": "INR",
+    "price": 899.0,
+    "url": "https://www.ikea.com/in/en/p/tiphede-rug-flatwoven-natural-black-00456759/",
+    "description": "A separate floor rug for a softer room finish. Check the size, floor grip, cleaning needs, and chair movement before purchase.",
+    "tags": [
+      "natural"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "Use a suitable anti-slip layer if needed; its price is separate.",
+      "Check that chair casters move safely and rug edges stay flat. A rug is not a chair mat."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/in/en/images/products/tiphede-rug-flatwoven-natural-black__0772066_pe755879_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "TIPHEDE rug, flatwoven, natural/black, 120x180 cm (3'11&quot;x5'11&quot;)  - IKEA",
+    "material": "Cotton",
+    "dimensions": {
+      "widthCm": 120.0,
+      "depthCm": 180.0
+    },
+    "specifications": {
+      "type": "Flatwoven cotton rug",
+      "model": "004.567.59"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/in/en/p/tiphede-rug-flatwoven-natural-black-00456759/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "in-lohals",
+    "name": "LOHALS Rug, flatwoven - natural 133x195 cm (4 ' 4 \"x6 ' 5 \")",
+    "brand": "IKEA",
+    "category": "rug",
+    "market": "IN",
+    "currency": "INR",
+    "price": 3990.0,
+    "url": "https://www.ikea.com/in/en/p/lohals-rug-flatwoven-natural-50511287/",
+    "description": "A separate floor rug for a softer room finish. Check the size, floor grip, cleaning needs, and chair movement before purchase.",
+    "tags": [
+      "natural"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "Use a suitable anti-slip layer if needed; its price is separate.",
+      "Check that chair casters move safely and rug edges stay flat. A rug is not a chair mat."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/in/en/images/products/lohals-rug-flatwoven-natural__0280221_pe419173_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "LOHALS rug, flatwoven, natural, 133x195 cm (4'4&quot;x6'5&quot;)  - IKEA",
+    "material": "Natural fibres",
+    "dimensions": {
+      "widthCm": 133.0,
+      "depthCm": 195.0
+    },
+    "specifications": {
+      "type": "Flatwoven jute rug",
+      "model": "505.112.87"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/in/en/p/lohals-rug-flatwoven-natural-50511287/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "in-stoense",
+    "name": "STOENSE Rug, low pile - off-white 133x195 cm (4 ' 4 \"x6 ' 5 \")",
+    "brand": "IKEA",
+    "category": "rug",
+    "market": "IN",
+    "currency": "INR",
+    "price": 6490.0,
+    "url": "https://www.ikea.com/in/en/p/stoense-rug-low-pile-off-white-90425527/",
+    "description": "A separate floor rug for a softer room finish. Check the size, floor grip, cleaning needs, and chair movement before purchase.",
+    "tags": [
+      "white"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "Use a suitable anti-slip layer if needed; its price is separate.",
+      "Check that chair casters move safely and rug edges stay flat. A rug is not a chair mat."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/in/en/images/products/stoense-rug-low-pile-off-white__0624373_pe691791_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "STOENSE Rug, low pile, off-white, 133x195 cm  - IKEA",
+    "material": "Synthetic fibres",
+    "dimensions": {
+      "widthCm": 133.0,
+      "depthCm": 195.0
+    },
+    "specifications": {
+      "type": "Low-pile rug",
+      "model": "904.255.27"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/in/en/p/stoense-rug-low-pile-off-white-90425527/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "in-bengta-beige",
+    "name": "BENGTA Block-out curtain, 1 piece - beige/with heading tape 210x250 cm (83x98 \")",
+    "brand": "IKEA",
+    "category": "curtain",
+    "market": "IN",
+    "currency": "INR",
+    "price": 999.0,
+    "url": "https://www.ikea.com/in/en/p/bengta-block-out-curtain-1-piece-beige-with-heading-tape-50602150/",
+    "description": "A window fabric option for privacy or light control. Measure the window and confirm the panel count and existing support.",
+    "tags": [
+      "dark"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "Curtain rod or rail, brackets, hooks, and installation are not included.",
+      "Confirm a compatible existing curtain support before an addition. Sheer fabric does not give full night privacy."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/in/en/images/products/bengta-block-out-curtain-1-piece-beige-with-heading-tape__1341494_pe948758_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "BENGTA block-out curtain, 1 piece, beige/with heading tape, 210x250 cm (83x98&quot;)  - IKEA",
+    "material": "Polyester",
+    "dimensions": {
+      "widthCm": 210.0,
+      "depthCm": 250.0
+    },
+    "specifications": {
+      "type": "Block-out curtain",
+      "model": "506.021.50",
+      "panelCount": 1
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/in/en/p/bengta-block-out-curtain-1-piece-beige-with-heading-tape-50602150/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "in-lill",
+    "name": "LILL Net curtains, 1 pair - white/with rod pocket 280x250 cm (110x98 \")",
+    "brand": "IKEA",
+    "category": "curtain",
+    "market": "IN",
+    "currency": "INR",
+    "price": 399.0,
+    "url": "https://www.ikea.com/in/en/p/lill-net-curtains-1-pair-white-with-rod-pocket-70171927/",
+    "description": "A window fabric option for privacy or light control. Measure the window and confirm the panel count and existing support.",
+    "tags": [
+      "white"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "Curtain rod or rail, brackets, hooks, and installation are not included.",
+      "Confirm a compatible existing curtain support before an addition. Sheer fabric does not give full night privacy."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/in/en/images/products/lill-net-curtains-1-pair-white-with-rod-pocket__0099863_pe242253_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "LILL net curtains, 1 pair, white/with rod pocket, 280x250 cm (110x98&quot;)  - IKEA",
+    "material": "Polyester",
+    "dimensions": {
+      "widthCm": 280.0,
+      "depthCm": 250.0
+    },
+    "specifications": {
+      "type": "Sheer curtains",
+      "model": "701.719.27",
+      "panelCount": 2
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/in/en/p/lill-net-curtains-1-pair-white-with-rod-pocket-70171927/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "us-flintan-beige",
+    "name": "FLINTAN Office chair - beige",
+    "brand": "IKEA",
+    "category": "chair",
+    "market": "US",
+    "currency": "USD",
+    "price": 99.99,
+    "url": "https://www.ikea.com/us/en/p/flintan-office-chair-beige-00492205/",
+    "description": "An office chair with a mesh back and adjustable seat height. Try the seat, arm clearance, and adjustment range for your body.",
+    "tags": [
+      "dark"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "The product label does not establish personal fit or a medical benefit."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/us/en/images/products/flintan-office-chair-beige__1007198_pe825954_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "FLINTAN office chair, beige  - IKEA",
+    "material": "Fabric",
+    "dimensions": {},
+    "specifications": {
+      "type": "Mesh office chair",
+      "model": "004.922.05"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/us/en/p/flintan-office-chair-beige-00492205/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "us-flintan-arms",
+    "name": "FLINTAN Office chair with armrests - black",
+    "brand": "IKEA",
+    "category": "chair",
+    "market": "US",
+    "currency": "USD",
+    "price": 119.99,
+    "url": "https://www.ikea.com/us/en/p/flintan-office-chair-with-armrests-black-s29424471/",
+    "description": "An office chair with a mesh back and adjustable seat height. Try the seat, arm clearance, and adjustment range for your body.",
+    "tags": [
+      "dark"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "The product label does not establish personal fit or a medical benefit."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/us/en/images/products/flintan-office-chair-with-armrests-black__1007241_pe825960_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "FLINTAN office chair with armrests, black  - IKEA",
+    "material": "Fabric, Metal",
+    "dimensions": {},
+    "specifications": {
+      "type": "Mesh office chair",
+      "model": "294.244.71"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/us/en/p/flintan-office-chair-with-armrests-black-s29424471/"
+    ],
+    "retailer": "IKEA",
+    "tier": "mid"
+  },
+  {
+    "id": "us-micke",
+    "name": "MICKE Desk - white 28 3/4x19 5/8 \"",
+    "brand": "IKEA",
+    "category": "desk",
+    "market": "US",
+    "currency": "USD",
+    "price": 69.99,
+    "url": "https://www.ikea.com/us/en/p/micke-desk-white-30213076/",
+    "description": "A compact desk with a drawer and rear cable outlet. Check screen distance and leg clearance before purchase.",
+    "tags": [
+      "white"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/us/en/images/products/micke-desk-white__0736022_pe740349_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "MICKE Desk, white, 28 3/4x19 5/8&quot;  - IKEA",
+    "material": "Wood (including board), Metal",
+    "dimensions": {},
+    "specifications": {
+      "type": "Compact desk",
+      "model": "302.130.76"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/us/en/p/micke-desk-white-30213076/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "us-lohals",
+    "name": "LOHALS Rug, flatwoven - natural 5 ' 3 \"x7 ' 7 \"",
+    "brand": "IKEA",
+    "category": "rug",
+    "market": "US",
+    "currency": "USD",
+    "price": 129.99,
+    "url": "https://www.ikea.com/us/en/p/lohals-rug-flatwoven-natural-50277393/",
+    "description": "A separate floor rug for a softer room finish. Check the size, floor grip, cleaning needs, and chair movement before purchase.",
+    "tags": [
+      "natural"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "Use a suitable anti-slip layer if needed; its price is separate.",
+      "Check that chair casters move safely and rug edges stay flat. A rug is not a chair mat."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/us/en/images/products/lohals-rug-flatwoven-natural__0280221_pe419173_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "LOHALS rug, flatwoven, natural, 5'3&quot;x7'7&quot;  - IKEA",
+    "material": "Natural fibers",
+    "dimensions": {},
+    "specifications": {
+      "type": "Flatwoven jute rug",
+      "model": "502.773.93"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/us/en/p/lohals-rug-flatwoven-natural-50277393/"
+    ],
+    "retailer": "IKEA",
+    "tier": "mid"
+  },
+  {
+    "id": "us-stoense",
+    "name": "STOENSE Rug, low pile - off-white 6 ' 7 \"x9 ' 10 \"",
+    "brand": "IKEA",
+    "category": "rug",
+    "market": "US",
+    "currency": "USD",
+    "price": null,
+    "url": "https://www.ikea.com/us/en/p/stoense-rug-low-pile-off-white-20426808/",
+    "description": "A separate floor rug for a softer room finish. Check the size, floor grip, cleaning needs, and chair movement before purchase.",
+    "tags": [
+      "white"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "Use a suitable anti-slip layer if needed; its price is separate.",
+      "Check that chair casters move safely and rug edges stay flat. A rug is not a chair mat."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "unknown",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/us/en/images/products/stoense-rug-low-pile-off-white__0624402_pe691814_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "STOENSE rug, low pile, off-white, 6'7&quot;x9'10&quot;  - IKEA",
+    "material": "Synthetic fibers",
+    "dimensions": {},
+    "specifications": {
+      "type": "Low-pile rug",
+      "model": "204.268.08"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/us/en/p/stoense-rug-low-pile-off-white-20426808/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "de-flintan-arms",
+    "name": "FLINTAN Drehstuhl mit Armlehnen - schwarz",
+    "brand": "IKEA",
+    "category": "chair",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 99.99,
+    "url": "https://www.ikea.com/de/de/p/flintan-drehstuhl-mit-armlehnen-schwarz-s89424468/",
+    "description": "An office chair with a mesh back and adjustable seat height. Try the seat, arm clearance, and adjustment range for your body.",
+    "tags": [
+      "dark"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "The product label does not establish personal fit or a medical benefit."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/flintan-drehstuhl-mit-armlehnen-schwarz__1007241_pe825960_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "FLINTAN Drehstuhl mit Armlehnen, schwarz  - IKEA Deutschland",
+    "material": "Stoff, Metall",
+    "dimensions": {
+      "widthCm": 71.0,
+      "depthCm": 71.0
+    },
+    "specifications": {
+      "type": "Mesh office chair",
+      "model": "894.244.68"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/flintan-drehstuhl-mit-armlehnen-schwarz-s89424468/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "de-dagotto",
+    "name": "DAGOTTO Fußstütze - schwarz",
+    "brand": "IKEA",
+    "category": "footrest",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 19.99,
+    "url": "https://www.ikea.com/de/de/p/dagotto-fussstuetze-schwarz-40240989/",
+    "description": "A separate foot support with a tilting platform. Use only if your feet need support after chair adjustment.",
+    "tags": [
+      "dark"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/dagotto-fussstuetze-schwarz__0156454_pe315498_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "DAGOTTO Fußstütze, schwarz  - IKEA Deutschland",
+    "material": "Edelstahl, Kunststoff",
+    "dimensions": {
+      "widthCm": 38.0,
+      "depthCm": 49.0,
+      "heightCm": 15.0
+    },
+    "specifications": {
+      "type": "Tilting footrest",
+      "model": "402.409.89"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/dagotto-fussstuetze-schwarz-40240989/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "de-tiphede",
+    "name": "TIPHEDE Teppich flach gewebt - natur/schwarz 120x180 cm",
+    "brand": "IKEA",
+    "category": "rug",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 8.99,
+    "url": "https://www.ikea.com/de/de/p/tiphede-teppich-flach-gewebt-natur-schwarz-40456757/",
+    "description": "A separate floor rug for a softer room finish. Check the size, floor grip, cleaning needs, and chair movement before purchase.",
+    "tags": [
+      "natural"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "Use a suitable anti-slip layer if needed; its price is separate.",
+      "Check that chair casters move safely and rug edges stay flat. A rug is not a chair mat."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/tiphede-teppich-flach-gewebt-natur-schwarz__0772066_pe755879_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "TIPHEDE Teppich flach gewebt, natur/schwarz, 120x180 cm  - IKEA Deutschland",
+    "material": "Baumwolle",
+    "dimensions": {
+      "widthCm": 120.0,
+      "depthCm": 180.0
+    },
+    "specifications": {
+      "type": "Flatwoven cotton rug",
+      "model": "404.567.57"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/tiphede-teppich-flach-gewebt-natur-schwarz-40456757/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "de-stoense",
+    "name": "STOENSE Teppich Kurzflor - elfenbeinweiß 200x300 cm",
+    "brand": "IKEA",
+    "category": "rug",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 139.0,
+    "url": "https://www.ikea.com/de/de/p/stoense-teppich-kurzflor-elfenbeinweiss-20426808/",
+    "description": "A separate floor rug for a softer room finish. Check the size, floor grip, cleaning needs, and chair movement before purchase.",
+    "tags": [
+      "white"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "Use a suitable anti-slip layer if needed; its price is separate.",
+      "Check that chair casters move safely and rug edges stay flat. A rug is not a chair mat."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/stoense-teppich-kurzflor-elfenbeinweiss__0624402_pe691814_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "STOENSE Kurzflor-Teppich, elfenbeinweiß, 200x300 cm  - IKEA Deutschland",
+    "material": "Kunstfasern",
+    "dimensions": {
+      "widthCm": 200.0,
+      "depthCm": 300.0
+    },
+    "specifications": {
+      "type": "Low-pile rug",
+      "model": "204.268.08"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/stoense-teppich-kurzflor-elfenbeinweiss-20426808/"
+    ],
+    "retailer": "IKEA",
+    "tier": "mid"
+  },
+  {
+    "id": "de-bengta-beige",
+    "name": "BENGTA 1 Gardinenschal (verdunk.) - beige/mit Gardinenband 210x250 cm",
+    "brand": "IKEA",
+    "category": "curtain",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 9.99,
+    "url": "https://www.ikea.com/de/de/p/bengta-1-gardinenschal-verdunk-beige-mit-gardinenband-20602137/",
+    "description": "A window fabric option for privacy or light control. Measure the window and confirm the panel count and existing support.",
+    "tags": [
+      "dark"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "Curtain rod or rail, brackets, hooks, and installation are not included.",
+      "Confirm a compatible existing curtain support before an addition. Sheer fabric does not give full night privacy."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/bengta-1-gardinenschal-verdunk-beige-mit-gardinenband__1341494_pe948758_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "BENGTA 1 Gardinenschal (verdunk.), beige/mit Gardinenband, 210x250 cm  - IKEA Deutschland",
+    "material": "Polyester",
+    "dimensions": {
+      "widthCm": 210.0,
+      "depthCm": 250.0
+    },
+    "specifications": {
+      "type": "Block-out curtain",
+      "model": "206.021.37",
+      "panelCount": 1
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/bengta-1-gardinenschal-verdunk-beige-mit-gardinenband-20602137/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "de-lill",
+    "name": "LILL Gardinenstore/2 Schals - weiß/mit Tunnelsaum 280x250 cm",
+    "brand": "IKEA",
+    "category": "curtain",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 3.5,
+    "url": "https://www.ikea.com/de/de/p/lill-gardinenstore-2-schals-weiss-mit-tunnelsaum-90111980/",
+    "description": "A window fabric option for privacy or light control. Measure the window and confirm the panel count and existing support.",
+    "tags": [
+      "white"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "Curtain rod or rail, brackets, hooks, and installation are not included.",
+      "Confirm a compatible existing curtain support before an addition. Sheer fabric does not give full night privacy."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/lill-gardinenstore-2-schals-weiss-mit-tunnelsaum__0099863_pe242253_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "LILL Gardinenstore/2 Schals, weiß/mit Tunnelsaum, 280x250 cm  - IKEA Deutschland",
+    "material": "Polyester",
+    "dimensions": {
+      "widthCm": 280.0,
+      "depthCm": 250.0
+    },
+    "specifications": {
+      "type": "Sheer curtains",
+      "model": "901.119.80",
+      "panelCount": 2
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/lill-gardinenstore-2-schals-weiss-mit-tunnelsaum-90111980/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "us-lill",
+    "name": "LILL Sheer curtains, 1 pair - white/with rod pocket 110x98 \"",
+    "brand": "IKEA",
+    "category": "curtain",
+    "market": "US",
+    "currency": "USD",
+    "price": 4.99,
+    "url": "https://www.ikea.com/us/en/p/lill-sheer-curtains-1-pair-white-with-rod-pocket-90111980/",
+    "description": "A window fabric option for privacy or light control. Measure the window and confirm the panel count and existing support.",
+    "tags": [
+      "white"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "Curtain rod or rail, brackets, hooks, and installation are not included.",
+      "Confirm a compatible existing curtain support before an addition. Sheer fabric does not give full night privacy."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/us/en/images/products/lill-sheer-curtains-1-pair-white-with-rod-pocket__0099863_pe242253_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "LILL Sheer curtains, 1 pair, white/with rod pocket, 110x98&quot;  - IKEA",
+    "material": "Polyester",
+    "dimensions": {},
+    "specifications": {
+      "type": "Sheer curtains",
+      "model": "901.119.80",
+      "panelCount": 2
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/us/en/p/lill-sheer-curtains-1-pair-white-with-rod-pocket-90111980/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "de-lohals",
+    "name": "LOHALS Teppich flach gewebt - natur 133x195 cm",
+    "brand": "IKEA",
+    "category": "rug",
+    "market": "DE",
+    "currency": "EUR",
+    "price": 59.99,
+    "url": "https://www.ikea.com/de/de/p/lohals-teppich-flach-gewebt-natur-30511288/",
+    "description": "A separate floor rug for a softer room finish. Check the size, floor grip, cleaning needs, and chair movement before purchase.",
+    "tags": [
+      "natural"
+    ],
+    "notes": [
+      "Price is a dated local reference. Check delivery, tax, local availability, and the final variant.",
+      "Use a suitable anti-slip layer if needed; its price is separate.",
+      "Check that chair casters move safely and rug edges stay flat. A rug is not a chair mat."
+    ],
+    "checkedAt": "2026-10-19",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "imageUrl": "https://www.ikea.com/de/de/images/products/lohals-teppich-flach-gewebt-natur__0280221_pe419173_s5.jpg",
+    "linkStatus": "verified",
+    "verifiedTitle": "LOHALS Teppich flach gewebt, natur, 133x195 cm  - IKEA Deutschland",
+    "material": "Naturfaser",
+    "dimensions": {
+      "widthCm": 133.0,
+      "depthCm": 195.0
+    },
+    "specifications": {
+      "type": "Flatwoven jute rug",
+      "model": "305.112.88"
+    },
+    "sourceUrls": [
+      "https://www.ikea.com/de/de/p/lohals-teppich-flach-gewebt-natur-30511288/"
+    ],
+    "retailer": "IKEA",
+    "tier": "budget"
+  },
+  {
+    "id": "in-hp-km160",
+    "name": "KM160 wired keyboard and mouse combo",
+    "category": "keyboard",
+    "price": 864,
+    "url": "https://www.hp.com/in-en/shop/products/accessories/hp-km160-wired-mouse-and-keyboard-combo-99y13aa-acj",
+    "imageUrl": "https://www.hp.com/in-en/shop/media/catalog/product/k/m/km160_99y13aa_m1553737_1.png",
+    "description": "A wired keyboard and mouse set for a basic work desk.",
+    "specifications": {
+      "type": "Wired keyboard and mouse combo",
+      "connection": "Wired",
+      "model": "99Y13AA#ACJ"
+    },
+    "coversCategories": [
+      "keyboard",
+      "mouse"
+    ],
+    "tags": [
+      "wired",
+      "budget"
+    ],
+    "brand": "HP",
+    "market": "IN",
+    "currency": "INR",
+    "checkedAt": "2026-10-20",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "linkStatus": "verified",
+    "verifiedTitle": "HP KM160 wired keyboard and mouse combo | HP Store India",
+    "retailer": "HP",
+    "notes": [
+      "Price is a dated local reference. Check the exact model, compatible computer ports, delivery, and final price."
+    ],
+    "tier": "budget",
+    "sourceUrls": [
+      "https://www.hp.com/in-en/shop/products/accessories/hp-km160-wired-mouse-and-keyboard-combo-99y13aa-acj"
+    ]
+  },
+  {
+    "id": "in-hp240",
+    "name": "240 Pike Silver Bluetooth mouse",
+    "category": "mouse",
+    "price": 1178.01,
+    "url": "https://www.hp.com/in-en/shop/products/accessories/hp-240-pike-silver-bluetooth-mouse-43n04aa-uuf",
+    "imageUrl": "https://www.hp.com/in-en/shop/media/catalog/product/h/p/hp_240_bluetooth_mouse_naturalsilver_coreset_topdown_m1927954.png",
+    "description": "A compact Bluetooth mouse with an ambidextrous shape and three buttons.",
+    "specifications": {
+      "type": "Compact Bluetooth mouse",
+      "connection": "Bluetooth 5.1",
+      "maxDpi": 1600,
+      "shape": "Ambidextrous",
+      "battery": "One AA battery",
+      "model": "43N04AA#UUF"
+    },
+    "tags": [
+      "wireless",
+      "compact",
+      "silver"
+    ],
+    "brand": "HP",
+    "market": "IN",
+    "currency": "INR",
+    "checkedAt": "2026-10-20",
+    "priceFreshness": "retailer-page",
+    "priceStatus": "reference",
+    "stockStatus": "unverified",
+    "linkStatus": "verified",
+    "verifiedTitle": "HP 240 Pike Silver Bluetooth mouse | HP Store India",
+    "retailer": "HP",
+    "notes": [
+      "Price is a dated local reference. Check the exact model, compatible computer ports, delivery, and final price."
+    ],
+    "tier": "budget",
+    "sourceUrls": [
+      "https://www.hp.com/in-en/shop/products/accessories/hp-240-pike-silver-bluetooth-mouse-43n04aa-uuf"
     ]
   }
 ];

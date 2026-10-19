@@ -4,9 +4,9 @@ import AxeBuilder from '@axe-core/playwright';
 test('electronics stay visible at tiny budgets with model details, real local links, and comparisons', async ({page}) => {
   await page.goto('/', {waitUntil:'domcontentloaded'});
   await page.getByLabel('Your total budget').fill('50');
-  await expect(page.getByRole('heading', {name: 'Keyboards. Mice. Monitors.'})).toBeVisible();
-  await page.locator('.electronics-shortcuts button').first().click();
-  await expect(page.locator('.electronics-card')).toHaveCount(6);
+  await expect(page.getByRole('heading', {name: 'Choose every part of your space.'})).toBeVisible();
+  await page.locator('.electronics-launcher:visible .electronics-shortcuts button').first().click();
+  await expect(page.locator('.electronics-card')).toHaveCount(7);
   const before = await page.locator('.product-row').count();
   await page.getByLabel('Product type', {exact: true}).selectOption('Mechanical keyboard');
   await expect(page.locator('.electronics-card')).toHaveCount(1);
@@ -32,7 +32,7 @@ test('electronics stay visible at tiny budgets with model details, real local li
 test('electronics replacement changes the actual plan, supports undo, and never hides owned categories', async ({page}) => {
   await page.goto('/', {waitUntil:'domcontentloaded'}); await page.getByLabel('Where you shop').selectOption('EU');
   await page.getByRole('button', {name: 'laptop', exact: true}).click();
-  await page.getByRole('button', {name: 'Electronics', exact: true}).click();
+  await page.getByRole('button', {name: 'Browse products', exact: true}).click();
   const card = page.locator('.electronics-card[data-product-id="de-mxkeys-s"]');
   await card.getByRole('button', {name: 'Details and options'}).click();
   await expect(page.getByRole('dialog')).toContainText('German QWERTZ');
@@ -42,7 +42,7 @@ test('electronics replacement changes the actual plan, supports undo, and never 
   await page.getByRole('button', {name: 'Undo', exact: true}).click();
   await expect(page.locator('.board-product[data-product-id="de-mxkeys-s"]')).toHaveCount(0);
   await page.getByRole('button', {name: 'keyboard', exact: true}).click();
-  await page.getByRole('button', {name: 'Electronics', exact: true}).click();
+  await page.getByRole('button', {name: 'Browse products', exact: true}).click();
   await expect(page.locator('.electronics-card')).toHaveCount(4);
   await card.getByRole('button', {name: 'Details and options'}).click();
   await expect(page.getByRole('dialog')).toContainText('Uncheck that equipment');
@@ -53,7 +53,7 @@ test('all regional electronics have photos and local currency links; phone and d
   await page.setViewportSize({width:390, height:844}); await page.goto('/', {waitUntil:'domcontentloaded'});
   for (const market of ['IN', 'EU', 'US']) {
     await page.getByLabel('Where you shop').selectOption(market);
-    await page.getByRole('button', {name: 'Electronics', exact: true}).click();
+    await page.getByRole('button', {name: 'Browse products', exact: true}).click();
     for (const category of ['Keyboards', 'Mice', 'Monitors']) {
       await page.locator('.electronics-categories').getByRole('button', {name:new RegExp('^' + category + ' ')}).click();
       for (const card of await page.locator('.electronics-card').all()) {
